@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="doctors.css" />
+    <link rel="stylesheet" href="footer.css" />
     <script
       src="https://kit.fontawesome.com/683b4b40e3.js"
       crossorigin="anonymous"
@@ -17,137 +20,46 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Playfair+Display&family=Poppins:ital,wght@1,100&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        background-color: #f0f1ec;
-      }
-      #parent {
-        width: 80%;
-        margin: auto;
-        background-color: #f7f8f5;
-      }
-      #nav {
-        padding: 0 20px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        background-color: #ffffff;
-      }
-      #mid {
-        display: flex;
-        margin-top: 30px;
-      }
-      .left {
-        width: 70%;
-        margin-right: 2%;
-        display: grid;
-      }
-      .right {
-        width: 28%;
-        border: 1px solid black;
-        height: 200px;
-        background-color: #ffffff;
-      }
-      h4 {
-        margin-bottom: 0px;
-      }
-      h3 {
-        margin-top: -5px;
-        margin-bottom: 15px;
-      }
-
-      .large {
-        width: 95%;
-        margin: auto;
-      }
-      .bord {
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        padding: 0px 35px;
-        background-color: #ffffff;
-        margin-bottom: 20px;
-      }
-      .searchicon {
-        margin-top: 12px;
-        font-size: 17px;
-      }
-      .colorteal {
-        color: #337e93;
-      }
-      .font {
-        font-family: "Nunito", sans-serif;
-      }
-      .buttonbox {
-        margin-top: 20px;
-      }
-      button {
-        background-color: transparent;
-        padding: 2px 10px;
-        color: #337e93;
-        border-radius: 8px;
-        margin-left: 9px;
-        margin-bottom: 34px;
-        border: 1px solid black;
-      }
-      #fourcolum {
-        display: grid;
-        width: 95%;
-        grid-template-rows: 215px;
-        grid-template-columns: repeat(4, 170px);
-        grid-gap: 20px;
-        grid-template-areas: "a b c d";
-        justify-content: center;
-        margin: auto;
-        margin-bottom: 8px;
-      }
-      #fourcolum > div {
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        border-radius: 10px;
-        text-align: center;
-        font-size: 13px;
-        padding: 22px;
-      }
-      #fourcolum > div:first-child {
-        grid-area: a;
-      }
-      #fourcolum > div:nth-child(2) {
-        grid-area: b;
-      }
-      #fourcolum > div:nth-child(3) {
-        grid-area: c;
-      }
-      #fourcolum > div:nth-child(4) {
-        grid-area: d;
-      }
-      img {
-        height: 50px;
-      }
-
-      .line {
-        padding-top: 15px;
-        color: rgb(2, 71, 91, 0.6);
-      }
-      .line2 {
-        line-height: 5px;
-        margin-top: -8px;
-      }
-      .lasttext {
-        margin-top: 5px;
-      }
-    </style>
   </head>
   <body>
     <div id="parent">
-      <div id="nav">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          consequuntur delectus, quo ipsa fugiat dolorum eveniet, labore vero,
-          maiores amet dolor ad mollitia itaque temporibus! Amet ratione sit
-          odio eos itaque, maiores neque soluta cupiditate repellendus quae,
-          consequatur labore animi.lorem20 Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Nulla illum consequatur accusamus
-          nostrum porro similique dolorem assumenda, dolorum quis modi sunt,
-          maxime voluptas repudiandae ex sit explicabo necessitatibus facilis
-          perferendis.
-        </p>
+      <div id="header">
+        <img
+          id="apolloimage"
+          src="data:image/png;base64,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"
+          alt=""
+        />
+        <div>
+          <h4>DOCTORS</h4>
+          <p>consult</p>
+          <p>Online</p>
+        </div>
+        <div>
+          <h4>PHARMACY</h4>
+          <p>Medicines &</p>
+          <p>other products</p>
+        </div>
+        <div>
+          <h4>LAB TESTS</h4>
+          <p>Health</p>
+          <p>check - ups</p>
+        </div>
+        <div>
+          <h4>COVID-19</h4>
+          <p>Latest</p>
+          <p>updates</p>
+        </div>
+        <img
+          id="cartsymbol"
+          src="https://newassets.apollo247.com/images/ic_cart.svg"
+          alt=""
+        />
+        <span id="cartcount">0</span>
+        <img
+          id="accountsymbol"
+          src="https://newassets.apollo247.com/images/ic_account_white.svg"
+          alt=""
+        />
       </div>
       <div class="large">
         <h4>Home</h4>
@@ -257,6 +169,86 @@
           </div>
           <div class="right"></div>
         </div>
+      </div>
+
+      <!-- footer=============================== -->
+
+      <div id="footer">
+        <img src="https://newassets.apollo247.com/images/ic_logo.png" alt="" />
+        <h3>About Apollo 247</h3>
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us / Grievance</a></li>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">Health Queries</a></li>
+          <li><a href="">Terms and Conditions</a></li>
+          <li><a href="">Returns Policy</a></li>
+          <li><a href="">Refund Policy</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Apollo 247 Android App</a></li>
+          <li><a href="">Apollo 247 iOS App</a></li>
+          <li><a href="">Apollo Sitemap</a></li>
+          <li><a href="">Online Doctor App</a></li>
+          <li><a href="">Online Medicinee App</a></li>
+          <li><a href="">Apollo Pharmacy</a></li>
+        </ul>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="">Online Doctor Consultation</a></li>
+          <li><a href="">Apollo Circle Membership</a></li>
+          <li><a href="">Online Medicines</a></li>
+          <li><a href="">Project Kavach</a></li>
+          <li><a href="">Cough Scanner</a></li>
+          <li><a href="">Covid Vaccine Tracker</a></li>
+          <li><a href="">Covid Vaccine Update</a></li>
+          <li><a href="">Apollo Pro Health Program</a></li>
+          <li><a href="">Doctors by Speciality</a></li>
+          <li><a href="">Doctors by City</a></li>
+          <li><a href="">All Doctors List</a></li>
+        </ul>
+        <h3>Top Specialties</h3>
+        <ul>
+          <li><a href="">Covid Consultation</a></li>
+          <li><a href="">Consult Physicians</a></li>
+          <li><a href="">Consult Dermatologists</a></li>
+          <li><a href="">Consult Paediatricians</a></li>
+          <li><a href="">Consult Gynaecologists</a></li>
+          <li><a href="">Consult Gastroenterologists</a></li>
+          <li><a href="">Consult Cardiologists</a></li>
+          <li><a href="">Consult Dietitians</a></li>
+          <li><a href=""> consult ENT Specialists</a></li>
+          <li><a href="">Consult Geriatricians</a></li>
+          <li><a href="">Consult Diabetologists</a></li>
+        </ul>
+        <h3>Book lab Tests at Home</h3>
+        <ul>
+          <li><a href="">RT PCR Test At Home</a></li>
+          <li><a href="">Book Lab Tests at Home</a></li>
+          <li><a href="">Renal Profile (KFT, RFT Test)</a></li>
+          <li><a href="">Hemogram Test</a></li>
+          <li><a href="">Lipid Profile Test</a></li>
+          <li><a href="">Thyroid Profile Test(T3 T4 Tsh Test)</a></li>
+          <li><a href="">D Dimer Test</a></li>
+          <li><a href="">Urine Culture Test</a></li>
+          <li><a href="">Complete Blood Count (CBC Test)</a></li>
+          <li><a href="">Widal test</a></li>
+          <li><a href="">Liver Function Test (LFT Test)</a></li>
+        </ul>
+        <h3>Product Categories</h3>
+        <ul>
+          <li><a href="">View all Brands</a></li>
+          <li><a href="">Health Care</a></li>
+          <li><a href="">Persnal Care</a></li>
+          <li><a href="">Baby Care</a></li>
+          <li><a href="">Nutrition</a></li>
+          <li><a href="">Healthcare Devices</a></li>
+          <li><a href="">Beauty Skin Care</a></li>
+          <li><a href="">Immunity Boosters</a></li>
+          <li><a href="">Coronavirus Prevention</a></li>
+          <li><a href="">Diabetes Care</a></li>
+          <li><a href="">Patanjali Coronil Kit</a></li>
+          <li><a href="">Mamaearth Products</a></li>
+        </ul>
       </div>
     </div>
   </body>
