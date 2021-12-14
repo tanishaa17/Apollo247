@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/683b4b40e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Playfair+Display&family=Poppins:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f0f1ec;
+      }
+      #parent {
+        width: 80%;
+        margin: auto;
+        background-color: #f7f8f5;
+      }
+      #nav {
+        padding: 0 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: #ffffff;
+      }
+      #mid {
+        display: flex;
+        margin-top: 30px;
+      }
+      .left {
+        width: 70%;
+        margin-right: 2%;
+        display: grid;
+      }
+      .right {
+        width: 28%;
+        border: 1px solid black;
+        height: 200px;
+        background-color: #ffffff;
+      }
+      h4 {
+        margin-bottom: 0px;
+      }
+      h3 {
+        margin-top: -5px;
+        margin-bottom: 15px;
+      }
+
+      .large {
+        width: 95%;
+        margin: auto;
+      }
+      .bord {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 0px 35px;
+        background-color: #ffffff;
+        margin-bottom: 20px;
+      }
+      .searchicon {
+        margin-top: 12px;
+        font-size: 17px;
+      }
+      .colorteal {
+        color: #337e93;
+      }
+      .font {
+        font-family: "Nunito", sans-serif;
+      }
+      .buttonbox {
+        margin-top: 20px;
+      }
+      button {
+        background-color: transparent;
+        padding: 2px 10px;
+        color: #337e93;
+        border-radius: 8px;
+        margin-left: 9px;
+        margin-bottom: 34px;
+        border: 1px solid black;
+      }
+      #fourcolum {
+        display: grid;
+        width: 95%;
+        grid-template-rows: 215px;
+        grid-template-columns: repeat(4, 170px);
+        grid-gap: 20px;
+        grid-template-areas: "a b c d";
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 8px;
+      }
+      #fourcolum > div {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 13px;
+        padding: 22px;
+      }
+      #fourcolum > div:first-child {
+        grid-area: a;
+      }
+      #fourcolum > div:nth-child(2) {
+        grid-area: b;
+      }
+      #fourcolum > div:nth-child(3) {
+        grid-area: c;
+      }
+      #fourcolum > div:nth-child(4) {
+        grid-area: d;
+      }
+      img {
+        height: 50px;
+      }
+
+      .line {
+        padding-top: 15px;
+        color: rgb(2, 71, 91, 0.6);
+      }
+      .line2 {
+        line-height: 5px;
+        margin-top: -8px;
+      }
+      .lasttext {
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="nav">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          consequuntur delectus, quo ipsa fugiat dolorum eveniet, labore vero,
+          maiores amet dolor ad mollitia itaque temporibus! Amet ratione sit
+          odio eos itaque, maiores neque soluta cupiditate repellendus quae,
+          consequatur labore animi.lorem20 Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Nulla illum consequatur accusamus
+          nostrum porro similique dolorem assumenda, dolorum quis modi sunt,
+          maxime voluptas repudiandae ex sit explicabo necessitatibus facilis
+          perferendis.
+        </p>
+      </div>
+      <div class="large">
+        <h4>Home</h4>
+        <hr />
+        <div id="mid">
+          <div class="left">
+            <div class="bord">
+              <h4 class="font colorteal">Online Doctor Consultation</h4>
+              <i class="fas fa-search searchicon colorteal"
+                >&nbsp; &nbsp; search for doctor or specialist</i
+              >
+              <hr />
+              <p>Popular Cities</p>
+              <div class="buttonbox">
+                <button>New Delhi</button>
+                <button>Hydrabad</button>
+                <button>Chhenai</button>
+                <button>Kolkata</button>
+                <button>Mumabi</button>
+                <button>Banglore</button>
+              </div>
+            </div>
+            <h3 class="colorteal">
+              Start your care now by choosing from over 4000 doctors and 58
+              specialities
+            </h3>
+            <h3 style="font-family: Arial, Helvetica, sans-serif">
+              TOP SPECIALTIES
+            </h3>
+
+            <div id="fourcolum">
+              <div>
+                <h3>Dermatology</h3>
+                <img
+                  src="https://prodaphstorage.blob.core.windows.net/specialties/ee249e8a-950a-489c-8a33-8846889831f5.jpg"
+                  alt=""
+                />
+                <div class="small">
+                  <div class="line">
+                    <p>specialist for skin and hair treatment</p>
+                  </div>
+                  <div class="line2">
+                    <p>Rashes,Pimpple,achne</p>
+                    <p>Hairfall,Dandruff</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3>General physician</h3>
+                <img
+                  src="https://newassets.apollo247.com/specialties/ic_general_medicine.png"
+                  alt=""
+                />
+                <div class="small">
+                  <div class="line">
+                    <p>specialist for skin and hair treatment</p>
+                  </div>
+                  <div class="line2">
+                    <p>Rashes,Pimpple,achne</p>
+                    <p>Hairfall,Dandruff</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3>Pediatrics</h3>
+                <img
+                  src="https://newassets.apollo247.com/specialties/ic_paediatrics.png"
+                  alt=""
+                />
+                <div class="small">
+                  <div class="line">
+                    <p>specialist for skin and hair treatment</p>
+                  </div>
+                  <div class="line2">
+                    <p>Rashes,Pimpple,achne</p>
+                    <p>Hairfall,Dandruff</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3>Psychiatry</h3>
+                <img
+                  src="https://newassets.apollo247.com/specialties/ic_psychiatrist.png"
+                  alt=""
+                />
+                <div class="small">
+                  <div class="line">
+                    <p>Specialists to help treat mental health</p>
+                  </div>
+                  <div class="line2">
+                    <p>Anxiety, Depression</p>
+                    <p>Stress, OCD, Bipolar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bord">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis,
+              qui. Dolore iusto inventore quibusdam pariatur consequuntur.
+              Possimus ratione cumque, eius doloremque maiores esse, repellendus
+              magni autem inventore fugiat iure libero deleniti hic!
+              Praesentium, id magnam eligendi quidem obcaecati ratione
+              exercitationem minus cumque sit et sed explicabo iure labore
+              possimus optio.
+            </div>
+          </div>
+          <div class="right"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
