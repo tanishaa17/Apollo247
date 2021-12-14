@@ -1,0 +1,32 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+body {
+  background-color: #dcdfce;
+}
+#main {
+  width: 80%;
+  background-color: white;
+  margin: auto;
+}
+#header {
+  width: 80%;
+  background-color: white;
+  height: 100px;
+  display: flex;
+  position: fixed;
+  padding-bottom: 15px;
+}
+#header > div {
+  margin-left: 25px;
+  font-size: small;
+}
+#header > DIV > h3 {
+  text-align: justify;
+  border-bottom: solid black 1px;
+  padding-bottom: 5px;
+}
+#header > DIV > p {
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
