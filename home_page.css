@@ -30,3 +30,17 @@ body {
   margin-top: 0px;
   margin-bottom: 2px;
 }
+#content {
+  font-size: small;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 20px;
+  color: #02475b;
+}
+#content > h3 {
+  margin-bottom: 10px;
+}
+#content > p {
+  margin-top: 10px;
+  font-size: 14px;
+}
