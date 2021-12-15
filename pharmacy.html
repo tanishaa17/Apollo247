@@ -1,23 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Document</title>
-    <link rel="stylesheet" href="pharmacy css.css">
-</head>
-<body>
+  <head>
+    <link
+      rel="shortcut icon"
+      href="https://newassets.apollo247.com/images/pharmacy_logo.svg"
+    />
+    <title>Apollo Pharmacy</title>
+    <link rel="stylesheet" href="pharmacy css.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="bot.css" />
+    <script
+      src="https://kit.fontawesome.com/683b4b40e3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="container">
+      <div id="header">
+        <img
+          id="apolloimage"
+          src="https://newassets.apollo247.com/images/pharmacy_logo.svg"
+          alt=""
+        />
         <div>
-         <div id="left">  
-        <form action="submit">
-            <input type="text" placeholder= "Search meds, brands and more" class="searchbar">
-            <input type="submit" value=">"/>
-        </form>
-        <img src="https://newassets.apollo247.com/pub/media/magestore/bannerslider/images/f/i/first3_web_3.jpg" width="100%" height="80%" alt="">
-    </div> 
-    <div id="right">
-        <h3>Special Offers</h3>
+          <h4>DOCTORS</h4>
+          <p>consult</p>
+          <p>Online</p>
+        </div>
+        <div>
+          <h4>PHARMACY</h4>
+          <p>Medicines &</p>
+          <p>other products</p>
+        </div>
+        <div>
+          <h4>LAB TESTS</h4>
+          <p>Health</p>
+          <p>check - ups</p>
+        </div>
+        <div>
+          <h4>COVID-19</h4>
+          <p>Latest</p>
+          <p>updates</p>
+        </div>
+        <img
+          id="cartsymbol"
+          src="https://newassets.apollo247.com/images/ic_cart.svg"
+          alt=""
+        />
+        <span id="cartcount">0</span>
+        <img
+          id="accountsymbol"
+          src="https://newassets.apollo247.com/images/ic_account_white.svg"
+          alt=""
+        />
+      </div>
+      <div id="firstdiv">
+        <div id="left">
+          <form id="myform" action="submit">
+            <div class="text">
+              <input
+                type="text"
+                placeholder=" &nbsp; &nbsp; Search meds, brands and more"
+                class="searchbar"
+              />
+              <i class="fas fa-chevron-circle-right selecticon"></i>
+            </div>
+          </form>
+          <img
+            class="image"
+            src="https://newassets.apollo247.com/pub/media/magestore/bannerslider/images/f/i/first3_web_3.jpg"
+            alt=""
+          />
+        </div>
+        <div id="right">
+          <div><h2>Special Offers</h2></div>
+          <div>
+            <div>
+              <p>
+                Place Your Order via <br />
+                prescriptions
+              </p>
+              <button>UPLOAD</button>
+            </div>
+            <div>
+              <img
+                src="https://newassets.apollo247.com/images/ic_prescription_pad.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div>
+            <h3><a href="">Your Orders ></a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="title">
+        <span>SHOP BY HEALTH CONDITIONS</span>
+        <hr />
+      </div>
+      <div class="services">
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/healtharea/247images/i/c/ic_diabetes.png"
+            alt=""
+          />
+          <p>Diabetes Care</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/healtharea/247images/i/c/ic_heart.png"
+            alt=""
+          />
+          <p>Cardiac</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/healtharea/247images/i/c/ic_immunity_1.png"
+            alt=""
+          />
+          <p>COVID Care</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/healtharea/247images/o/r/oral_care_2.png"
+            alt=""
+          />
+          <p>Oral Care</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/healtharea/247images/c/o/coronavirus_protection_1.png"
+            alt=""
+          />
+          <p>COVID Protection</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/healtharea/247images/i/c/ic_lungs.png"
+            alt=""
+          />
+          <p>Respiratory</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/healtharea/247images/c/o/cold_and_immunity_21oct.png"
+            alt=""
+          />
+          <p>Cold & Immunity</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/healtharea/247images/i/c/ic_stomach.png"
+            alt=""
+          />
+          <p>Stomach Care</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/healtharea/247images/i/c/ic_condom.png"
+            alt=""
+          />
+          <p>Sexual Health</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/healtharea/247images/i/c/ic_eyeear.png"
+            alt=""
+          />
+          <p>Eye Care</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/healtharea/247images/a/d/adult.png"
+            alt=""
+          />
+          <p>Elderly Care</p>
+        </div>
+      </div>
+      <div class="title">
+        <span>HOT SELLERS</span>
+        <hr />
+      </div>
+      <div class="products">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="title">
+        <span>WINTER CARE</span>
+        <hr />
+      </div>
+      <div class="products">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="title">
+        <span>COVID CARE AND PROTECTION</span>
+        <hr />
+      </div>
+      <div class="products">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="title">
+        <span>SHOP BY CATEGORY</span>
+        <hr />
+      </div>
+      <div class="services">
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/catalog/category/ayurveda.jpg"
+            alt=""
+          />
+          <p>Ayurveda</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/catalog/category/health_devices_22oct.png"
+            alt=""
+          />
+          <p>Health Device</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/catalog/category/baby_care_22oct.png"
+            alt=""
+          />
+          <p>Baby Care</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/catalog/category/elderly_care.png"
+            alt=""
+          />
+          <p>Adult Diapers</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/catalog/category/sexualhealth.png"
+            alt=""
+          />
+          <p>Sexual Wellness</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/catalog/category/women_care_22oct.png"
+            alt=""
+          />
+          <p>Women Care</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/catalog/category/personal_care_22oct.png"
+            alt=""
+          />
+          <p>Personal Care</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/catalog/category/home_essentials_22oct.png"
+            alt=""
+          />
+          <p>Home Essentials</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/catalog/category/health_and_nutrition_22oct.png"
+            alt=""
+          />
+          <p>Health & Nutrition</p>
+        </div>
+        <div class="typeclass">
+          <img
+            class="typeimage"
+            src="https://newassets.apollo247.com/pub/media/catalog/category/otc.png"
+            alt=""
+          />
+          <p>OTC</p>
+        </div>
+      </div>
+      <div class="title">
+        <span>EXPLORE-POPULAR PRODUCTS</span>
+        <hr />
+      </div>
+      <div class="ads">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="posters">
+        <div>
+          <p>ORDER MEDICINE ONLINE FROM</p>
+          <hr />
+          <span>Genuine medicines and essentials delivered in a jiffy</span>
+        </div>
+        <div>
+          <img
+            src="https://newassets.apollo247.com/images/apollopharmacy/pharmacyLogoColor.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://cdn.apollohospitals.com/dev-apollohospitals/2021/11/desktop-apollo1.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="title">
+        <span>HALF PRICE STORES</span>
+        <hr />
+      </div>
+      <div class="products">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="footer">
+        <img src="https://newassets.apollo247.com/images/ic_logo.png" alt="" />
+        <h3>About Apollo 247</h3>
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us / Grievance</a></li>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">Health Queries</a></li>
+          <li><a href="">Terms and Conditions</a></li>
+          <li><a href="">Returns Policy</a></li>
+          <li><a href="">Refund Policy</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Apollo 247 Android App</a></li>
+          <li><a href="">Apollo 247 iOS App</a></li>
+          <li><a href="">Apollo Sitemap</a></li>
+          <li><a href="">Online Doctor App</a></li>
+          <li><a href="">Online Medicinee App</a></li>
+          <li><a href="">Apollo Pharmacy</a></li>
+        </ul>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="">Online Doctor Consultation</a></li>
+          <li><a href="">Apollo Circle Membership</a></li>
+          <li><a href="">Online Medicines</a></li>
+          <li><a href="">Project Kavach</a></li>
+          <li><a href="">Cough Scanner</a></li>
+          <li><a href="">Covid Vaccine Tracker</a></li>
+          <li><a href="">Covid Vaccine Update</a></li>
+          <li><a href="">Apollo Pro Health Program</a></li>
+          <li><a href="">Doctors by Speciality</a></li>
+          <li><a href="">Doctors by City</a></li>
+          <li><a href="">All Doctors List</a></li>
+        </ul>
+        <h3>Top Specialties</h3>
+        <ul>
+          <li><a href="">Covid Consultation</a></li>
+          <li><a href="">Consult Physicians</a></li>
+          <li><a href="">Consult Dermatologists</a></li>
+          <li><a href="">Consult Paediatricians</a></li>
+          <li><a href="">Consult Gynaecologists</a></li>
+          <li><a href="">Consult Gastroenterologists</a></li>
+          <li><a href="">Consult Cardiologists</a></li>
+          <li><a href="">Consult Dietitians</a></li>
+          <li><a href=""> consult ENT Specialists</a></li>
+          <li><a href="">Consult Geriatricians</a></li>
+          <li><a href="">Consult Diabetologists</a></li>
+        </ul>
+        <h3>Book lab Tests at Home</h3>
+        <ul>
+          <li><a href="">RT PCR Test At Home</a></li>
+          <li><a href="">Book Lab Tests at Home</a></li>
+          <li><a href="">Renal Profile (KFT, RFT Test)</a></li>
+          <li><a href="">Hemogram Test</a></li>
+          <li><a href="">Lipid Profile Test</a></li>
+          <li><a href="">Thyroid Profile Test(T3 T4 Tsh Test)</a></li>
+          <li><a href="">D Dimer Test</a></li>
+          <li><a href="">Urine Culture Test</a></li>
+          <li><a href="">Complete Blood Count (CBC Test)</a></li>
+          <li><a href="">Widal test</a></li>
+          <li><a href="">Liver Function Test (LFT Test)</a></li>
+        </ul>
+        <h3>Product Categories</h3>
+        <ul>
+          <li><a href="">View all Brands</a></li>
+          <li><a href="">Health Care</a></li>
+          <li><a href="">Persnal Care</a></li>
+          <li><a href="">Baby Care</a></li>
+          <li><a href="">Nutrition</a></li>
+          <li><a href="">Healthcare Devices</a></li>
+          <li><a href="">Beauty Skin Care</a></li>
+          <li><a href="">Immunity Boosters</a></li>
+          <li><a href="">Coronavirus Prevention</a></li>
+          <li><a href="">Diabetes Care</a></li>
+          <li><a href="">Patanjali Coronil Kit</a></li>
+          <li><a href="">Mamaearth Products</a></li>
+        </ul>
+      </div>
     </div>
+    <div id="bot">
+      <img src="https://newassets.apollo247.com/images/ic-mascot.png" alt="" />
     </div>
-    </div>
-</body>
+  </body>
 </html>
