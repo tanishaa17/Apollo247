@@ -1,18 +1,10 @@
-body {
-  background-color: #dcdfce;
-  margin-top: -20px;
-  margin-bottom: -20px;
-}
-#parent {
-  width: 80%;
-  background-color: white;
+#large {
+  width: 95%;
   margin: auto;
+  padding-top: 97px;
 }
-
-#nav {
-  padding: 0 20px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: #ffffff;
+h4 {
+  margin-bottom: 0px;
 }
 #mid {
   display: flex;
@@ -21,36 +13,12 @@ body {
 .left {
   width: 70%;
   margin-right: 2%;
-  display: grid;
-}
-.right {
-  width: 28%;
-  border: 1px solid black;
-  height: 200px;
-  background-color: #ffffff;
-}
-h4 {
-  margin-bottom: 0px;
-}
-h3 {
-  margin-top: -5px;
-  margin-bottom: 15px;
-}
-
-.large {
-  width: 95%;
-  margin: auto;
-  padding-top: 100px;
 }
 .bord {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 0px 35px;
+  padding: 15px 35px;
   background-color: #ffffff;
   margin-bottom: 20px;
-}
-.searchicon {
-  margin-top: 12px;
-  font-size: 17px;
 }
 .colorteal {
   color: #337e93;
@@ -61,19 +29,10 @@ h3 {
 .buttonbox {
   margin-top: 20px;
 }
-button {
-  background-color: transparent;
-  padding: 2px 10px;
-  color: #337e93;
-  border-radius: 8px;
-  margin-left: 9px;
-  margin-bottom: 34px;
-  border: 1px solid black;
-}
 #fourcolum {
   display: grid;
   width: 95%;
-  grid-template-rows: 215px;
+  grid-template-rows: 235px;
   grid-template-columns: repeat(4, 170px);
   grid-gap: 20px;
   grid-template-areas: "a b c d";
@@ -101,7 +60,16 @@ button {
 #fourcolum > div:nth-child(4) {
   grid-area: d;
 }
-img {
+button {
+  background-color: transparent;
+  padding: 2px 10px;
+  color: #337e93;
+  border-radius: 8px;
+  margin-left: 9px;
+  margin-bottom: 34px;
+  border: 1px solid black;
+}
+h3 + img {
   height: 50px;
 }
 
@@ -113,6 +81,44 @@ img {
   line-height: 5px;
   margin-top: -8px;
 }
-.lasttext {
-  margin-top: 5px;
+.right {
+  width: 28%;
+  border: 1px solid black;
+  height: 200px;
+  background-color: #ffffff;
+}
+
+.start {
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+.searchicon {
+  margin-top: 12px;
+  font-size: 17px;
+}
+.textbelow {
+  margin-top: 30px;
+}
+
+/* content========================== */
+#content {
+  width: 95%;
+  margin: auto;
+  background-color: white;
+  padding: 20px 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+a[href="page.html"] {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+#listof > ul > li {
+  padding-bottom: 10px;
+  line-height: 28px;
+}
+#consult,
+#how {
+  padding: 5px;
 }
