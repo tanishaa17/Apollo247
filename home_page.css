@@ -26,3 +26,67 @@ body {
   margin-top: 10px;
   font-size: 14px;
 }
+#image1 {
+  width: 100%;
+  padding-top: 150px;
+  display: flex;
+  padding-left: 30px;
+}
+#left {
+  width: 40%;
+}
+#rigth {
+  width: 50%;
+  margin-left: 7.2%;
+}
+#left > div {
+  display: flex;
+}
+#left > h1 {
+  color: #02475b;
+  font-size: 50px;
+}
+#left > p {
+  color: #0087ba;
+  font-size: 20px;
+}
+.ready {
+  font-size: small;
+  background-color: gray;
+  margin-bottom: 5px;
+  height: 60px;
+  background: linear-gradient(105.88deg, #2c4c70 0.63%, #5eacb0 102.46%);
+  color: white;
+  border-radius: 8px;
+}
+.ready > img {
+  height: 40px;
+  padding: 10px 20px 10px 16px;
+}
+#rigth > img {
+  padding-top: 52px;
+  width: 100%;
+}
+#sides {
+  margin-top: 15px;
+  display: flex;
+  height: 45px;
+  padding-bottom: 35px;
+}
+.seal {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  width: 47%;
+  font-size: small;
+  margin-right: 6%;
+}
+.seal > img {
+  padding: 5px;
+  padding-left: 10px;
+  height: 35px;
+}
+
+.seal > p {
+  padding-left: 15px;
+  font-weight: bold;
+}
