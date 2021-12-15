@@ -26,3 +26,215 @@ body {
   margin-top: 10px;
   font-size: 14px;
 }
+#image1 {
+  width: 100%;
+  padding-top: 150px;
+  display: flex;
+  padding-left: 30px;
+}
+#left {
+  width: 40%;
+}
+#rigth {
+  width: 50%;
+  margin-left: 7.2%;
+}
+#left > div {
+  display: flex;
+}
+#left > h1 {
+  color: #02475b;
+  font-size: 50px;
+}
+#left > p {
+  color: #0087ba;
+  font-size: 20px;
+}
+.ready {
+  font-size: small;
+  background-color: gray;
+  margin-bottom: 5px;
+  height: 60px;
+  background: linear-gradient(105.88deg, #2c4c70 0.63%, #5eacb0 102.46%);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.ready > p {
+  padding-top: 8px;
+}
+.ready > img {
+  height: 40px;
+  padding: 10px 20px 10px 16px;
+}
+#rigth > img {
+  padding-top: 52px;
+  width: 100%;
+}
+#sides {
+  color: #01475b;
+  cursor: pointer;
+  margin-top: 15px;
+  display: flex;
+  height: 45px;
+  padding-bottom: 35px;
+}
+.seal {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  width: 47%;
+  font-size: small;
+  margin-right: 6%;
+}
+.seal > img {
+  padding: 5px;
+  padding-left: 10px;
+  height: 35px;
+}
+
+.seal > p {
+  padding-left: 15px;
+  font-weight: bold;
+}
+div > i {
+  color: orange;
+  padding: 12px 15px 8px 20px;
+}
+#image3 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 90%;
+  margin: auto;
+  padding: 15px 15px 20px 20px;
+  border-radius: 8px;
+  color: #07ae8b;
+  background-color: white;
+  margin-bottom: 25px;
+}
+#image3 > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+#image3 > div > div {
+  display: flex;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 38px;
+  font-size: small;
+}
+#image3 > div > div > img {
+  height: 20px;
+  padding: 12px 15px 8px 20px;
+}
+#image3 > div > div > p {
+  padding: 0px 15px 8px 0px;
+  color: orange;
+}
+#image4 {
+  background-color: white;
+  margin-top: 30px;
+  margin: auto;
+  width: 93%;
+  padding-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+#image4 > img {
+  height: 100%;
+  width: 100%;
+}
+#holder {
+  background-color: whitesmoke;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+#gray {
+  margin-top: 15px;
+  background-image: url(https://newassets.apollo247.com/images/ecosystem-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  line-height: 10px;
+  color: white;
+}
+#gray > p {
+  font-size: small;
+}
+#gray > h1 > span > img {
+  margin-left: 370px;
+}
+#stealth {
+  padding: 15px;
+  padding-bottom: 20px;
+  border-bottom: gray dashed 1px;
+}
+#article {
+  margin-top: -45px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 250px;
+  font-size: small;
+  color: orange;
+  float: right;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#stealth > h3 {
+  color: #07ae8b;
+}
+#stealth > p {
+  color: rgba(1, 71, 91, 0.6);
+  font-size: small;
+}
+#stealth + p {
+  padding-left: 15px;
+  font-size: small;
+  color: #01475b;
+}
+#article > i {
+  padding: 20px 10px 10px 20px;
+}
+#article > p {
+  font-size: 15px;
+}
+#grind {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.life {
+  color: #01475b;
+  cursor: pointer;
+  display: flex;
+  height: 35px;
+  font-size: small;
+  text-align: justify;
+  border: #00485d solid 1px;
+  border-radius: 8px;
+  padding-bottom: 8px;
+}
+.life > img {
+  padding: 8px 15px 5px 20px;
+}
+#image2 {
+  width: 93%;
+  margin: auto;
+  cursor: pointer;
+}
+#image2 > img {
+  width: 100%;
+}
+#image5 {
+  width: 93%;
+  margin: auto;
+}
+#image5 > img {
+  width: 100%;
+  cursor: pointer;
+}
+#image2 {
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
