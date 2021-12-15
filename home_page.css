@@ -58,6 +58,10 @@ body {
   background: linear-gradient(105.88deg, #2c4c70 0.63%, #5eacb0 102.46%);
   color: white;
   border-radius: 8px;
+  cursor: pointer;
+}
+.ready > p {
+  padding-top: 8px;
 }
 .ready > img {
   height: 40px;
@@ -68,6 +72,8 @@ body {
   width: 100%;
 }
 #sides {
+  color: #01475b;
+  cursor: pointer;
   margin-top: 15px;
   display: flex;
   height: 45px;
@@ -115,7 +121,6 @@ div > i {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   height: 38px;
   font-size: small;
-  border-radius: 8px;
 }
 #image3 > div > div > img {
   height: 20px;
@@ -126,10 +131,13 @@ div > i {
   color: orange;
 }
 #image4 {
-  margin-top: 25px;
+  background-color: white;
+  margin-top: 30px;
   margin: auto;
   width: 93%;
-  cursor: pointer;
+  padding-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
 }
 #image4 > img {
   height: 100%;
@@ -138,7 +146,7 @@ div > i {
 #holder {
   background-color: whitesmoke;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 #gray {
   margin-top: 15px;
@@ -154,4 +162,79 @@ div > i {
 }
 #gray > h1 > span > img {
   margin-left: 370px;
+}
+#stealth {
+  padding: 15px;
+  padding-bottom: 20px;
+  border-bottom: gray dashed 1px;
+}
+#article {
+  margin-top: -45px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 250px;
+  font-size: small;
+  color: orange;
+  float: right;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#stealth > h3 {
+  color: #07ae8b;
+}
+#stealth > p {
+  color: rgba(1, 71, 91, 0.6);
+  font-size: small;
+}
+#stealth + p {
+  padding-left: 15px;
+  font-size: small;
+  color: #01475b;
+}
+#article > i {
+  padding: 20px 10px 10px 20px;
+}
+#article > p {
+  font-size: 15px;
+}
+#grind {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.life {
+  color: #01475b;
+  cursor: pointer;
+  display: flex;
+  height: 35px;
+  font-size: small;
+  text-align: justify;
+  border: #00485d solid 1px;
+  border-radius: 8px;
+  padding-bottom: 8px;
+}
+.life > img {
+  padding: 8px 15px 5px 20px;
+}
+#image2 {
+  width: 93%;
+  margin: auto;
+  cursor: pointer;
+}
+#image2 > img {
+  width: 100%;
+}
+#image5 {
+  width: 93%;
+  margin: auto;
+}
+#image5 > img {
+  width: 100%;
+  cursor: pointer;
+}
+#image2 {
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
