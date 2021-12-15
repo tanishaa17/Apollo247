@@ -40,6 +40,7 @@ h3 {
 .large {
   width: 95%;
   margin: auto;
+  padding-top: 100px;
 }
 .bord {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;

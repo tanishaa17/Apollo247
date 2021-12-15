@@ -90,3 +90,68 @@ body {
   padding-left: 15px;
   font-weight: bold;
 }
+div > i {
+  color: orange;
+  padding: 12px 15px 8px 20px;
+}
+#image3 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 90%;
+  margin: auto;
+  padding: 15px 15px 20px 20px;
+  border-radius: 8px;
+  color: #07ae8b;
+  background-color: white;
+  margin-bottom: 25px;
+}
+#image3 > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+#image3 > div > div {
+  display: flex;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 38px;
+  font-size: small;
+  border-radius: 8px;
+}
+#image3 > div > div > img {
+  height: 20px;
+  padding: 12px 15px 8px 20px;
+}
+#image3 > div > div > p {
+  padding: 0px 15px 8px 0px;
+  color: orange;
+}
+#image4 {
+  margin-top: 25px;
+  margin: auto;
+  width: 93%;
+  cursor: pointer;
+}
+#image4 > img {
+  height: 100%;
+  width: 100%;
+}
+#holder {
+  background-color: whitesmoke;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#gray {
+  margin-top: 15px;
+  background-image: url(https://newassets.apollo247.com/images/ecosystem-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  line-height: 10px;
+  color: white;
+}
+#gray > p {
+  font-size: small;
+}
+#gray > h1 > span > img {
+  margin-left: 370px;
+}
