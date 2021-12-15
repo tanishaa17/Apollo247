@@ -191,6 +191,19 @@ a[href="page.html"] {
   padding: 5px;
 }
 #section {
-  height: 350px;
-  border: 1ppx solid black;
+  margin-top: 35px;
+}
+#section > p {
+  padding-bottom: 0px;
+}
+#otherspart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(27, 100px);
+  grid-gap: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#otherspart > div {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
