@@ -1,0 +1,27 @@
+.container {
+  height: 1000px;
+  border: 2px solid red;
+  width: 80%;
+  margin: auto;
+}
+.container > div {
+  /* border: 2px solid rgb(9, 255, 0); */
+  height: 300px;
+  display: flex;
+}
+.searchbar {
+  width: 90%;
+  height: 50px;
+  background-color: #f7f8f5;
+}
+#left {
+  width: 70%;
+  border: 2px solid gray;
+  height: 100%;
+}
+#right {
+  width: 30%;
+  border: 2px solid rgb(109, 238, 22);
+  height: 100%;
+  padding-left: 10px;
+}
