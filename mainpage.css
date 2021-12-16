@@ -51,7 +51,7 @@
   border-radius: 10px;
   text-align: center;
   font-size: 13px;
-  padding: 22px;
+  margin-left: 20px;
 }
 #fourcolum > div:first-child {
   grid-area: a;

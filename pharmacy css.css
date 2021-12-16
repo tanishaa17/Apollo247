@@ -176,7 +176,7 @@ input[type="text"] {
   margin-top: 20px;
   display: grid;
   grid-template-rows: 200px;
-  grid-template-columns: repeat(3, 470px);
+  grid-template-columns: 40% 20% 40%;
   grid-gap: 10px;
   align-content: center;
 }
