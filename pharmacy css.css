@@ -1,3 +1,6 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
 body {
   background-color: #dcdfce;
   margin-top: -20px;
@@ -28,6 +31,9 @@ body {
   margin-top: 30px;
   margin-left: 20px;
   margin-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  justify-content: space-between;
 }
 #services > div {
   border: 2px solid green;
