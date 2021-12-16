@@ -34,17 +34,17 @@ body {
 .selecticon {
   font-size: 25px;
 }
-.arrow{
+.arrow {
   font-size: 10px;
 }
-.percent{
+.percent {
   font-size: 40px;
 }
 .text {
   background-color: #f7f8f5;
 }
-.viewall{
-  color: #FCB716;
+.viewall {
+  color: #fcb716;
   cursor: pointer;
 }
 
@@ -56,7 +56,7 @@ body {
 #left {
   width: 76%;
   margin-right: 3%;
- /* border: 2px solid black; */
+  /* border: 2px solid black; */
 }
 .image {
   width: 100%;
@@ -113,8 +113,8 @@ input[type="text"] {
   /* border: 2px solid red; */
 }
 #right > div:nth-child(3) {
-   width: 90%;
-   padding: 10px 20px; 
+  width: 90%;
+  padding: 10px 20px;
   margin-top: 20px;
   border-radius: 8px;
   cursor: pointer;
@@ -178,20 +178,18 @@ input[type="text"] {
   margin: auto;
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(3,30%);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
   cursor: pointer;
-  border: 2px solid red;
 }
 .ads > div {
   /* border: 2px solid green; */
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-  border: 2px solid rgb(134, 121, 121);
 }
-.ads>div:nth-child(3){
+.ads > div:nth-child(3) {
   width: 100%;
 }
-.ads>div:nth-child(3)>img{
+.ads > div:nth-child(3) > img {
   width: 100%;
   height: 100%;
 }
@@ -227,14 +225,14 @@ input[type="text"] {
   height: 50%;
   margin: auto;
 }
-#indiamap{
+#indiamap {
   background-image: url("https://newassets.apollo247.com/images/apollopharmacy/indiaMap.svg");
-background-color: #2582A1;
-background-size: 100% 100%; 
-background-repeat: no-repeat;
-width: 100%;
-height: 100%;
+  background-color: #2582a1;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
-.details{
+.details {
   border: 2px solid cyan;
 }
