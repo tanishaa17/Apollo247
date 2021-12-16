@@ -1,0 +1,29 @@
+#footer {
+  font-size: small;
+  padding-right: 15px;
+  padding-left: 45px;
+  background-color: #020d11;
+  padding-bottom: 20px;
+}
+#footer > h3 {
+  color: #fcb714;
+}
+#footer > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer > ul > li {
+  color: white;
+  padding-right: 30px;
+  font-size: 14px;
+  line-height: 27px;
+}
+#footer > ul > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+#footer > img {
+  margin-top: 15px;
+  width: 105px;
+  margin-left: 42%;
+}
