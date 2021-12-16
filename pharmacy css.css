@@ -67,19 +67,21 @@ input[type="text"] {
   height: 50px;
 }
 #right {
+  border: 2px solid teal;
   /* width: 20%;  */
   margin-left: 10px;
 }
-#right > div > span {
-  color: rgb(4, 78, 78);
-  font-size: 15px;
+#right > div:nth-child(1) > p {
+  color: rgb(15, 136, 136);
+  font-size: small;
+  padding-left: 20px;
+  padding-bottom: 40px;
 }
 #right > div:nth-child(1) {
   display: flex;
-  height: auto;
+  height: 50px;
   cursor: pointer;
-  /* cursor: pointer;
-  border: 2px solid rgb(16, 206, 32); */
+  border: 2px solid rgb(16, 206, 32); 
   padding-left: 15px;
   color: #062513;
 }
@@ -178,15 +180,13 @@ input[type="text"] {
   margin: auto;
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(3,30%);
+  grid-template-columns: repeat(3,1fr);
   grid-gap: 15px;
   cursor: pointer;
-  border: 2px solid red;
 }
 .ads > div {
   /* border: 2px solid green; */
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-  border: 2px solid rgb(134, 121, 121);
 }
 .ads>div:nth-child(3){
   width: 100%;
