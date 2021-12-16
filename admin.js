@@ -1,10 +1,10 @@
-var hotsellers = [];
-var winter = [];
-var covidProtection = [];
-var popularHealth = [];
-var topBooked = [];
-var diabetes = [];
-var women = [];
+var hotsellers = JSON.parse(localStorage.getItem("hotsell")) || [];
+var winter = JSON.parse(localStorage.getItem("winters"))||[];
+var covidProtection = JSON.parse(localStorage.getItem("covid-19"))||[];
+var popularHealth = JSON.parse(localStorage.getItem("popularhealth"))||[];
+var topBooked = JSON.parse(localStorage.getItem("topbook"))||[];
+var diabetes = JSON.parse(localStorage.getItem("diabetic"))||[];
+var women = JSON.parse(localStorage.getItem("womenWell"))||[];
 
 
 document.querySelector("#adpt").addEventListener("click", addProducts);
