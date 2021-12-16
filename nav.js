@@ -9,3 +9,9 @@ document.querySelector("#pharma").addEventListener("click", navpharma);
 function navpharma() {
   window.location.href = "pharmacy.html";
 }
+
+document.querySelector("#apolloimage").addEventListener("click", navhome);
+
+function navhome() {
+  window.location.href = "home page.html";
+}
