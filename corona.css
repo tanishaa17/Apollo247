@@ -106,6 +106,9 @@
   
 
 }
+.categori:hover{
+  cursor: pointer;
+}
 .cat{
   margin-left: 15%;
   font-family: sans-serif;
@@ -193,6 +196,7 @@ h1{
   margin-top: 50px;
 }
 button{
+
   width: 140px;
   height: 40px;
   border-radius: 6px;
@@ -204,6 +208,9 @@ button{
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   
+}
+button:hover{
+  cursor: pointer;
 }
 .healthbites{
   background-image:url(https://newassets.apollo247.com/cms/2021-11/exercise_0.jpg) ;
@@ -248,6 +255,9 @@ object-fit: cover;
   border-radius: 20px;
 
 }
+.visualstories:hover{
+  cursor: pointer;
+}
 .visualstories>:nth-child(1){
   background-image: url(https://newassets.apollo247.com/cms/2021-08/COPD-0.jpg);
 }
@@ -290,6 +300,9 @@ width: 95%;
 margin: auto;
 margin-top: 40px;
 grid-gap: 20px;
+}
+.latestarticles:hover{
+  cursor: pointer;
 }
 .latestarticles>div p{
  color: gray;
@@ -344,6 +357,9 @@ width: 95%;
 margin: auto;
 margin-top: 40px;
 grid-gap: 20px;
+}
+.conditions:hover{
+  cursor: pointer;
 }
 .conditions>div p{
  color: gray;
