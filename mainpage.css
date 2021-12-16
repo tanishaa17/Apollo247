@@ -11,7 +11,7 @@ h4 {
   margin-top: 30px;
 }
 .left {
-  width: 70%;
+  width: 65%;
   margin-right: 2%;
 }
 .bord {
@@ -82,13 +82,80 @@ h3 + img {
   margin-top: -8px;
 }
 .right {
-  width: 28%;
-  border: 1px solid black;
-  height: 200px;
+  width: 31%;
+  height: 798px;
+  font-family: "IBM Plex Sans", sans-serif;
   background-color: #ffffff;
 }
-
-.start {
+.marginleft {
+  padding-left: 6px;
+}
+h4 + ul {
+  font-size: 14px;
+}
+#rightbox {
+  padding: 1px 13px;
+}
+.rightmobile {
+  margin-top: 15px;
+  padding: 15px;
+  border-color: #f7f8f5;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#usemobile {
+  margin-top: 45px;
+}
+#usemobile > h4 {
+  font-weight: normal;
+}
+#iconwith {
+  display: flex;
+}
+#iconwith > div > p {
+  line-height: 5px;
+  font-size: 15px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+#iconwith > div > img {
+  margin-right: 20px;
+}
+#payment {
+  padding: 15px 7px;
+}
+#payment > div {
+  display: flex;
+  cursor: pointer;
+}
+#payment > div > p {
+  font-size: 12px;
+  color: #337e93;
+}
+#payment > div > img {
+  margin-right: 5px;
+}
+#downloadapp {
+  margin-top: 43px;
+  margin-bottom: 34px;
+}
+#downloadapp > div {
+  display: flex;
+  cursor: pointer;
+}
+#downloadapp > div > img {
+  margin-right: 47px;
+}
+#downloadapp > div > p {
+  color: #fdbc6b;
+  font-size: 14px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+#downloadapp > p {
+  font-size: small;
+  color: #218ac7;
+}
+.right .start {
   margin-top: -5px;
   margin-bottom: 15px;
 }
@@ -99,6 +166,7 @@ h3 + img {
 .textbelow {
   margin-top: 30px;
 }
+/* Rightbox============================ */
 
 /* content========================== */
 #content {
@@ -121,4 +189,21 @@ a[href="page.html"] {
 #consult,
 #how {
   padding: 5px;
+}
+#section {
+  margin-top: 35px;
+}
+#section > p {
+  padding-bottom: 0px;
+}
+#otherspart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(27, 100px);
+  grid-gap: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#otherspart > div {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
