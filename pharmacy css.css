@@ -12,10 +12,7 @@ body {
   margin: auto;
   background-color: #ffffff;
 }
-.image {
-  width: 100%;
-  margin-top: 45px;
-}
+
 #firstdiv {
   /* height: 300px; */
   display: flex;
@@ -31,18 +28,24 @@ body {
   margin-top: 30px;
   margin-left: 20px;
   margin-right: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 150px);
+  display: flex;
   justify-content: space-between;
-}
-#services > div {
-  border: 2px solid green;
 }
 .selecticon {
   font-size: 25px;
 }
+.arrow{
+  font-size: 10px;
+}
+.percent{
+  font-size: 40px;
+}
 .text {
   background-color: #f7f8f5;
+}
+.viewall{
+  color: #FCB716;
+  cursor: pointer;
 }
 
 .searchbar {
@@ -53,6 +56,12 @@ body {
 #left {
   width: 76%;
   margin-right: 3%;
+ /* border: 2px solid black; */
+}
+.image {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
 }
 input[type="text"] {
   height: 50px;
@@ -61,12 +70,27 @@ input[type="text"] {
   /* width: 20%;  */
   margin-left: 10px;
 }
+#right > div > span {
+  color: rgb(4, 78, 78);
+  font-size: 15px;
+}
+#right > div:nth-child(1) {
+  display: flex;
+  height: auto;
+  cursor: pointer;
+  /* cursor: pointer;
+  border: 2px solid rgb(16, 206, 32); */
+  padding-left: 15px;
+  color: #062513;
+}
 #right > div:nth-child(2) {
   background-color: #f7f8f5;
   border-radius: 8px;
-  width: 230px;
+  width: 90%;
   display: flex;
-  padding: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  justify-content: space-between;
   /* border: 4px solid bisque; */
 }
 #right > div > div:nth-child(1) {
@@ -81,52 +105,56 @@ input[type="text"] {
   background-color: #fcaa16;
   border: none;
   padding: 10px 30px;
+  cursor: pointer;
 }
 #right > div > :nth-child(2) {
   width: 20%;
+  padding-top: 5px;
   /* border: 2px solid red; */
 }
 #right > div:nth-child(3) {
-  /* border: 2px solid red; */
-  width: 230px;
+   width: 90%;
+   padding: 10px 20px; 
   margin-top: 20px;
-  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
   background-color: #f7f8f5;
-  font-family: IBM Plex Sans, sans-serif;
+  font-size: 22px;
 }
 .services {
   height: 150px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
+  width: 98%;
+  margin: auto;
   display: grid;
-  grid-template-rows: 80px;
-  grid-template-columns: repeat(11, 200px);
-  grid-gap: 10px;
-  overflow-x: scroll;
+  grid-template-rows: 60%;
+  grid-template-columns: repeat(6, 15%);
+  grid-gap: 15px;
+  cursor: pointer;
   align-content: center;
+  justify-content: space-around;
 }
 .services > div {
-  border: none;
-}
-.services > div:hover {
-  margin: 5px;
+  /* border: none; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 8px;
 }
 .typeimage {
-  height: 80%;
-  margin-right: 20px;
+  padding-top: 15px;
+  height: 60%;
+  width: 25%;
+  margin-right: 8px;
 }
 .typeclass {
   display: flex;
   justify-content: center;
-  padding: 10px 40px;
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-  border-radius: 8px;
+  /* padding: 10px 10px; */
 }
 .typeclass > p {
   font-family: sans-serif;
   font-size: 15px;
+  padding: 15px 5px;
 }
 .products {
   height: 220px;
@@ -135,38 +163,37 @@ input[type="text"] {
   margin-top: 20px;
   display: grid;
   grid-template-rows: 200px;
-  grid-template-columns: repeat(10, 200px);
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
-  overflow-x: scroll;
+  cursor: pointer;
   align-content: center;
 }
 .products > div {
   /* border: 2px solid red; */
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.products > div:hover {
-  margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .ads {
   height: 220px;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 95%;
+  margin: auto;
   margin-top: 20px;
   display: grid;
-  grid-template-rows: 200px;
-  grid-template-columns: repeat(3, 470px);
-  grid-gap: 10px;
-  overflow-x: scroll;
-  align-content: center;
+  grid-template-columns: repeat(3,30%);
+  grid-gap: 15px;
+  cursor: pointer;
+  border: 2px solid red;
 }
 .ads > div {
   /* border: 2px solid green; */
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border: 2px solid rgb(134, 121, 121);
 }
-.ads > div:hover {
-  margin-bottom: 15px;
+.ads>div:nth-child(3){
+  width: 100%;
+}
+.ads>div:nth-child(3)>img{
+  width: 100%;
+  height: 100%;
 }
 .posters {
   /* border: 2px solid pink; */
@@ -200,7 +227,14 @@ input[type="text"] {
   height: 50%;
   margin: auto;
 }
-.posters > div:nth-child(3) > img {
-  height: 100%;
-  width: 100%;
+#indiamap{
+  background-image: url("https://newassets.apollo247.com/images/apollopharmacy/indiaMap.svg");
+background-color: #2582A1;
+background-size: 100% 100%; 
+background-repeat: no-repeat;
+width: 100%;
+height: 100%;
+}
+.details{
+  border: 2px solid cyan;
 }
