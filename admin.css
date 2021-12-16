@@ -11,3 +11,29 @@ body {
   background-color: white;
   margin: auto;
 }
+#prodadd {
+  padding: 20px 35px 40px;
+  margin: auto;
+  width: 60%;
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  color: #07ae8b;
+}
+#htag {
+  padding-top: 150px;
+  margin: auto;
+  text-align: center;
+  color: #02475b;
+}
+#adpt {
+  margin: auto;
+  width: 180px;
+  height: 40px;
+  margin-left: 60%;
+}
+#adpt:hover {
+  background-color: lime;
+  color: white;
+  border: none;
+}

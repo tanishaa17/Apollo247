@@ -13,9 +13,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add Products</title>
+    <title>Login / SignUp</title>
 
-    <link rel="stylesheet" href="admin.css" />
+    <link rel="stylesheet" href="login.css" />
     <!-- --------------header,footer,bot--------------- -->
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="footer.css" />
@@ -64,27 +64,33 @@
         />
       </div>
       <!-- ----------------End of header------------- -->
-      <h1 id="htag">ADD YOUR PRODUCTS</h1>
-      <div id="prodadd">
-        <h3>Name of the Product</h3>
-        <input type="text" id="name" />
-
-        <h3>MRP</h3>
-        <input type="number" id="mrp" placeholder="Maximum retail price" />
-
-        <h3>Selling Price</h3>
-        <input type="number" name="" id="sp" placeholder="selling price" />
-
-        <h3>Image URL</h3>
-        <input
-          type="text"
-          name=""
-          id="imgurl"
-          placeholder="add the image url"
-        />
+      <div id="sick">
+        <div id="rigth">
+          <h1>Login to Your Account</h1>
+          <h3>Email Id</h3>
+          <input type="text" id="em" placeholder="Enter your Email id" />
+          <h3>Password</h3>
+          <input type="password" id="psw" placeholder="Password" />
+        </div>
+        <button id="login">Login To your Account</button>
+        <hr />
+        <div id="left">
+          <h1>Create An Account</h1>
+          <h3>Name</h3>
+          <input type="text" id="name" placeholder="Enter your Fullname" />
+          <h3>Email Id</h3>
+          <input type="text" id="em" placeholder="Enter your Email id" />
+          <h3>Password</h3>
+          <input type="password" id="psw" placeholder="Password" />
+          <h3>Re-Enter Password</h3>
+          <input
+            type="password"
+            id="repsw"
+            placeholder="Re-Enter your password"
+          />
+        </div>
+        <button>Sign Up</button>
       </div>
-      <button id="adpt">ADD PRODUCT</button>
-      <hr />
       <!-- -------------------footer---------------------------------- -->
 
       <div id="footer">
@@ -164,7 +170,6 @@
           <li><a href="">Mamaearth Products</a></li>
         </ul>
       </div>
-      <!-- --------------------End of footer--------------------- -->
     </div>
 
     <!-- --------------bot------------------ -->
@@ -174,3 +179,6 @@
     <!-- -------------------End of bot------------------------------------ -->
   </body>
 </html>
+
+<script src="nav.js"></script>
+<script src="login.js"></script>
