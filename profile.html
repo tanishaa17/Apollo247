@@ -1,55 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- ----------------------font------------ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <!-- ----------------------end of font------------- -->
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add Products</title>
+    <title>Document</title>
 
-    <link rel="stylesheet" href="admin.css" />
-    <!-- --------------header,footer,bot--------------- -->
-    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main_page.css" />
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="header2.css" />
     <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="bot.css" />
-    <!-- --------------header,footer,bot--------------- -->
   </head>
   <body>
     <div id="main">
-      <!-- header----------------------------------- -->
       <div id="header">
         <img
           id="apolloimage"
           src="data:image/png;base64,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"
           alt=""
         />
-        <div id="doc">
-          <h4>DOCTORS</h4>
-          <p>consult</p>
-          <p>Online</p>
+        <div>
+          <h4>APPOINTMENTS</h4>
         </div>
-        <div id="pharma">
-          <h4>PHARMACY</h4>
-          <p>Medicines &</p>
-          <p>other products</p>
+        <div>
+          <h4>HEALTH RECORDS</h4>
         </div>
-        <div id="labtest">
+        <div>
+          <h4>MEDICINES</h4>
+        </div>
+        <div>
           <h4>LAB TESTS</h4>
-          <p>Health</p>
-          <p>check - ups</p>
         </div>
-        <div id="covid">
+        <div>
           <h4>COVID-19</h4>
-          <p>Latest</p>
-          <p>updates</p>
         </div>
         <img
           id="cartsymbol"
@@ -63,59 +46,14 @@
           alt=""
         />
       </div>
-      <!-- ----------------End of header------------- -->
-      <h1 id="htag">ADD YOUR PRODUCTS</h1>
-      <div id="prodadd">
-        <h3>Name of the Product</h3>
-        <input type="text" id="name" />
 
-        <h3>MRP</h3>
-        <input type="number" id="mrp" placeholder="Maximum retail price" />
-
-        <h3>Selling Price</h3>
-        <input type="number" name="" id="sp" placeholder="selling price" />
-
-        <h3>Image URL</h3>
-        <input
-          type="text"
-          name=""
-          id="imgurl"
-          placeholder="add the image url"
-        />
-      </div>
-      <div id="selectcat">
-        <!-- -----------------------add to doctors-------------- -->
-        <div class="add"></div>
-
-        <!-- ------------------add to pharmacy----------- -->
-        <div class="add">
-          <h3>ADD to PHARMACY</h3>
-          <select id="catinpharma">
-            <option value="">------</option>
-            <option value="hotsellers">Hot Sellers</option>
-            <option value="wintercare">Winter Care</option>
-            <option value="covidcare">Covid Care and Protection</option>
-            <option value="halfprice">Half Price</option>
-          </select>
-        </div>
-        <!-- ----------------------add to labtests ------------------ -->
-        <div class="add">
-          <h3>ADD To LAB TESTS</h3>
-          <select id="addinlabtests">
-            <option value="">-----</option>
-            <option value="popular">Popular health Checkup Packages</option>
-            <option value="topbooked">Top Booked Tests</option>
-            <option value="diabetes">Diabetes Screening</option>
-            <option value="womenwellness">Women Wellness</option>
-          </select>
+      <div id="profile">
+        <div></div>
+        <div>
+          <div></div>
+          <button>ADD NEW PROFILE</button>
         </div>
       </div>
-      <button id="adpt">ADD PRODUCT</button>
-      <hr />
-
-      <div></div>
-
-      <!-- -------------------footer---------------------------------- -->
 
       <div id="footer">
         <img src="https://newassets.apollo247.com/images/ic_logo.png" alt="" />
@@ -194,16 +132,6 @@
           <li><a href="">Mamaearth Products</a></li>
         </ul>
       </div>
-      <!-- --------------------End of footer--------------------- -->
     </div>
-
-    <!-- --------------bot------------------ -->
-    <div id="bot">
-      <img src="https://newassets.apollo247.com/images/ic-mascot.png" alt="" />
-    </div>
-    <!-- -------------------End of bot------------------------------------ -->
   </body>
 </html>
-
-<script src="nav.js"></script>
-<script src="admin.js"></script>

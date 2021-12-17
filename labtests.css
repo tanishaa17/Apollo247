@@ -9,11 +9,10 @@ body {
   margin-bottom: -20px;
 }
 #div1 {
-  padding-top: 100px;
+  padding-top: 150px;
   display: flex;
   width: 100%;
   margin-left: 40px;
-  margin-top: 40px;
 }
 #searchBar {
   width: 100%;
