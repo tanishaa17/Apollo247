@@ -13,7 +13,7 @@
 }
 #mid {
   display: flex;
-  margin-top: 30px;
+  margin-top: 14px;
 }
 .left {
   width: 65%;
@@ -37,9 +37,9 @@
 #fourcolum {
   display: grid;
   width: 95%;
-  grid-template-rows: 100%;
-  grid-template-columns: repeat(4, 24%);
-  grid-gap: 20px;
+  grid-template-rows: 109%;
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 12px;
   grid-template-areas: "a b c d";
   justify-content: center;
   margin: auto;
@@ -81,10 +81,12 @@ h3 + img {
 .line {
   padding-top: 15px;
   color: rgb(2, 71, 91, 0.6);
+  font-size: 10px;
 }
 .line2 {
   line-height: 5px;
   margin-top: -8px;
+  font-size: 11px;
 }
 .right {
   width: 31%;
@@ -208,7 +210,7 @@ a[href="page.html"] {
 #otherspart {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(27, 100px);
+  grid-template-rows: repeat(27, 110px);
   grid-gap: 24px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -217,10 +219,10 @@ a[href="page.html"] {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 input[type="text"] {
-  color: #eef;
+  color: rgb(11, 11, 218);
   margin-top: 10px;
   border: none;
-  width: 95%;
+  width: 400px;
 }
 .fom {
   display: flex;
@@ -234,4 +236,47 @@ input[type="text"] {
 }
 #listof > ul {
   line-height: 5px;
+}
+#otherspart > div {
+  display: flex;
+  padding: 7px 27px;
+  border-radius: 10px;
+}
+#otherspart > div > img {
+  height: 52%;
+  margin-right: 19px;
+  margin-top: 4px;
+}
+.textofimg {
+  line-height: 8px;
+}
+
+.textofimg > p {
+  font-size: 10px;
+  color: #8cf;
+  text-decoration: none;
+}
+.textofimg :first-child {
+  color: #479;
+  text-decoration: none;
+  font-size: 13px;
+}
+.textofimg:last-child {
+  color: rgb(64, 196, 196);
+  font-weight: 15px;
+  text-decoration: none;
+}
+.lasttextone {
+  font-size: 10px;
+  color: black;
+}
+.text_name {
+  cursor: pointer;
+}
+#faq > div > p:first-child {
+  color: #218ac7;
+}
+#large > h5 {
+  padding-top: 20px;
+  margin-bottom: 0px;
 }
