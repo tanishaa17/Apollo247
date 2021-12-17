@@ -1,0 +1,50 @@
+body {
+    background-color: #dcdfce;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+  
+  .maindiv {
+    width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+    border: 2px solid seagreen;
+  }
+  .divfirst{
+    margin-top: 150px;
+    border: 2px solid red;
+    width: 100%;
+    height: 400px;
+  }
+  .selecticon {
+    font-size: 25px;
+    border: 2px solid salmon;
+  }
+  .text {
+    background-color: #FFFFFF;
+    border: 2px solid rgb(77, 94, 131);
+    width: 98%;
+  }
+  .searchbar {
+    width: 90%;
+    background-color: #f7f8f5;
+    border: none;
+    border: 2px solid rgb(114, 250, 114);
+    width: 60%;
+  }
+  input[type="text"] {
+    height: 60px;
+
+  }
+  #uploadbut{
+    border: 1px solid #FDBD16;
+    color: #FDBD16;
+    margin-left: 5%;
+    height: 35px;
+    width: 120px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+  }
+  .off{
+    margin-left: 8%;
+  }
