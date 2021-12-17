@@ -7,67 +7,83 @@ body {
   margin-bottom: -20px;
 }
 .container {
-  background-color: #f7f8f5;
+  background-color: white;
   width: 80%;
   margin: auto;
 }
 
-.main {
+/* .main {
   width: 80%;
   margin: auto;
   height: auto;
   background-color: #fff;
-}
-
+} */
 .img-content {
-  width: 95%;
-  height: 50vh;
+  padding-top: 111px;
+  height: 30%;
+}
+.img-content > div {
   background-image: url(https://newassets.apollo247.com/cms/2021-11/airbanner_0.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
-  margin: auto;
+  height: 500px;
+  cursor: pointer;
 }
-.img-content > div {
-  padding: 200px 100px;
+#insideimage {
+  padding: 118px 107px;
+
+  line-height: 5px;
 }
-.img-content > div > h1 {
+.eidtorpick {
+  background-color: rgb(250, 251, 249);
+}
+#insideimage > h1 {
   color: white;
-  font-size: 40px;
-  padding: 1px;
+  font-size: 50px;
 }
-.img-content > div > p {
-  color: gray;
-  font-size: 20px;
+#insideimage > p {
+  color: #ddd;
+  font-size: 30px;
   padding: 20px 0px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-.img-content > div > button {
+#insideimage > button {
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  color: orangered;
+  color: orange;
 }
 .categories {
-  width: 95%;
-  margin: auto;
+  margin-top: -5px;
+  background-color: white;
 }
-.categories > :nth-child(1) {
-  font-size: 20px;
-  padding: 10px 0px;
+.categories > h3 {
+  padding-left: 23px;
 }
 .cat-div {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   margin: auto;
+  margin-top: 10px;
+}
+.cat-div > div {
+  padding: 10px;
+}
+
+.cat-div > div {
+  text-align: center;
+}
+.cat-div > div > p {
+  font-size: 12px;
+  font-weight: bold;
 }
 .cat-div img {
-  height: 100px;
-  padding-left: 40px;
+  height: 51%;
 }
 .healthy-img {
   background-image: url(https://newassets.apollo247.com/cms/2021-11/exercise_0.jpg);
-  height: 33vh;
+  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
@@ -81,33 +97,29 @@ body {
   font-size: 30px;
 }
 
-.healthy-bites > div {
-  font-size: 20px;
-  font-family: sans-serif;
-  padding: 15px 0px;
-  color: #5b7783;
-}
 .healthy-bites {
-  /* border: 2px solid blue; */
-  width: 95%;
-  margin: auto;
+  border: 2px solid blue;
+  background-color: white;
+}
+.healthy-bites > h3 {
+  padding-left: 23px;
+  color: #5b7783;
 }
 .visual-stories {
   /* border: 2px solid yellow; */
-  width: 95%;
-  margin: auto;
+
   background: #02475b;
   margin-top: 30px;
 }
-.visual-stories > div {
-  padding: 6px 0px;
+.visual-stories > h3 {
+  padding: 12px 15px;
   color: white;
 }
 .visual {
   display: flex;
   /* border: 2px solid purple; */
   height: auto;
-  margin-top: 7px;
+  margin-top: -24px;
 }
 
 .visual > :nth-child(1) {
@@ -168,11 +180,11 @@ body {
   padding-top: 40px;
   color: white;
 }
-.visual-stories > div,
-h2 {
-  padding-top: 10px;
-  padding-bottom: 0px;
+.visual {
+  padding-bottom: 10px;
+  margin-left: 5px;
 }
+
 .artist {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -183,21 +195,24 @@ h2 {
 .latest-articles > div {
   margin-left: 0px;
 }
-
-.latest-articles h2 {
-  font-size: 20px;
+.latest-articles {
+  background-color: white;
 }
+
+.latest-articles > h3 {
+  color: #02475b;
+  padding: 20px 23px;
+  font-size: 20px;
+  color: #5b7783;
+}
+
 .latest-articles img {
   width: 95%;
   height: 240px;
   object-fit: cover;
   width: 100%;
 }
-.latest-articles > :nth-child(1) {
-  padding: 20px 20px;
-  font-size: 20px;
-  color: #5b7783;
-}
+
 .text {
   margin: 10px;
   padding: 20px 0px;
@@ -296,20 +311,23 @@ h2 {
 .artist-last {
   margin-top: 10px;
 }
-.eidtorpick {
-  width: 95%;
-
-  margin: auto;
+.eidtorpick > h2 {
+  padding-left: 23px;
+  color: #02475b;
 }
 .editorflex {
   display: flex;
-  width: 100%;
 }
 .eidtorpick > div > h2 {
   margin-left: 20px;
 }
 .editorflex > div {
-  margin: 10px 20px;
+  margin: 10px 7px;
+}
+.editorflex {
+  padding-left: 11px;
+}
+.rigth {
 }
 
 .rigth1 {
@@ -317,7 +335,7 @@ h2 {
 }
 .rigth1 img {
   width: 50%;
-  height: 160px;
+  height: 120px;
 }
 .rigth1 > div {
   padding: 5px 10px;
@@ -325,7 +343,7 @@ h2 {
 }
 .rigth2 > img {
   width: 50%;
-  height: 160px;
+  height: 125px;
 }
 .rigth2 > div {
   padding: 5px 20px;
@@ -336,8 +354,8 @@ h2 {
   margin-top: 40px;
 }
 .left img {
-  width: 700px;
-  height: 300px;
+  width: 100%;
+  height: 70%;
 }
 .left {
   width: 50%;
@@ -347,15 +365,13 @@ h2 {
   padding: 0px 20px;
   line-height: 20px;
 }
-.eidtorpick h2,
-p {
-  color: #5b7783;
-}
+
 .editorflex h2 {
   font-size: 15px;
+  color: #02475b;
 }
 .editorflex p {
-  font-size: 10px;
+  font-size: 13px;
 }
 .eidtorpick img {
   border-radius: 20px;
@@ -370,12 +386,12 @@ p {
   background-color: white;
   border: none;
   border-radius: 10px;
-  font-size: 15px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   margin: 20px 0px;
   margin-left: 45%;
   font-family: sans-serif;
+  margin-top: -16px;
 }
 @media only screen and (min-width: 376px) and (max-width: 769px) {
   .artist {
