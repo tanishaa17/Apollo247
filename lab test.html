@@ -76,8 +76,8 @@
          <!-- POPULAR CATEGORIES(31)================ -->
 
        <div id="category">
-        <h4>POPULAR CATEGORIES(31)</h4>
-        <h4 class="viewall" >VIEW ALL</h4>
+        <h4 class="pop">POPULAR CATEGORIES(31)</h4>
+        <h4 class="viewall">VIEW ALL</h4>
        </div>
 
        <div id="div3">
@@ -117,15 +117,11 @@
     </div>
 
     <div id="healthCheackup">
-        <h4>POPULAR HEALTH CHECKUP PACKAGE (84)</h4>
+        <h4 class="pop">POPULAR HEALTH CHECKUP PACKAGE (84)</h4>
         <h4 class="viewall" >VIEW ALL</h4>
        </div>
 
-    <div id="div5">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+    <div id="div5"> </div>
 
     <div id="div6">
         <img src="https://newassets.apollo247.com/images/ic_workflow.png" alt="" height="50px" width="50px">
@@ -133,14 +129,14 @@
     </div>
 
     <div id="tests">
-        <h4>TOP BOOKED TESTS(16)</h4>
+        <h4 class="pop">TOP BOOKED TESTS(16)</h4>
         <h4 class="viewall" >VIEW ALL</h4>
        </div>
 
        <div id="div7"> </div>
 
        <div id="diabetes">
-        <h4>DIABETES SCREENING(27)</h4>
+        <h4 class="pop">DIABETES SCREENING(27)</h4>
         <h4 class="viewall" >VIEW ALL</h4>
        </div>
 
@@ -174,7 +170,7 @@
     </div>
 
     <div id="wellness">
-        <h4>WOMEN WELLNESS(18)</h4>
+        <h4 class="pop">WOMEN WELLNESS(18)</h4>
         <h4 class="viewall" >VIEW ALL</h4>
        </div>
 
@@ -358,6 +354,82 @@
 </html>
 
 <script>
+
+    var healthCheackup = [
+        {
+            title : "Special Health Package Premium",
+            inc : "TOTAL INCLUSIONS : 60",
+            hba : "Hba1c, Glycated Hemoglobin",
+            est : "Estimated Average Glucose (Eag)",
+            vit : "Vitamin D (25 - Oh Vitamin D) + 57 More",
+            MRP : "6530",
+            price : "2824",
+        },
+
+        {
+            title : "Special Health Package Premium",
+            inc : "TOTAL INCLUSIONS : 60",
+            hba : "Hba1c, Glycated Hemoglobin",
+            est : "Estimated Average Glucose (Eag)",
+            vit : "Vitamin D (25 - Oh Vitamin D) + 57 More",
+            MRP : "6530",
+            price : "2824",
+        },
+
+        {
+            title : "Special Health Package Premium",
+            inc : "TOTAL INCLUSIONS : 60",
+            hba : "Hba1c, Glycated Hemoglobin",
+            est : "Estimated Average Glucose (Eag)",
+            vit : "Vitamin D (25 - Oh Vitamin D) + 57 More",
+            MRP : "6530",
+            price : "2824",
+        },
+    ]
+
+    // healthCheackup.map(function(elems){
+    //     var card4 = document.createElement("div");
+    //     card4.setAttribute("class", "cards");
+
+    //     var name = document.createElement("p");
+    //     name.textContent = elems.title;
+    //     name.setAttribute("class", "typetitle");
+
+    //     var para = document.createElement("p");
+    //     para.textContent = elems.inc;
+    //     para.setAttribute("class", "inclusions");
+
+    //     var line1 = document.createElement("h5");
+    //     line1.textContent = elems.hba;
+    //     line1.setAttribute("class", "htag");
+
+    //     var line2 = document.createElement("h5");
+    //     line2.textContent = elems.est;
+    //     line2.setAttribute("class", "htag");
+
+    //     var line3 = document.createElement("h5");
+    //     line3.textContent = elems.vit;
+    //     line3.setAttribute("class", "htag");
+
+    //     var horz = document.createElement("hr");
+    //     horz.setAttribute("class", "hor");
+
+    //     var mrp = document.createElement("p");
+    //     mrp.textContent = "MRP  " + "Rs." + elems.MRP;
+    //     mrp.setAttribute("class", "mrpp");
+
+    //     var price = document.createElement("p");
+    //     price.textContent = elems.price;
+    //     price.setAttribute("class", "typeprice");
+
+    //     var but = document.createElement("p");
+    //     but.innerHTML = "ADD TO CART";
+    //     but.setAttribute("class", "button");
+
+    //     cards.append(name, para, line1, line2, line3, horz, mrp, price, but);
+    //     document.getElementById(div5).append(card4);
+    // });
+
     var tests = [
         {
             img : "https://newassets.apollo247.com/organs/virus.png",

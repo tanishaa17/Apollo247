@@ -2,8 +2,6 @@
     width: 80%;
     margin: auto;
 }
-
-
 #div2{
     display: flex;
 }
@@ -50,8 +48,9 @@ button{
 }
 #category{
     display: flex;
+    justify-content: space-between;
 }
-#category > h4{
+.pop{
     margin-top: 50px;
     font-family: sans-serif;
     font-weight: 700;
@@ -61,6 +60,10 @@ button{
 .viewall {
     color: #fcb716;
     cursor: pointer;
+    margin-top: 50px;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
   }
 
 #div3{
