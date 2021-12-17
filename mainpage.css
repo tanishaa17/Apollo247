@@ -1,17 +1,22 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
 #large {
   width: 95%;
   margin: auto;
   padding-top: 97px;
 }
-h4 {
+#large > h6 {
   margin-bottom: 0px;
+  color: #fa2;
 }
 #mid {
   display: flex;
-  margin-top: 30px;
+  margin-top: 14px;
 }
 .left {
-  width: 70%;
+  width: 65%;
   margin-right: 2%;
 }
 .bord {
@@ -32,9 +37,9 @@ h4 {
 #fourcolum {
   display: grid;
   width: 95%;
-  grid-template-rows: 235px;
-  grid-template-columns: repeat(4, 170px);
-  grid-gap: 20px;
+  grid-template-rows: 109%;
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 12px;
   grid-template-areas: "a b c d";
   justify-content: center;
   margin: auto;
@@ -46,7 +51,7 @@ h4 {
   border-radius: 10px;
   text-align: center;
   font-size: 13px;
-  padding: 22px;
+  margin-left: 20px;
 }
 #fourcolum > div:first-child {
   grid-area: a;
@@ -62,9 +67,9 @@ h4 {
 }
 button {
   background-color: transparent;
-  padding: 2px 10px;
+  padding: 5px 13px;
   color: #337e93;
-  border-radius: 8px;
+  border-radius: 16px;
   margin-left: 9px;
   margin-bottom: 34px;
   border: 1px solid black;
@@ -76,19 +81,88 @@ h3 + img {
 .line {
   padding-top: 15px;
   color: rgb(2, 71, 91, 0.6);
+  font-size: 10px;
 }
 .line2 {
   line-height: 5px;
   margin-top: -8px;
+  font-size: 11px;
 }
 .right {
-  width: 28%;
-  border: 1px solid black;
-  height: 200px;
+  width: 31%;
+  height: 50%;
+  font-family: "IBM Plex Sans", sans-serif;
   background-color: #ffffff;
 }
-
-.start {
+.marginleft {
+  padding-left: 6px;
+}
+h4 + ul {
+  font-size: 13px;
+}
+#rightbox {
+  padding: 1px 13px;
+}
+.rightmobile {
+  margin-top: 15px;
+  padding: 15px;
+  border-color: #f7f8f5;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#usemobile {
+  margin-top: 45px;
+}
+#usemobile > h4 {
+  font-weight: normal;
+}
+#iconwith {
+  display: flex;
+}
+#iconwith > div > p {
+  line-height: 5px;
+  font-size: 15px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+#iconwith > div > img {
+  margin-right: 20px;
+}
+#payment {
+  padding: 15px 7px;
+}
+#payment > div {
+  display: flex;
+  cursor: pointer;
+}
+#payment > div > p {
+  font-size: 12px;
+  color: #337e93;
+}
+#payment > div > img {
+  margin-right: 5px;
+}
+#downloadapp {
+  margin-top: 43px;
+  margin-bottom: 34px;
+}
+#downloadapp > div {
+  display: flex;
+  cursor: pointer;
+}
+#downloadapp > div > img {
+  margin-right: 47px;
+}
+#downloadapp > div > p {
+  color: #fdbc6b;
+  font-size: 14px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+#downloadapp > p {
+  font-size: small;
+  color: #218ac7;
+}
+.right .start {
   margin-top: -5px;
   margin-bottom: 15px;
 }
@@ -99,6 +173,7 @@ h3 + img {
 .textbelow {
   margin-top: 30px;
 }
+/* Rightbox============================ */
 
 /* content========================== */
 #content {
@@ -110,7 +185,7 @@ h3 + img {
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 a[href="page.html"] {
-  color: black;
+  color: #256;
   text-decoration: none;
   font-weight: bold;
 }
@@ -121,4 +196,87 @@ a[href="page.html"] {
 #consult,
 #how {
   padding: 5px;
+}
+#content {
+  color: #256;
+}
+
+#section {
+  margin-top: 35px;
+}
+#section > p {
+  padding-bottom: 0px;
+}
+#otherspart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(27, 110px);
+  grid-gap: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#otherspart > div {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+input[type="text"] {
+  color: rgb(11, 11, 218);
+  margin-top: 10px;
+  border: none;
+  width: 400px;
+}
+.fom {
+  display: flex;
+  width: 95%;
+  font-size: 15px;
+  border-bottom: 3px solid #eef;
+}
+.dcs {
+  font-size: 14px;
+  color: black;
+}
+#listof > ul {
+  line-height: 5px;
+}
+#otherspart > div {
+  display: flex;
+  padding: 7px 27px;
+  border-radius: 10px;
+}
+#otherspart > div > img {
+  height: 52%;
+  margin-right: 19px;
+  margin-top: 4px;
+}
+.textofimg {
+  line-height: 8px;
+}
+
+.textofimg > p {
+  font-size: 10px;
+  color: #8cf;
+  text-decoration: none;
+}
+.textofimg :first-child {
+  color: #479;
+  text-decoration: none;
+  font-size: 13px;
+}
+.textofimg:last-child {
+  color: rgb(64, 196, 196);
+  font-weight: 15px;
+  text-decoration: none;
+}
+.lasttextone {
+  font-size: 10px;
+  color: black;
+}
+.text_name {
+  cursor: pointer;
+}
+#faq > div > p:first-child {
+  color: #218ac7;
+}
+#large > h5 {
+  padding-top: 20px;
+  margin-bottom: 0px;
 }
