@@ -5,7 +5,7 @@ var popularHealth = JSON.parse(localStorage.getItem("popularhealth")) || [];
 var topBooked = JSON.parse(localStorage.getItem("topbook")) || [];
 var diabetes = JSON.parse(localStorage.getItem("diabetic")) || [];
 var women = JSON.parse(localStorage.getItem("womenWell")) || [];
-
+var halfPrice = JSON.parse(localStorage.getItem("halfPriceStore")) || [];
 document.querySelector("#adpt").addEventListener("click", addProducts);
 
 function addProducts() {
@@ -35,6 +35,10 @@ function addProducts() {
   if (inTo1 == "covidcare") {
     covidProtection.push(obj);
     localStorage.setItem("covid-19", JSON.stringify(covidProtection));
+  }
+  if (inTo1 == "halfprice") {
+    halfPrice.push(obj);
+    localStorage.setItem("halfPriceStore", JSON.stringify(halfPrice));
   }
 
   if (inTo2 == "popular") {
