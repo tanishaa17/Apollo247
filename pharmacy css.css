@@ -34,8 +34,8 @@ body {
   color: #fcb716;
   cursor: pointer;
 }
-.protype{
-  color: #02475B;
+.protype {
+  color: #02475b;
 }
 .selecticon {
   font-size: 25px;
@@ -49,7 +49,6 @@ body {
 .text {
   background-color: #f7f8f5;
 }
-
 
 .searchbar {
   width: 90%;
@@ -154,62 +153,64 @@ input[type="text"] {
 .typeclass {
   display: flex;
   justify-content: center;
+  height: 60px;
   /* padding: 10px 10px; */
 }
 .typeclass > p {
   font-family: sans-serif;
   font-size: 15px;
   padding: 15px 5px;
+  color: #01475b;
+  font-size: x-small;
 }
 #hotsel {
-display: grid;
-grid-template-columns: repeat(6,1fr);
-grid-template-rows: auto;
-grid-gap: 10px;
-text-align: center;
-padding: 10px 10px;
-line-height: normal;
-/* border: 2px solid cadetblue; */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  text-align: center;
+  padding: 10px 10px;
+  line-height: normal;
+  /* border: 2px solid cadetblue; */
 }
 #hotsel > div {
   /* border: 2px solid red; */
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 8px;
-  
 }
-.namecash{
+.namecash {
   font-size: 15px;
-    color: #01475b;
+  color: #01475b;
 }
-.prc{
-  color: #01475b; 
-font-size: 20px;
+.prc {
+  color: #01475b;
+  font-size: 20px;
 }
-.but{
+.but {
   font-size: large;
   width: 100%;
-  color: #FDCB56;
+  color: #fdcb56;
 }
 #wintercare {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   grid-gap: 10px;
   text-align: center;
   padding: 10px 10px;
   line-height: normal;
   /* border: 2px solid cadetblue; */
-  }
+}
 #wintercare > div {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 8px;
   /* border: 2px solid red; */
 }
-#covidcare{
+#covidcare {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   grid-gap: 10px;
   text-align: center;
@@ -217,15 +218,15 @@ font-size: 20px;
   line-height: normal;
   /* border: 2px solid cadetblue; */
 }
-#covidcare>div{
+#covidcare > div {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 8px;
   /* border: 2px solid red; */
 }
-#halfprice{
+#halfprice {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   grid-gap: 10px;
   text-align: center;
@@ -233,7 +234,7 @@ font-size: 20px;
   padding: 10px 10px;
   /* border: 2px solid cadetblue; */
 }
-#halfprice>div{
+#halfprice > div {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 8px;
@@ -245,7 +246,7 @@ font-size: 20px;
   margin: auto;
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
   cursor: pointer;
 }
@@ -301,11 +302,11 @@ font-size: 20px;
   height: 100%;
 }
 .details {
-  padding: 20px ;
+  padding: 20px;
 }
-.details>h4{
-  color: #02475B;
+.details > h4 {
+  color: #02475b;
 }
-.details>p{
-  color: #02475B;
+.details > p {
+  color: #02475b;
 }
