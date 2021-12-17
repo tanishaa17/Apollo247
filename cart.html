@@ -1,176 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- --------------header,footer,bot--------------- -->
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="content.css"/>
-    <link rel="stylesheet" href="main_page.css"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="bot.css" />
+    <!-- --------------header,footer,bot--------------- -->
+    <link rel="stylesheet" href="content.css" />
+    <link rel="stylesheet" href="main_page.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- ---------------------icon------------- -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- -------------------------end of icon --------- -->
+
+    <!-- ----------------------font------------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ----------------------end of font------------- -->
+  </head>
+  <body>
     <div id="main">
-        <div id="header">
-            <img
-              id="apolloimage"
-              src="data:image/png;base64,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"
-              alt=""
-            />
-            <div>
-              <h4>DOCTORS</h4>
-              <p>consult</p>
-              <p>Online</p>
-            </div>
-            <div>
-              <h4>PHARMACY</h4>
-              <p>Medicines &</p>
-              <p>other products</p>
-            </div>
-            <div>
-              <h4>LAB TESTS</h4>
-              <p>Health</p>
-              <p>check - ups</p>
-            </div>
-            <div>
-              <h4>COVID-19</h4>
-              <p>Latest</p>
-              <p>updates</p>
-            </div>
-            <img
-              id="cartsymbol"
-              src="https://newassets.apollo247.com/images/ic_cart.svg"
-              alt=""
-            />
-            <span id="cartcount">0</span>
-            <img
-              id="accountsymbol"
-              src="https://newassets.apollo247.com/images/ic_account_white.svg"
-              alt=""
-            />
-          </div>
+      <!-- header----------------------------------- -->
+      <div id="header">
+        <img
+          id="apolloimage"
+          src="data:image/png;base64,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"
+          alt=""
+        />
+        <div id="doc">
+          <h4>DOCTORS</h4>
+          <p>consult</p>
+          <p>Online</p>
+        </div>
+        <div id="pharma">
+          <h4>PHARMACY</h4>
+          <p>Medicines &</p>
+          <p>other products</p>
+        </div>
+        <div id="labtest">
+          <h4>LAB TESTS</h4>
+          <p>Health</p>
+          <p>check - ups</p>
+        </div>
+        <div id="covid">
+          <h4>COVID-19</h4>
+          <p>Latest</p>
+          <p>updates</p>
+        </div>
+        <img
+          id="cartsymbol"
+          src="https://newassets.apollo247.com/images/ic_cart.svg"
+          alt=""
+        />
+        <span id="cartcount">0</span>
+        <img
+          id="accountsymbol"
+          src="https://newassets.apollo247.com/images/ic_account_white.svg"
+          alt=""
+        />
+      </div>
+      <!-- ----------------End of header------------- -->
 
-         <div id="content">
-             <div id="left">
-               <div>
+      <div id="content">
+        <div id="crack">
+          <div id="left">
+            <div>
+              <div>
+                <span id="backarrow" class="material-icons">arrow_backt</span>
+              </div>
+              <span>Back to Patient Name</span>
+            </div>
+            <div>
+              <button id="button">+ ADD TESTS</button>
+            </div>
+          </div>
+          <hr />
+          <div id="itemscart">
+            <div>
+              <img
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGCBUVExcVFRUYGBcZGh0cGhoaGiAcHBwaISEZHyQcHR8cHyslHRwoHhwZJDUlKCwuMjIyGiE3PDcxOysxMi4BCwsLDw4PHBERHTMoISgzMTExMTMxMTExMTExMTExMTExMTkxMTExMTExMTExMTExMTExMTExMTExMTExMTExMf/AABEIALkBEQMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAEBQMGAQIHAAj/xABCEAACAQIEAwYDBQYFAwQDAAABAhEAAwQSITEFQVEGEyJhcYEykaEUQlKx0QcjYsHh8DNygrLxFZKiQ0RTwhYkNP/EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACURAAICAgIBBQEAAwAAAAAAAAABAhEDIRIxQRMiMlFhcUKBsf/aAAwDAQACEQMRAD8A6lcxGpBrSy5POhb7+JucE0Rhbg101qSyHvGzEZj86jvu+Ukk+xNa4hoJgawa9adu78WhmpGC8OxNwkgs+/Mmm6uTzPzpZgnysZ2ppaA5U0DJQ5kUYm1Lg1HYd5FWQDcZRu6YqSCNdDFY4Vez21YmdNaLvrKkdRSPgNwjvLcaq1SxjxxpQ15TuCfnU9mSNa1dRTBC9bzFiCTHrWhdgRLH5mt3twZrN20GE0DBcbcZCDmaD5mgLuKuI48TQf4jTg2ZGp2oDiNkGD0qWMx9seYDN8zRId41ZvmaGe3IBHKs4dpkNvTAw+KbNGZvmf1opWbfM3zNQG2DFTl/D6UgNLzuD8TR6mpVvmIJPzrBdWUGhbjSdOX1qgGVm9rufSa2xV3aCfrQ2G1OaKnvLpQIgxDsRuw9CaG4Zi2VjbdiTyJJP50YHERS7iYiHXQqdfSgY4ZmK8x70HcZgDLN8zRuDuB0BqLFDTbShCBcLimj4j8zRaOZ+I/OkbuVuAcqdWm086YEzk8ifnW9l53JoR7lZS9p5ikFBN4HqfnQyXSrDxH0Jr32iVkcqGvISQwoAdd4eterWvUyRUlg940c2J+pojTNHOs97AY9GP51AimQ5+VIskuKM1aXfwmpLzwdKgv3ZboKhgLUxAS4UPOnVknwjlVa4xbPeKRvIprwx2BykkkUIGhkTDEUXhmoS7uDRGHbWtCQs0ik28SeQcfWn1Vvte5QW7g+64n0mpYIcYa5qZqZjrUVpdARrIpX2r4t3KBU+NtAAJI9BzNKUlFWyoxcpUjfi/F7dsldWcCcq6keZ6VUOK9s8hQSInxKkEhfMnnQlrspjcQ5Z7vco8kqDNxv8xpZZ7F27dxmxF7Nag5EWQ7nkSRsPzrmlNtW3SOuGOC0tsL/APyq3nYvfK2yeskewrY/tEtKcttLjqu7FMw942rXEdgcCbaOXvWwxj4t/LWmy4vA2bK4a3ltgjYqZPmTzNZ84rrsvi34G/DeMW7mHF1wqqeanQjrRmDthvGjhh5b1z/EdnbtgtcsXc6jxd1HI9NfpVs7FYe73T3MmU7Ih2J5n+VaQyMyyY1X0NwBIB3ra9cynLyNT2mW+kxlddxz9DQV22ToeR+ldEWmrOZqnTJlSN+e1DpCuDy2/SjCCwHp/f1oHG5gJHX8/wCtUAyS5r5VvnPTSlmCvlx4hB8v7600kFddCKABcZ1U0LcuFgDGh0NF2iCpBoNHMMG2G1MDHBMRkZ7RnTUelNplfI1X8TdCvbuDYnKasKvIAUetACrF2iD5isYLFQCTTHF2N28qX2F02oAKs66msuNCBWLe8Vu1sxNAGtpYGvOsBcrRyO1b3T4RNbWSrgGdRQAfXq9XqCBbi7kaLzJn5mhjnOXXZvpUWN7wuwTYMf8AdTbB29p351KLBMUADpvNR3rJPPTej8VaBDAbmoHUCI6UNAI+NMFZDOsimPDsYrPl3OUGaXcfiVcDNB2qThzlXVgujf3/ADpAPHuT7VJYfUUMqkEzWlziFtNMwLj7o3puaj2xxhKXSH00h7U2C+Gur5EimWB4ilxdfCeYOhqXGoCjCJkU7T2iacXTFvAOIK2Et3GMAICT6Up7PILt04l3DFw3dryRRoI84obB4ctw+9aX4rZeB6GY+VK/2c8RS6ncPAe3IMaeDqKwyt2b4kuLZZG4lat2zdJJlmQmeQJ/So73ErHd2rhg5wMo9dqG4tw7BdzcCy8AsBnJAPXfeq9iDgguGVc0OwE5zKGR56VySvo6IpPey44mxbEF9Z2HTzoC7g8PcYg20LgQs66Hf0NJOMriLjslm8pFoEeMbjTmOfnSnC2cemW5Nu5mkFcxUrHOTSivov8ArLcvALFtNO8Z20Ia40wee+wFPeFMqoqJ8AEAc4pTgbNzEpIMNGV2nwgfhU7ljz0qPiNm5gytxgWtDRmUlyg6lYGnnrW0VW6MZST9rex/iilu4t3MFnwsJ+L0HM0FjMWC5yrv+M5foAT7ECk+AZ5a5bt96G0W8rd4xX8PiMqR0iKw1u421m6J3/dnU+elDyyXxCOOH+TDO8uf/Iir0VBPzZyP/GluP4cxY3BisSG5ZSkDSNAEIHyqHGXHBKwy/wCZCPlpSzGJcVdUdp6+EewkbyOdZOc32zojjxrouXZ3Hg2lVz3jLmVrjBVJYGYMBROUr0mnLKCpYGABJn9a5VwLHsiPaa2hVnLSzKxmFEKNROm8/lTHtR2huJhcli27K4KOwR2VFg5yWiB01PU8q2hlafEwngXa0WleJrm0ttl5vmXTflPPWKKCW3EoQzDfLrI6xMiucYCxjRbK92VW6kByQIO6kH1jTes4Pg3ErTi8lxLjqJKI7Zj5RcCyPIH2pxySTtscsUWtaLnisMl1HCHxIdVIIKn0Io/gGJL25OjKYM9RQnD7rMtu5fQWrv3mJE+QbKTKkaQdaw7i1da5qbTbqoJ166bVtDKmtmEsTvQ5xrysHY0DhsFAkE6cqyt1bii5bMoa8L4ERMj61qmnsxaa0YurzG9T2LpKefMVtfQFZ1mgsNZi42pgj5VQhkqgr1NCsPGNKksOVEEVjJm1B1pANa9Wa9TJF2GYi5cB/ET7aGprN7UgcvypaEIxD5m+ImAPU0ZYDSYWNIqCza7eJjl1rS6uXTlyNS3WG3l9ajuMGWHIEcxVAKzZ8LA7zvW+HtfCB0/p+lZvp4biz5zQvC8WGMB58OlSAdi8RltOxO2k+ZpeOzq23DlndT4mObn1/pRjWVNtrbHQzrzpJ2Y47e7lyw75Edl2hwASNjuK55xTds68baS4jF8KSsznUGQRoakw3GHUgTp+Ft6EbHpiGJsnKyxHLX+IdKXY3EXC4SFZmIGcHQHzqVKujdxUvkhx2exaLevBmAW6Zg8jEH51QeMcPfC4ssjFRmkEGM9udV+VWHGWyzEIQLqb9HjkfOjFt28dhAtyVKHw3BurDce3PlVOal2ZPFw3EqljiuH7+7bQOq3BCCT8R308zTHhHZW2lo38QrsZlLfi8IHMgalieXKmmAw2FsHNathnGhuEZnPnmjwA9BE8gamPH3VS7siAep+emYnyH0rBSinaRq4yaEvZnj/eYprCYcsWOpRYdV6seSjTVj+dXLEcJQhme4URRroP/InU+gis2cfORgVl1zM2WCUGq+0sPmaGxvEA2It2NDKG6/pOVY/LyzA8q2tPwYyUrGvDsWlq0iKQxmCRp4pmI66jSoOPcas20uNceFtsEuAg7sAcvnINVzstii7X5MAY68oIjkU0PXeiMDa7x8XaujRrrMOfOVjSNFC/I0Pqhemu0JMJ21a5fCW8trDxlRIAAAgCfwjT2pvdxmpPjWd4J0NULj/DbNsO6XDauZ4W0ozJAkZpJlQdwNYo3sTwvEXQLl+862hoiLGZx6kStv8AvTc8mTA2uSkZxxvlVWWzEcdcEW2/e22GU23ElhrMa+KqonZLGXmdlZktlj3YuI85NxIOwiBrvFXfDXrVkZbWRfJfG59SNz61Jc4gREsQDzlZPluCNNYFGK4d7OiOJx6ZRMF2OvIzDFPlUGAVOXMv4lblpyOu9dI7OYi2uGRULultcgIXU5dDoN9I33oJeIE6HXpOoPod489tKqGF4s2FuLYt3gyG4TA1IEnTbRiNDWjbky3C1TLkSFgITGY5eWhkn3gfQULwvGMbi6/ExB15ZWbT08Pz86WX8WVywdSpnXaT8WvOAPat8HdGZByQXTO2p8C/Mj6isjTjqgvtXiAlu3dA1zAHWNCGM/MAj1NCcG4tm0DEHnOm/WSJ9Qak7ecMxBw1sWrXe5CGuIrAuFCEfDMkydgD6UsxnZ3EYZc7qWRQPGpmF3nqB1kATWkYtxsmM4dWXDhV5FLKRkNwgyPhJjmD8J+U/WiXhTGXWd5mD08qq/AOJgnID3g/+NtHXrHXn5elNOOpdt5MRhpZgIZdDnQbZhzI2012rfDka9rObPiV2h9n0BO1CYlSDIND8E4nbxdslfDcX47fNWG8eVbYxZXPO1didnI1QUuIzAaCRUuCMHfek1q7mAYAqdtaYd+vhk9B70MB9XqzXqCBDcvZbjeEmHP5n9KZYbEyaS4i5kvPJABfT50esTppqDPWpRYXjVEA85pdbsAzqTDTRburqwzCZ08qExlsIIBM9abAWcRut3rToFPzBrHA8FMG2NFmT5nWKH4liELshzZ4En60uTi93Lct22NsBwM0TOg1qZXWioJXss3EpWBIBA68+tJ8wtqQGXMdcwgfSqhxDDM5m5irzsd8imB5Us/6X4tbl5R1ZSK5pUz0IKlpF0vYO05DMYaNSpgn3FRJw1P/AE70MRoCZE+9Vq3wxB/77L6jpQWJwJBlMWjEc9R/Oo4/pqp/jLBZ4LjBibZZx3ZJz3FPwqASSQeoEDzIptxvi9u2mW2sKNFVSNSYMD2Msx69TSq2b9rh1x3fvTcIAAJP7sHWD1LfQU67AcKt4thibom2oi0jCA8aF3HMTMLtuSDoarhyMZ5KtsrltMZfXPbw73QBoVXLaU/wZoDH+KSaVquI+0W7d626XHdU8QOgJAOXNOwk6dN67zc8tuQH5Vxvt9xFnupbVstzvMwI3VtVgHlzFVGCM45ZSZdcQVFy6skqlu2RMwAS2vTZBS3gzBsTib5YZQ9mwkCYygXG9jmXz0NNe1zouCuXQdWS2CeRiR8pY/SqJwrFPbwjPmyi5iLrrAliFW2hJnQAFCOex251JVYk7ocdj8cqPeRvCRjb2Yb6MVKnXloQD5U5ts1r7RcCspa5cIk6MuYlWUTsQRFUbiN0DG5znTvLaOxIyy6EoxHInKJ9Z0qwdvcUyYZcl0eLw5iYlSCfugwwIHLmal/9KjoRP2exOLc3LVvMrnNOdQsHoSRqDy1pjfsYrDL3d22VMeGCpBUQDDbH0mdutOv2YcQH2e2s/CI+WkVdcTctXABcRHA2zqGAPUSN6VXGjP1HGdnLcHevu2RDdYtsiqokDpB29qvPAezaIC18SxMhc0x6sI8XkNPWm9u5atghEROuRVWflE7VG+OWZ+vL0/OkoxW2OeWUtLQr7TdnCbLvhP8AEg+FiWzdYLa5hyEwdK4sQbV8LcDBw2zAg689etfRNnFoqBs39xO1cu7QcDXFMj3bvduIMgA5Z1KnUCPntVrghY3kf7QoGOJksNxGu0DU/UD51cP2d21u3XuNqLeUAHncPOOigCPM+VVjjHAQti5dt3e97tQ8ZQsrOpGpmFzN55ah/Zzxq5ZN5XS4qPDBijQCBBkxH4frWThS5HRkna4ryMsV2jvC2Xy63blwgxqIMRP/AHaV0HhPFSyK5YlGifIEAhvSDqK45x3FKl4y5CszMpEFSDqUM7ENPsRVp4J2gVrEiAF8Ppl2/wDEgVnFShtHOsdt8h32n4Pbwt8YqyuUXBlZR8KsJYwOQdREDTTzrfgvEMxdDHhIcEaGcxBB66LSHifai3iUSxmaVuK0qJ2VgRPXWmGCxNi192W8OpJzELMbEDTXlzNW4OTs3hqFPZp2sX7Lct4yz4ZuFLgB05lSfYEf6hVnt4hb1lbtvQNo46N19DSbEDDY602HLG2WhgV1hly/iEGIHSROorHYFHtXbuEumYlDGxESrgdCIPvXTjuOmcuVJ9BWIuBSuadTp09TRmHUNPilTB9Ntag4lh/AyH4xInzFR8L8NtRpM6jyroMC4zXqzXqCCq8aUyzZC8XDA6b60VirZKBBIbKDJ96i42SWcKdQ+vvJo7DYdSFLTIUAgnn1rNulbNErBMPh0tavqWmSOorW9dJssxDAnbTWm9rEW00yj+dZfi9vY1n60R8JfRUsTpfUkTnSYjWRQHDMSoxF0XLZgqLmnXUR9KvBxtgkEqpPWBUbYjDgk5EkiJyiY6UpZo12VGMk9oouJ7TO+YW8KxI+EBdPMmpeHcVxl0kHBXZnmkD5tAq6rxO2ohVUegAqC/xqBvWEpx+zpWSXiJSuOWb6yzYUxEnwqYHsaqHEOI2LgIa2BH3l0I/Wrrf7QM93IpLuzeFRvSjj/YvNcN25dFoNGZVXNHUzMUsatnQ5yS2iw47Ci1gLSKCQLKwdJnKDPrTjs+qph7BQ+BbafDtGUVriLK3MEhtksAgykiCQBEkdY5VWex/aJbQOFuEShOSdMyTIA81mI6RXRRyJ2XPF8eRNMrN8hXHf2r3R9pR0EK6ZhyMzz86tPavjgDDKu51PKqX2kF/GMjImZUBUGVWSY8IzMMxAg6fiHWlGlJDlDjG0MOA9ozcwd3Bs0mF7stqdxoPIEA+lexYJwFq3sVS6CJBMl3bNoeYO3lS93NrDdwyNbuNqAylW0IJMx6melIbmNupILVo4t9C5pL3Fv/6jbuLbLMBkZiBGmRshInkZUGp8bwm/jbSFFyICTmYRmGwIE7anXyFE/s87HKyW8RipYP4rds7Zdwz+u4HQj0q54jHBYQaSY5dY0/L2rnk1F68GsXyXRyXh/F7uAvNbnNDQ6jbyYee3zq44PtyjAZmKGPvCPzqs4iy2J4i62ssLBZj8CAASxjkCQAOZgVYX7CJcIL4wjTlZiT694YHtROcFSk6bM0nbrYwvdqQBIuKRH4xNCcO482Jvd3aAYxmdiSVRBuzGduXmTUHCOyNrDM4xRQoNUdtiOsTH8qaYHA28Gjd2NXeSDs7DVUMa93b1JGupjVjovb92XFN+A/i2P7oC34mYglUBAYj8bk/4dsdTrttEVWM5uMToRJXvNkH8KLuVB5nc7nkdeJMXcrMlmm7nkFm+6LkHQCCRaUyAJYgyAG9xbhCZvCsBrkQM34VA0CgaAD1oSNkN8NjsmHdjopGRBuSWzAuTH4Qx9R0mmXBcK1yCi51/EsLE8805T7a9RWvC+Od1bKJADkHUAzEAH6VI3F7jspDRMmBsDpyGg6/Ok48iXNq9DTFdiLOIUi7kdzqMsqZ65hsfaD0rnPGuyeJw13IrM9m42jbEMN0cDZgBuNGjTmB0/gGNiCx1GnvQd/jtu5duWvutcMT1VRJH+oCmp8dGHGUnZU+xnYzEtcuXVKJbDQpcnxNpOUAHQHQnrprBp1xns/iUlriBlUavbOYQOqwCB5xAjerJa4moUKkBFAAFPOBXQZg6+s1alyZPOUEcf4Hi4xA7ti8GBqMpB03O4q5dmbjtxG6X3Hd7bfAv96VQv2hquB4m4tjwtF1FGwz7r6Bg0DpAq/8A7L8LcZGxN3R7rZgN4EADfXQVrTtBKcZQbQ446At5mEaxIPUgRSXNctuDCEEiI10O9MeJXFuX7hVZKsFaTplgQwHrI9qFS1DZDvup29hWxzF1ivV6a9TIOfW7VzPdJZgxxV1g24CqWAB8oFWG67C33iEMY57HTlUGLxFsPctA/eYnyzFp+s1OjEqirtkAnkNDr51DVmidFWu8Z11MHeDoR7VtZxTXPgBPp+tFcQ4Ph8Q83d0IkqYJAGxI5TQXGeI21w917cLat/u7YH3n5+oA/OuV4KfZ2QmpK0ifEl7YBeAG28QPzg6UBiOInk1a8K4taa0pgZo8XOeoPlVM7UYxrN6bTHu31Ubwea0pYFeilKlbLdc40EEs0etLRxO/jLow+GXMzSSToAo3Zj91fOgOEdksZiouXCLSHm/xEeSjb3rovZLgyYHD3ChVrjkDOBBKjYfMk+9LjCPnYpSl4Qr7J9mnwmIN289u4csLkJOXrOYCt+3/ABAlIt8xqefWhr2MfvGOpImQNTVU7U8WzOQvw08cnJbRdU7bOgfsu4ir4fuHIMSPYyR/Me1If2jdj3LZ7QIgZgw0ysI99fKqr2MxlwYy2ltWYv4cq76CZ9o+U12DhXGEvJ3dzRxoD1H610J+Gc0/k2uvJwLH8QxDjJcXxIYJ2OnM9fWulcM4YqYbByrMxsrdYKCSWuHNrGv3lHpbortb2RW547YAb8Q/KCYAobgXF3tj7NcOV0RUR5gErIA1EzEH56c6xyvVUCk4rknZDjuGXWQpcRSDqULSQTvlI20PxKRv6zRsdwIpirNshjbe4i+IagFgDMaEeY/56LY4jcd8txggnKAwEz6++3SgeKpnWFbxo2a28TluAyJ/hIGUgn9a58eZxe+jN5uXyQ57ScYFlG2BOVbfykn0AYCqvi+LNet5cNau3Li/gUtqdNcoOUc9YgbVjs7wC9jovY2/lRSYtiZ323hBM6DU1c71prai1YVbdsQBAA8pMVrKo67OpTvrRVf2ZYN7N2+MRbuISEIzrEx3jMZOhgZfcL5VceFcWti4bQtqisQ2gG5jVp+InSTVPxfFFs4ljcbQhrbGdp2J9CBryk1J9qGcXFBI0PhBI+nLSs27fJoXpo6PxHguHxFk22QZW100g9R+E+n9K5/2sS5hrxVmyqVJS7MsV2yWgdrm2Zj10gb2bgHHRtmmaUftUxqNg2JI7xGU2zzksAR7qTVJxdJCg5Qe+ih376wCfBbWYAOrE6evvvU/CAbxgW1yD7rrcUDzDLz9ar/D1726M7ZjpzAge3l0q/YBVtgBEEAcjB/Wrn7VRtB8t+AqzwW0yyCbbDo+dB7nl6ke9D3MK9ojPGWYDD4T01gax11NEHiEatnHQss6f5hqPX6VKuOVlKOQ6OIKt4ww5iQJPpEjcGayTfkqUfoRca7VpbUojAudyuoQefnvpSLgnFQ98a6AH3muhcA7M2LQJRcynVc2sD8Pt13NVvtnwoK5vW1hhqQNMwrb2NUcylJOhphsVr6cvOrRwPiduzbNy64CqCT+kcz5Vx6z2hZoCAyToI3P61dez/Zu9fVXxUrbGvdnSfXXb5b0KDT2KXGSF+B4e/FeIvjLqFbOYZVPNFACg8uWuu5aOVdQxuKTD2fBoSIQab6669KE+1W8PbABVVB0VQNR0219dBtVK7XcUuMyO6Hurjm2GGyk6gDnJJ3rW23+mVJL8Nv+od0wxLyUIyXQR4mQ7aj7yn+dWDiGJZIKKHK5SAdSbZ5gjpSfCkXbT2ysXEEkczA1055l19ak4BfAUWmbO6DNbYTJssdJnpsR5VsjNnUMterFeqjMoPaQljiSgAKlADznO0z86YWcSVtWWuMEHdzlGuYgGdfeouIknv0ChPET4oJbxiG05HWtApK4a1bUG4S41GgWDJnlGlTZYsxyMMNduWyGbKrN5DUQo+tVLtBeC4a1b5jxH1OtdIHDXtzbIDK4AzDTnsegjnWnGuxWEZSzW3LH8DkD2jSsZSXyR04p8Vxf+jiy8QNs6HTnTvsgBcu9465hbbwT+I1Dx/sRiLRe5H7oNCgHNcKnY5VHtTjh5tWsPbRDkYJmadGmdZB1zRy5VE5LjcTaDcpcX0WLE8dA0zD+Inl+lE8I42Ltq4gMZT4ZP3YifnVHGBxGIUmxZe4oOrAeGf8AMSFnrrNYwXZ/itu4LiYVyRpGZII6Rn2rFYv0vJkjVFoxKgEFPRj5ml1/slbvywdrbHmsFfcH+UVtiMTdtwMRauW2mYYaT5EeE/OpLnGYSJGUkbeQq43Ewex72U4LhuGg3C/eXmEZ20yjmFA2nTzMUp4vxEd+WQ5TvpsetJOKcYzESdKWWnuYi8q25mfE3JR1J/lQuUnsdJKy9YPtGwEPrMamteIPZvCGA256j6RpHl0qtMxAZT9xik9Y2InkR+dDfaTGh9a0Un1IngnuI2xHDnXMbNzxN92540gaTJaRoAJ19KT47DY+ySy28+kZrL5vYqPHPOI51IvEGG/zG1EWuMEahiPf9T/c1LhG7oh40+wfsrxl0JDHKcxLg6Qd9jqKa8Y7V5gYOVfqd9fqaHucVRli5bt3BqPEsx6E7Dfal2JweDuSACnmHIHM88y7entS4JmnQbbsi3bN1wrXSA5LeLID8KKCIznSTynyr1rjN9vGLrKBoRLADpqpAHTWvcQwtu4pAxGXNl+JcwBBY8mHUfKhhwZykW8TazbS4ZAyzzgMP6UaqjZSSHFviz3UZXI7wCEcjxI/KSPiQtoZ6zyqfs5i0veK5btt1a4M2/QH8hFVy/2fxJ+HEYWCAsC6ek/g96NwXDbtuF76xAgaXJ/JfeoljVWmJzT1R0BsBhb9prfd2jpyQIQeqnk1cx4vc+y3mtOZI1UxlJHLbwz+dWvB3wmjXrZ01gsfecu1K+1WEs4vJN7K6to4QtpGo1I0570oXfu6Jtx+IiXiYGguFf8AVI+hqMYxCTLBiem5+WnzFMML2bwIjPdvuTJ+6ikD2Yj586YYZMJaIyYcGRMOS7R/qJBJmdBAj3rX2+AWSXkk4DxG7lVUDOVJgLLaHk0aD6b1YcZhe+EMQnIyQWB6QDvSG7x+4LYVWVYaMgBWAOQ6EdY1g0uxHEmMENlj7vxba+ZB9KVEyfLZZuE8NweCBNq3mf8AE2rn3jQeSj51FjOPs259EHw+/U+p9hVdONZzEmPL+gn2NbIr5WKKz5RJCjkATH9mncn/AEnikMjijcdWuPCllUsdhJjanXafhwex3CgZLvgBOmS6slGHqRE9YpNjMMhsq1s5rZtqxY882quAOW6npFNuGf8A7eDZCW7xDBEwwZfhIPmOfVa3hHijCcuRXuyQa5ZPidcQjd3caRPhOm+4nT0am2MLW71u7aIGUq8HQm2SBdt6aaHUedIGx5t4oXcmRL57nEIfu3V0zTyDCDPnVksyE7spncXBkYESOhbnDAH3mtCDp2WvVnSvUyClYyyWxGI8GuS4cwMkEQRPSRqKN7Jxk7wgSrODrqAxB/TShmKfaLhVCyt3tu4yt8DHMsuDrrEA61WOH8Sexa73KWtj7kbSigO3UgjbzrHI2o6NYJN7Lbce53ju7EWwfCAR4hOnoIonAcQt3QbQcySYG2nr5Us4Hje8KvcMkkqLQAnQAy2vvFScHDfaCosBFuMSHBGirOaI9AJ8682MZJ199o7JNV/CbB2LmHuqZZ7XiEhSTI5Hy8/Kqz2/7PDF3rTW1AuM6pcZNCLbGJPUrNdA4pjltnNroNp/v1qs8Qc3CjKctxSHttyaDPdt5GCPKt64aiZpuW2XXB4K2lpbSIAiqFCxpA8qq/Hey+FBa6veW2ALFbV10BjmFUwD6Udg+09t7Zb7wJBU6EEaEGdtaqPaHtZca5lQiIiBt/WtZzjJV5MoQkn2V7H8fDTZdi6NIQ3DLqeQYx4gdgTqDzNVZeHYp2yp4wSYkxA01J6a1txaBegndgx6gTOlO+BM1x+9YwsQqjTwjT50oeyG9msYubo2wvYu7mU37tvJI7xUnMB5EjXlr51eMLhLNu3lsqAvLL16kzM0nu4uDv0BPTofQ7UmxmJZHItkaEmORB5RWSm5PZ1LGo9D7iiAqSRp5agesgGqdj8OQC67SYjp5foaNw/aAsTNtZG4DAT7aA1Fjr1u4ZNxbYjVSIPPQESCZjUxWsYtEtxaE6Yia2Yig8c6LclSApG08+Z8v61vYxUgkEH21rdQdWjklNJ0yaJ61Gbf9/371jvgdjXs1FBaMqhGx+tbBj1J9/75H8q0D61sHFICVLpH4vp0H6VKuJbmW9/efzoYMKyWNAE5xOmubaPlt/PSsjFRy89TO+422O9Cs9ezDrRQw/7a2g0Ebf3z9xUT3yREkjf/AI10oZHFZLgCTtS4jsmBP18vy+dE24HPn6f39KBuyATA8JUHqC2x15HrUqqrW7kGSJAjQh0+NfQqQw5+E0/TbJeRIYNdbLKLMROo0BJEnykEUVwQ3Lgu2s+QlhesmfESsyhUfEIUiBQGCOS2zBTctNbLLlPiGaFdDpMBofXpTNbP7u1eDDvbWW4kkBxGjoY10Pi9GqoxSMpSciPg73DIIM28zoin/wBBzFwZRuEbK3zrdeLtZvG7ZBKlcl0LqGKwcw21ESPKaLuWmS7YxWGZFW9mYKYJS4VIdP8AISDPLU0LxrDhXzqDku6jLEIQNG3nRwUPpVEjHH8EF3vEdSLeJUNbuHfPoUzA7GSVPkUrTszxN3t5b/hv2mFm4RbLMcpGRmK9CZJOkSan4FxAYuz3DPcF21sHgSmi5Qw+IqYEnX4TQXFsW9vG2sSF7sXCLGIkaZgYW4QDMMIIPQkeVUB2f2r1eivUyClY5HuErbMKLtzOGGjnO/uQIgbVBjOCMuGFokFSoJE63NyBPSYnoAKJ7YsFXLncMt4XhkEnKpDlT5QG+dDWFbvsveG4ve3kbxBjaWO9VCehAYa6jMI0rNo0TAE4W0LcUZLgvJDK28qLZBjca8+Qqfsa19MSGuOGtFr1lBGqlWLAnXY5D8xR+GvZ7PeQNlJQkwHtHcEa66fKtLtq3busltyD3iXoUzGcsII6GG0PWpcIvY1N9DDiF0NcYMRlOx219962wWAgZQMwP0PlSDE4xyFZ/jCK7ATADM6iT5lT70xwfaUqmigaRPnr/T61glxezZ7Wgri/Z7CIHZ7cvdIzsGYa9QAYDee5rkfa3DXsLiMlsh0YZrbneBAIblmBMecg866Bx/jRuZR71XOJYi3cu2QwDEFlM8sylvzQUQfKdVoGnGPZQLhulmd5J2NWPsjjhqpYBxrB/NevmKfXMHZe5cthYzLmU8jBYH/elI+JcCAaV0MgyORJaII23X510zxqUaM8eRwlY8xLk/CNIgg8x/zSrG3AEY/dMCem/wBJg+9QNfvW1lwbgXSRown6Glt/iVtpB00iDpp5jY61zLDKPZ2+tGS7F3GHYajTXlzBoew7kazBFS8TuKyAKZ6+1G9lwzgKoBIJAB+ev5V1Q+Jw5H7tMU3lgjQ69a1Ryp0q5cRwLA/vLXizeE8oIA6denWgMfwwoAzLBWdOomB71dmdCNbrGdDNSW7jT6iaacUwndmQNQJiOcTGn961FhcNop5BgPZ9PltQw2gIYzQHLvWft45g0Y/DiWuWyOQYeQP6GfkaDtYUlsp321B0aNBU8UPkzcY1I8q8uPBPWdBUaYOSViM6yAdCPX50LYstLKNxrpv00+lHFD5sJvY0dDWVxRJygaxIkwOtaY7CldQQREnlH9n8q34coe2UOhUSp3mTpPzIo4oXJm2GuFpUyp6jUbT+tGoguqypMuocL5aq6j0MNQdw91lKyC24Go3BI+cfOmPDMPkOY6G1FwDWTZuGGB6FZDfOjQbMYZWfDjMR4M1lhrJMhlaf4dB71nCYvW3cyD70hQAe/WZzdcy6HyamF7DgtctgSLqnK8areQSrRyzLOvnUVuwHtB0ADXB3mn3MTaJzLHR1/wBtMCPDX+7utctrNu2yvkWSGw90ZWWB0115U6sqqh1uLbRkb925YywUQpPk1owTz1peeIIiWrtvaAzMAJFq4SLlqdwLdw/Jx0plhcQVvsFVEeQpAWQ9thKXbYPJWgNGgDE1LGg/BIcPdGHa2ty1c7y5Yza5b2UyoPmobTnIpbhrmex3XdtYu9472ZOYNm8Vy0GjfQMo61LY4rcuJc7p17yw3fIG+JSpGecxJKh4Gm6tGlNMTiGc2LixctX3S/bOUTZuKNbc6SJUoZ12oXQvImu3LiZblt7aXLU23R4YSAfiKa+K2JBPNPOmpe3eYXLoBN1ERlWYzKwGc8wUdl8W2W6p5Unxzi3eZyjBbyK4ubsJZWUMNPEj57ZBBOijmaP4Pet3Lr92uR7FwE2gCodWXJADDQSWSII1tmqA7RNerEedepkFI7UsxXEqkhjafIZ0zHOsjXceWuvWgbvDgXVrZZGZrLXMpIzB7TKc06MDlg76qKXcSVrmJFu6gVWuYoK9skQiXFdWI5vIJjqK14mly5ZRLRL2U7nus0944S7LM0buMrmTEgnprDNES8HxRa8qFiii5MI0Zf3TEhwRprP50XwS3d729cuEF+4t3CV/gLwoMa6LBNB8G4MAVBcMzEi5rq4BuofFy9tqnweJUXLMo9trttrRtGNhnC5mG5IzGNhHnNJAwPi+OcYW5mt22JLJZAk5mDoyiJ1ANxjJ6CqeMdfDXEWD3dpLjhtCGOSdegLVbONYHENmtJccMjq8hQPAbPjKx+J1gAfh6UDwjCnvsQwUOFD2md4BcqXYBeRBAtATJMUNJ9gm10VjE8VxGYKQFJ1A+8d9vkaFZ7ikXGBBB11ny+smrl2p4cc6XDbW2WlE8RgSrQW0ktnYbUNjsCpuuiIctt2lyc2bMmeR5L0/WhJLoG2+wXhvFZdXaQ2q+2X9Vpm9/OpWevvAQ/8A1al68LD3ka2ZUOQfQZZOvMJcVvSiGwhR/Q78vP8A3CtEIJRIY7cvzM/SsYjgdp1Vikid+en/ABUWDYlxn8xHnvy8lNPeDXAYXLrufUfz3+lMBPf7DWiXysY3Bnlofyaqx2VwzW7mIWCXtsNOUeISeuuX510bht8BVDzlBKRrsDH1DL/21VuK2mscSOQkC/aOv4nTeZGohdvOpYiwXrbuLZuACZXQGVBAM+uh9JFVzHYc3DdshixQsAxMlpJJiNube1OrmOxDlDaKsATJIgHRoSCOkHz9aUcaRrZUffY+JoPiYsAYaIAAuH686Bml3LltESVZdzucsztvoAKX8PtHvnTMYYMu+xgOp/KrFgLfeIiGAAdRtvlBOkmZBoFrItHMh8SO4h/DJXbTzEigDxsaI8CXBBnqMzRrzMOPek+OwhCFgSPEpkdCAfeJIjoKeIhuWrqKsNAvWyOZENl9wse9TX8OHdIAysrFehYAFdjtkz+pA2oAScSSclwADYFj+Ez9IJpNfwdzD4lWIEM+h3BUmN/cGruuFDIlsrPh5kiDqyjMBHIj3qPGYJb1hs6FSuh1B3EHUc4IPyoAq3G7EJc/dyQZJI+6diPcHX0pXwJwLqQfE0gA7Bt119fzq2OgNu1cI8BJtXJ0aTCq0eoU/wCo1XH4a9prtuPHbGdfIjWR5wKSBknEbEXEC/DIcLrIz/1B+Ypth8QpRbzjwImS8RqSlzwNEDdWzH2XrQ+MXvBauCSXEA+bQwE7eG5m9lr3CmW3dCgsLbHWTycenJgNI0INIAjF4e6qL8XerKB1mZtDPbMbS69d9BuK3w9hxam2rZriDFWiIyi8n+LbHMGA3h6Cmfcvcw0ZsuIDLZMmZdIuWnYg6EiVnqQOVAcEF1ftFm2AWA+0W1J0MFe8QNtmA5zyNAA2MvDu2OVGtN+9Tky2bkLdUQBJV4JB5wwofhV9Et/vgxfDEocp+KxdgSPJZJH+ZaaYpEQuVt5kUi9b3/8A5rulxQo0bKTtpBbypZbwjILbMrPbt5rVxgCM+GuapcE7gS3oVANUA/w2HeyyXEW3dck52kr3lsgZgZ0DPZZXmYlW0kaz8PwAvWcTgkuoLebvsKwO6iS6ROYRCsfPNQGAuIqlQlxblsGwNQysVm5bzmNyQyroZn2IuCvopF2GRrbd7ZzHKJZwj2bkAwmZmE9DFSAVetrcti33q3bltRdCgli1tp71B4dwIuCDurbRXkvMhtX0tnOrCxfO4e2dM/mCpRgeRCVLxLDCxcTE4SwEQE3UfMWGVQwuWmB0WGzKQN/Eelb3VRLisr90h7oW2QNDWn8dqZkSpV7Z1/CKoDt8V6vV6mQUXFYG8L7s4PgvXGtzBHduv55p67+ta4G8EFrv5717ao7BYl2tq7ZgBAANxtP4avd34jWBUjs53g7C5u8tMCoOw5DOHgyNyCZ9fKicSe7a0CjeC8BnjTLEt/z6ir41ailQ7KAcE74hbZPh8ZbQkHLd8ImNxbudem8Ut4eG7lJstaIdFYjXO2U251EnRFn1FdRO1ZFUKzkvEeG3GsFbjOcr2nByzlAbM+/L9223UV7hrm33RuBpuG1nVbZyLGay0TtJZfYE11oVkUqCzlfCsKy27YKw3eBGGXaUaxIHTMi7+VF8c4d4zkB8azIEakMw5dVSukVgVSCzk2Iw7AiFO4MwTuVJ18lLUTgwVugkHodDudJ+cV1KvUBZzyzY0YMPwmB1MqOWmuU0i/aZYdbeExCozPaugNAJ0Ik/VR866/WU3pAzkGDwrktadpUnQKkMAYOYNECOhrPEuF3DZtKGJZXYnw6E5WMRG5ZF0OkxXXqxSSHZyDCX5i8ttgX3lT4c2kAEaDw89pra+xuLra8ZHikbOCATqOYJ9Yrr5r1MRybhtnI9sZDAJXblvrptvW74TKCoDBrWwA+6SYjTUgED511WsUMLOX4VHbMoQkBviIKxEGRmGoI109q1OE1dGVwHVsoURrlJO4gNvHLTfWupGvUmOzhN3h1x0v22LgEJctkqWy3UAzKQoJ1AVtAd+tR8dwVzMtwhipSSy7gxDKJEkbjrpXe6yKAs+dOH8PZrF1O7uk2iWtggrKvqCOrB1UaT8Z61i/wm43eLbVvEFcL0bfmAJmdBHxqa+jGrxpis4xwJRduKzhk+0KM8A/4toqATppOhny6V4EpiSO4IVWF4ZcxkXPDdQg6b6Ff4ia7OedYpUFnFsJgWs3LtjLnWwTes7+PC3P8AEtT1CHMB1oe/a7llC96q2z9mZlBbNYu5nS6NRlKNPyX37jy96yKYWcM4Yl5X7t2CBQ2GuXMhlnGburoGWWykCDyA0M1rc4dcttcYlmVw5e2AYMEpcVJ1kOqOpIEyDyrutYFKh2cd7P4R2tXMCO9zK3e2jqEuPBLoD+Egg+ZDa6ipuG8NvuPsyq4bOLgD2xlyMyh0kjQWyMwIO5J3gV1xtq8m49aBWbQehr1T16mI/9k="
+                alt=""
+              />
+              <div>
+                <p>Sirona Hygenic Menstrual Cup Wash, 100ml</p>
                 <div>
-                  <span id="backarrow" class="material-icons">arrow_backt</span> 
+                  <label for="">QTY :</label>
+                  <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
                 </div>
-                 <div>Back to Patient Name</div>
-               </div>
-               <div>
-                 <button id="button">+ADD TEXTS</button>
-               </div>
-             </div>
-             <div id="right">
-               <div id="upperbox">
-                 <h3>TOTAL CHARGES</h3>
-                 <hr>
-                 <p class="p">Please select address to view Offers and Coupons</p>
-                 <div class="box1">
-                   <div>Total MRP</div>
-                   <div>$0.00</div>
-                 </div>
-                 <div class="box2">
-                  <div>Coupen discount</div>
-                  <div>$0</div>
-                </div>
-                <div class="box3">
-                  <div>Home Collection Charges</div>
-                  <div>$0.00</div>
-                </div> <hr>
-                <div class="box4">
-                  <div><h4>TO Pay</h4></div>
-                  <div><h4>$0.00</h4></div>
-                </div>
-               </div>
-
-               <div id="lowerbox">
-                 <button>LOGIN TO CONTINUE</button>
-               </div>
-             </div>
-         </div>
-
-          <div id="footer">
-            <img src="https://newassets.apollo247.com/images/ic_logo.png" alt="" />
-            <h3>About Apollo 247</h3>
-            <ul>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Contact Us / Grievance</a></li>
-              <li><a href="">FAQs</a></li>
-              <li><a href="">Health Queries</a></li>
-              <li><a href="">Terms and Conditions</a></li>
-              <li><a href="">Returns Policy</a></li>
-              <li><a href="">Refund Policy</a></li>
-              <li><a href="">Privacy Policy</a></li>
-              <li><a href="">Apollo 247 Android App</a></li>
-              <li><a href="">Apollo 247 iOS App</a></li>
-              <li><a href="">Apollo Sitemap</a></li>
-              <li><a href="">Online Doctor App</a></li>
-              <li><a href="">Online Medicinee App</a></li>
-              <li><a href="">Apollo Pharmacy</a></li>
-            </ul>
-            <h3>Services</h3>
-            <ul>
-              <li><a href="">Online Doctor Consultation</a></li>
-              <li><a href="">Apollo Circle Membership</a></li>
-              <li><a href="">Online Medicines</a></li>
-              <li><a href="">Project Kavach</a></li>
-              <li><a href="">Cough Scanner</a></li>
-              <li><a href="">Covid Vaccine Tracker</a></li>
-              <li><a href="">Covid Vaccine Update</a></li>
-              <li><a href="">Apollo Pro Health Program</a></li>
-              <li><a href="">Doctors by Speciality</a></li>
-              <li><a href="">Doctors by City</a></li>
-              <li><a href="">All Doctors List</a></li>
-            </ul>
-            <h3>Top Specialties</h3>
-            <ul>
-              <li><a href="">Covid Consultation</a></li>
-              <li><a href="">Consult Physicians</a></li>
-              <li><a href="">Consult Dermatologists</a></li>
-              <li><a href="">Consult Paediatricians</a></li>
-              <li><a href="">Consult Gynaecologists</a></li>
-              <li><a href="">Consult Gastroenterologists</a></li>
-              <li><a href="">Consult Cardiologists</a></li>
-              <li><a href="">Consult Dietitians</a></li>
-              <li><a href=""> consult ENT Specialists</a></li>
-              <li><a href="">Consult Geriatricians</a></li>
-              <li><a href="">Consult Diabetologists</a></li>
-            </ul>
-            <h3>Book lab Tests at Home</h3>
-            <ul>
-              <li><a href="">RT PCR Test At Home</a></li>
-              <li><a href="">Book Lab Tests at Home</a></li>
-              <li><a href="">Renal Profile (KFT, RFT Test)</a></li>
-              <li><a href="">Hemogram Test</a></li>
-              <li><a href="">Lipid Profile Test</a></li>
-              <li><a href="">Thyroid Profile Test(T3 T4 Tsh Test)</a></li>
-              <li><a href="">D Dimer Test</a></li>
-              <li><a href="">Urine Culture Test</a></li>
-              <li><a href="">Complete Blood Count (CBC Test)</a></li>
-              <li><a href="">Widal test</a></li>
-              <li><a href="">Liver Function Test (LFT Test)</a></li>
-            </ul>
-            <h3>Product Categories</h3>
-            <ul>
-              <li><a href="">View all Brands</a></li>
-              <li><a href="">Health Care</a></li>
-              <li><a href="">Persnal Care</a></li>
-              <li><a href="">Baby Care</a></li>
-              <li><a href="">Nutrition</a></li>
-              <li><a href="">Healthcare Devices</a></li>
-              <li><a href="">Beauty Skin Care</a></li>
-              <li><a href="">Immunity Boosters</a></li>
-              <li><a href="">Coronavirus Prevention</a></li>
-              <li><a href="">Diabetes Care</a></li>
-              <li><a href="">Patanjali Coronil Kit</a></li>
-              <li><a href="">Mamaearth Products</a></li>
-            </ul>
+              </div>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <p>$100</p>
+                <h3>189</h3>
+                <p>100-189</p>
+              </div>
+            </div>
+            <!-- -----------------push Content Here--------------- -->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
+        </div>
+
+        <div id="right">
+          <div id="upperbox">
+            <h3>TOTAL CHARGES</h3>
+            <hr />
+            <p class="p">Please select address to view Offers and Coupons</p>
+            <div class="box1">
+              <div>Total MRP</div>
+              <div id="tprice">$0.00</div>
+            </div>
+            <div class="box2">
+              <div>Coupen discount</div>
+              <div id="discountprice">$0</div>
+            </div>
+            <div class="box3">
+              <div>Home Collection Charges</div>
+              <div id="dvcharge">$0.00</div>
+            </div>
+            <hr />
+            <div class="box4">
+              <div><h4>TO Pay</h4></div>
+              <div id="toprice"><h4>$0.00</h4></div>
+            </div>
+          </div>
+
+          <div id="lowerbox">
+            <button>LOGIN TO CONTINUE</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <img src="https://newassets.apollo247.com/images/ic_logo.png" alt="" />
+        <h3>About Apollo 247</h3>
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us / Grievance</a></li>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">Health Queries</a></li>
+          <li><a href="">Terms and Conditions</a></li>
+          <li><a href="">Returns Policy</a></li>
+          <li><a href="">Refund Policy</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Apollo 247 Android App</a></li>
+          <li><a href="">Apollo 247 iOS App</a></li>
+          <li><a href="">Apollo Sitemap</a></li>
+          <li><a href="">Online Doctor App</a></li>
+          <li><a href="">Online Medicinee App</a></li>
+          <li><a href="">Apollo Pharmacy</a></li>
+        </ul>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="">Online Doctor Consultation</a></li>
+          <li><a href="">Apollo Circle Membership</a></li>
+          <li><a href="">Online Medicines</a></li>
+          <li><a href="">Project Kavach</a></li>
+          <li><a href="">Cough Scanner</a></li>
+          <li><a href="">Covid Vaccine Tracker</a></li>
+          <li><a href="">Covid Vaccine Update</a></li>
+          <li><a href="">Apollo Pro Health Program</a></li>
+          <li><a href="">Doctors by Speciality</a></li>
+          <li><a href="">Doctors by City</a></li>
+          <li><a href="">All Doctors List</a></li>
+        </ul>
+        <h3>Top Specialties</h3>
+        <ul>
+          <li><a href="">Covid Consultation</a></li>
+          <li><a href="">Consult Physicians</a></li>
+          <li><a href="">Consult Dermatologists</a></li>
+          <li><a href="">Consult Paediatricians</a></li>
+          <li><a href="">Consult Gynaecologists</a></li>
+          <li><a href="">Consult Gastroenterologists</a></li>
+          <li><a href="">Consult Cardiologists</a></li>
+          <li><a href="">Consult Dietitians</a></li>
+          <li><a href=""> consult ENT Specialists</a></li>
+          <li><a href="">Consult Geriatricians</a></li>
+          <li><a href="">Consult Diabetologists</a></li>
+        </ul>
+        <h3>Book lab Tests at Home</h3>
+        <ul>
+          <li><a href="">RT PCR Test At Home</a></li>
+          <li><a href="">Book Lab Tests at Home</a></li>
+          <li><a href="">Renal Profile (KFT, RFT Test)</a></li>
+          <li><a href="">Hemogram Test</a></li>
+          <li><a href="">Lipid Profile Test</a></li>
+          <li><a href="">Thyroid Profile Test(T3 T4 Tsh Test)</a></li>
+          <li><a href="">D Dimer Test</a></li>
+          <li><a href="">Urine Culture Test</a></li>
+          <li><a href="">Complete Blood Count (CBC Test)</a></li>
+          <li><a href="">Widal test</a></li>
+          <li><a href="">Liver Function Test (LFT Test)</a></li>
+        </ul>
+        <h3>Product Categories</h3>
+        <ul>
+          <li><a href="">View all Brands</a></li>
+          <li><a href="">Health Care</a></li>
+          <li><a href="">Persnal Care</a></li>
+          <li><a href="">Baby Care</a></li>
+          <li><a href="">Nutrition</a></li>
+          <li><a href="">Healthcare Devices</a></li>
+          <li><a href="">Beauty Skin Care</a></li>
+          <li><a href="">Immunity Boosters</a></li>
+          <li><a href="">Coronavirus Prevention</a></li>
+          <li><a href="">Diabetes Care</a></li>
+          <li><a href="">Patanjali Coronil Kit</a></li>
+          <li><a href="">Mamaearth Products</a></li>
+        </ul>
+      </div>
     </div>
-</body>
+    <div id="bot">
+      <img src="https://newassets.apollo247.com/images/ic-mascot.png" alt="" />
+    </div>
+    <!-- -------------------End of bot------------------------------------ -->
+  </body>
 </html>
+
+<script src="nav.js"></script>
