@@ -6,20 +6,17 @@
 
 #div2{
     display: flex;
-    width: 100%;
 }
 #img{
     width: 70%;
-    margin-left: 40px;
     margin-top: 50px;
+    margin-right: 15px;
 }
 #right{
     border: 1px solid whitesmoke;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
     width: 30%;
-    margin-left: 20px;
-    margin-right: 40px;
     margin-top: 50px;
 }
 .pres{
@@ -51,26 +48,30 @@ button{
     background-color: rgb(255, 186, 57);
     color: #ffffff;
 }
-
+#category{
+    display: flex;
+}
 #category > h4{
-    margin-left: 45px;
     margin-top: 50px;
     font-family: sans-serif;
     font-weight: 700;
     color: #02475b;
     letter-spacing: 1px;
 }
+.viewall {
+    color: #fcb716;
+    cursor: pointer;
+  }
 
 #div3{
-    display: flex;
-    width: 100%;
-    margin-left: 20px;
-    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    margin-top: 0px;
+    align-content: center;
 }
 #div3 > div{
-    width: 11%;
-    height: 170px;
-    margin-left: 27px;
     border: 1px solid whitesmoke;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
@@ -80,16 +81,14 @@ button{
     margin-left: 30%;
 }
 #div3 > div > p{
+    padding-top: 10px;
+    padding-bottom: 15px;
     text-align: center;
     font-family: sans-serif;
     font-weight: 700;
     color: #02475b;
 }
 #div4{
-    width: 90%;
-    height: 180px;
-    margin-left: 55px;
-    margin-right: 30px;
     margin-top: 70px;
     border: 1px solid whitesmoke;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -99,36 +98,35 @@ button{
     width: 100%;
     height: 100%;
 }
+#healthCheackup{
+    display: flex;
+}
 #healthCheackup > h4{
-    margin-left: 50px;
     margin-top: 50px;
     font-family: sans-serif;
     font-weight: 700;
     color: #02475b;
+    letter-spacing: 1px;
 }
 
 #div5{
-    display: flex;
-    width: 100%;
-    margin-left: 20px;
-    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    margin-top: 0px;
+    align-content: center;
 }
 #div5 > div{
-    width: 30%;
-    height: 250px;
-    margin-left: 20px;
     border: 1px solid whitesmoke;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
 }
 
 #div6{
-    width: 92%;
-    height: 80px;
-    border: 1px solid whitesmoke;
+   border: 1px solid whitesmoke;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
-    margin-left: 40px;
     margin-top: 50px;
 }
 #div6 > img{
@@ -141,9 +139,12 @@ button{
     font-family: sans-serif;
     font-weight: bolder;
     margin-left: 20px;
+    margin-bottom: 20%;
+}
+#tests{
+    display: flex;
 }
 #tests > h4{
-    margin-left: 50px;
     margin-top: 50px;
     font-family: sans-serif;
     font-weight: 700;
@@ -154,55 +155,101 @@ button{
 #div7{
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(10, 200px);
-    grid-gap: 10px;
-    overflow-x: scroll;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
     align-content: center;
-    margin-left: 15px;
+    /* margin-left: 15px; */
+    
 }
-#div7 > div{
-    height: 250px;
-    width: 80%;
+#div7 > div{ 
     border: 1px solid whitesmoke;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
-    margin-left: 25px;
+}
+.imgg{
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.typetitle{
+    margin-left: 10px;
     margin-top: 0px;
+    font-family: sans-serif;
+    color: #02475b;
+    font-weight: 600;
+}
+.typepara{
+    font-size: smaller;
+    margin-left: 10px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    color: #02475b;
+}
+.hor{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.typeprice{
+    margin-left: 10px;
+    margin-top: 40px;
+    font-family: sans-serif;
+    color: #02475b;
+    font-weight: 600;
+}
+.button{
+    margin-left: 10px;
+    margin-top: 0px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #fcb714;
 }
 
 #diabetes > h4{
-    margin-left: 50px;
     margin-top: 40px;
     font-family: sans-serif;
     font-weight: 700;
     color: #02475b;
     letter-spacing: 1px;
 }
-
+#diabetes{
+    display: flex;
+}
 #div8{
     display: grid;
-    width: 95%;
     grid-template-rows: auto;
-    grid-template-columns: repeat(10, 200px);
-    grid-gap: 10px;
-    overflow-x: scroll;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
     align-content: center;
-    margin-left: 15px;
 }
 #div8 > div{
-    height: 250px;
-    width: 80%;
     border: 1px solid whitesmoke;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
-    margin-left: 25px;
+}
+/* #div8 > div > typeprice{
     margin-top: 0px;
+} */
+.disc{
+    margin-left: 10px;
+    margin-top: 0px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #34aa55;
+    font-size: smaller;
+}
+.mrpp{
+    margin-left: 10px;
+    margin-top: 0px;
+    font-weight: 700;
+    color: gray;
+    font-family: sans-serif;
+    font-size: small;
 }
 #booking > h4{
-    margin-left: 50px;
     margin-top: 40px;
     font-family: sans-serif;
-    font-weight: 700;
+    font-weight: bold;
     color: #818b8d;
     letter-spacing: 1px;
 }
@@ -214,11 +261,7 @@ button{
     border: 1px solid whitesmoke;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
-    width: 93%;
-    height: 180px;
     margin-top: 5px;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 #div9 > div{
     margin: auto;
@@ -226,13 +269,15 @@ button{
     font-family: sans-serif;
     text-align: center;
     font-weight: bold;
-    font-size: medium;
-    line-height: 20px;
+    font-size: small;
+    line-height: 10px;
     letter-spacing: 1px;
+}
+#wellness{
+    display: flex;
 }
 
 #wellness > h4{
-    margin-left: 50px;
     margin-top: 40px;
     font-family: sans-serif;
     font-weight: 700;
@@ -242,22 +287,15 @@ button{
 
 #div10{
     display: grid;
-    width: 95%;
     grid-template-rows: auto;
-    grid-template-columns: repeat(10, 200px);
-    grid-gap: 10px;
-    overflow-x: scroll;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
     align-content: center;
-    margin-left: 15px;
-}
+    }
 #div10 > div{
-    height: 250px;
-    width: 80%;
     border: 1px solid whitesmoke;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
-    margin-left: 25px;
-    margin-top: 0px;
 }
 #div11{
     margin-top: 150px;
