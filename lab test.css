@@ -57,14 +57,14 @@ button{
     color: #02475b;
     letter-spacing: 1px;
 }
-.viewall {
+#viewall {
     color: #fcb716;
     cursor: pointer;
     margin-top: 50px;
     font-family: sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
-  }
+}
 
 #div3{
     display: grid;
@@ -103,6 +103,7 @@ button{
 }
 #healthCheackup{
     display: flex;
+    justify-content: space-between;
 }
 #healthCheackup > h4{
     margin-top: 50px;
@@ -146,6 +147,7 @@ button{
 }
 #tests{
     display: flex;
+    justify-content: space-between;
 }
 #tests > h4{
     margin-top: 50px;
@@ -161,8 +163,6 @@ button{
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 15px;
     align-content: center;
-    /* margin-left: 15px; */
-    
 }
 #div7 > div{ 
     border: 1px solid whitesmoke;
@@ -175,38 +175,6 @@ button{
     margin-top: 10px;
     margin-left: 10px;
 }
-.typetitle{
-    margin-left: 10px;
-    margin-top: 0px;
-    font-family: sans-serif;
-    color: #02475b;
-    font-weight: 600;
-}
-.typepara{
-    font-size: smaller;
-    margin-left: 10px;
-    margin-top: 0px;
-    font-family: sans-serif;
-    color: #02475b;
-}
-.hor{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.typeprice{
-    margin-left: 10px;
-    margin-top: 40px;
-    font-family: sans-serif;
-    color: #02475b;
-    font-weight: 600;
-}
-.button{
-    margin-left: 10px;
-    margin-top: 0px;
-    font-weight: 700;
-    font-family: sans-serif;
-    color: #fcb714;
-}
 
 #diabetes > h4{
     margin-top: 40px;
@@ -217,6 +185,7 @@ button{
 }
 #diabetes{
     display: flex;
+    justify-content: space-between;
 }
 #div8{
     display: grid;
@@ -230,25 +199,6 @@ button{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
 }
-/* #div8 > div > typeprice{
-    margin-top: 0px;
-} */
-.disc{
-    margin-left: 10px;
-    margin-top: 0px;
-    font-weight: 800;
-    font-family: sans-serif;
-    color: #34aa55;
-    font-size: smaller;
-}
-.mrpp{
-    margin-left: 10px;
-    margin-top: 0px;
-    font-weight: 700;
-    color: gray;
-    font-family: sans-serif;
-    font-size: small;
-}
 #booking > h4{
     margin-top: 40px;
     font-family: sans-serif;
@@ -258,6 +208,8 @@ button{
 }
 * small{
     font-weight: 100;
+    font-size: medium;
+    font-weight: bold;
 }
 #div9{
     display: flex;
@@ -278,6 +230,7 @@ button{
 }
 #wellness{
     display: flex;
+    justify-content: space-between;
 }
 
 #wellness > h4{
@@ -308,4 +261,90 @@ button{
     letter-spacing: .5px;
     font-family: sans-serif;
     color: #02475b;
+}
+.typepara{
+    font-size: smaller;
+    margin-left: 15px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    color: #02475b;
+}
+.disc{
+    margin-left: 15px;
+    margin-top: 0px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #34aa55;
+    font-size: smaller;
+}
+.typetitle{
+    margin-left: 15px;
+    margin-top: 15px;
+    font-family: sans-serif;
+    color: #02475b;
+    font-weight: 600;
+}
+.typeinc{
+    margin-left: 15px;
+    margin-top: 40px;
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: #02475b;
+}
+.typeline{
+    font-size: x-small;
+    font-weight: bold;
+    margin-left: 15px;
+    font-family: sans-serif;
+    color: #02475b;
+}
+.typeex{
+    margin-left: 15px;
+    margin-top: 0px;
+    font-weight: 800;
+    font-size: x-small;
+    font-family: sans-serif;
+    color: #fcb714;
+}
+.hor{
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.mrpp{
+    margin-left: 15px;
+    margin-top: 0px;
+    font-weight: 700;
+    color: gray;
+    font-family: sans-serif;
+    font-size: smaller;
+}
+.discount{
+    margin-left: 15px;
+    margin-top: 0px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #34aa55;
+    font-size: x-small;
+}
+.typeprice{
+    margin-left: 15px;
+    font-family: sans-serif;
+    color: #02475b;
+    font-weight: 800;
+}
+.savings{
+    margin-left: 15px;
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: x-small;
+    font-family: sans-serif;
+    color: #02475b;
+}
+.button{
+    margin-left: 15px;
+    margin-top: 0px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #fcb714;
 }

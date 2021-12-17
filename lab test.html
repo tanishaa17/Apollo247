@@ -77,7 +77,7 @@
 
        <div id="category">
         <h4 class="pop">POPULAR CATEGORIES(31)</h4>
-        <h4 class="viewall">VIEW ALL</h4>
+        <h4 id="viewall"VIEW ALL</h4>
        </div>
 
        <div id="div3">
@@ -118,7 +118,7 @@
 
     <div id="healthCheackup">
         <h4 class="pop">POPULAR HEALTH CHECKUP PACKAGE (84)</h4>
-        <h4 class="viewall" >VIEW ALL</h4>
+        <h4 id="viewall">VIEW ALL</h4>
        </div>
 
     <div id="div5"> </div>
@@ -130,14 +130,14 @@
 
     <div id="tests">
         <h4 class="pop">TOP BOOKED TESTS(16)</h4>
-        <h4 class="viewall" >VIEW ALL</h4>
+        <h4 id="viewall">VIEW ALL</h4>
        </div>
 
        <div id="div7"> </div>
 
        <div id="diabetes">
         <h4 class="pop">DIABETES SCREENING(27)</h4>
-        <h4 class="viewall" >VIEW ALL</h4>
+        <h4 id="viewall">VIEW ALL</h4>
        </div>
 
        <div id="div8"></div>
@@ -171,7 +171,7 @@
 
     <div id="wellness">
         <h4 class="pop">WOMEN WELLNESS(18)</h4>
-        <h4 class="viewall" >VIEW ALL</h4>
+        <h4 id="viewall">VIEW ALL</h4>
        </div>
 
        <div id="div10"></div>
@@ -359,76 +359,97 @@
         {
             title : "Special Health Package Premium",
             inc : "TOTAL INCLUSIONS : 60",
-            hba : "Hba1c, Glycated Hemoglobin",
-            est : "Estimated Average Glucose (Eag)",
-            vit : "Vitamin D (25 - Oh Vitamin D) + 57 More",
+            line1 : "Hba1c, Glycated Hemoglobin",
+            line2 : "Estimated Average Glucose (Eag)",
+            line3 : "Vitamin D (25 - Oh Vitamin D) + 57 More",
+            extra : "+5 More",
             MRP : "6530",
+            dis : "54% Off",
             price : "2824",
+            save : "948",
         },
 
         {
             title : "Special Health Package Premium",
             inc : "TOTAL INCLUSIONS : 60",
-            hba : "Hba1c, Glycated Hemoglobin",
-            est : "Estimated Average Glucose (Eag)",
-            vit : "Vitamin D (25 - Oh Vitamin D) + 57 More",
+            line1 : "Hba1c, Glycated Hemoglobin",
+            line2 : "Estimated Average Glucose (Eag)",
+            line3 : "Vitamin D (25 - Oh Vitamin D) + 57 More",
+            extra : "+5 More",
             MRP : "6530",
+            dis : "54% Off",
             price : "2824",
+            save : "948",
         },
 
         {
             title : "Special Health Package Premium",
             inc : "TOTAL INCLUSIONS : 60",
-            hba : "Hba1c, Glycated Hemoglobin",
-            est : "Estimated Average Glucose (Eag)",
-            vit : "Vitamin D (25 - Oh Vitamin D) + 57 More",
+            line1 : "Hba1c, Glycated Hemoglobin",
+            line2 : "Estimated Average Glucose (Eag)",
+            line3 : "Vitamin D (25 - Oh Vitamin D) + 57 More",
+            extra : "+5 More",
             MRP : "6530",
+            dis : "54% Off",
             price : "2824",
+            save : "948",
         },
     ]
 
-    // healthCheackup.map(function(elems){
-    //     var card4 = document.createElement("div");
-    //     card4.setAttribute("class", "cards");
+    healthCheackup.map(function(elems){
+            var card4 = document.createElement("div");
+            card4.setAttribute("class", "cards");
+    
+             var name = document.createElement("p");
+             name.textContent = elems.title;
+             name.setAttribute("class", "typetitle");
 
-    //     var name = document.createElement("p");
-    //     name.textContent = elems.title;
-    //     name.setAttribute("class", "typetitle");
+             var para = document.createElement("p");
+             para.textContent = elems.inc;
+             para.setAttribute("class", "typeinc");
 
-    //     var para = document.createElement("p");
-    //     para.textContent = elems.inc;
-    //     para.setAttribute("class", "inclusions");
+             var linee1 = document.createElement("p");
+             linee1.textContent = elems.line1;
+             linee1.setAttribute("class", "typeline");
 
-    //     var line1 = document.createElement("h5");
-    //     line1.textContent = elems.hba;
-    //     line1.setAttribute("class", "htag");
+             var linee2 = document.createElement("p");
+             linee2.textContent = elems.line2;
+             linee2.setAttribute("class", "typeline");
 
-    //     var line2 = document.createElement("h5");
-    //     line2.textContent = elems.est;
-    //     line2.setAttribute("class", "htag");
+             var linee3 = document.createElement("p");
+             linee3.textContent = elems.line3;
+             linee3.setAttribute("class", "typeline");
 
-    //     var line3 = document.createElement("h5");
-    //     line3.textContent = elems.vit;
-    //     line3.setAttribute("class", "htag");
+             var extraa = document.createElement("p");
+             extraa.textContent = elems.extra;
+             extraa.setAttribute("class", "typeex");
 
-    //     var horz = document.createElement("hr");
-    //     horz.setAttribute("class", "hor");
+             var horz = document.createElement("hr");
+             horz.setAttribute("class", "hor");
 
-    //     var mrp = document.createElement("p");
-    //     mrp.textContent = "MRP  " + "Rs." + elems.MRP;
-    //     mrp.setAttribute("class", "mrpp");
+             var mrp = document.createElement("p");
+             mrp.textContent = "MRP " + "Rs. " + elems.MRP;
+             mrp.setAttribute("class", "mrpp");
 
-    //     var price = document.createElement("p");
-    //     price.textContent = elems.price;
-    //     price.setAttribute("class", "typeprice");
+             var disc = document.createElement("p");
+             disc.textContent = "Rs. " + elems.dis;
+             disc.setAttribute("class", "discount");
 
-    //     var but = document.createElement("p");
-    //     but.innerHTML = "ADD TO CART";
-    //     but.setAttribute("class", "button");
+             var price = document.createElement("p");
+             price.textContent = "Rs. " + elems.price;
+             price.setAttribute("class", "typeprice");
 
-    //     cards.append(name, para, line1, line2, line3, horz, mrp, price, but);
-    //     document.getElementById(div5).append(card4);
-    // });
+             var sav = document.createElement("p");
+             sav.textContent = "Save " + "Rs. " + elems.save;
+             sav.setAttribute("class", "savings");
+
+             var but = document.createElement("p");
+             but.innerHTML = "ADD TO CART";
+             but.setAttribute("class", "button");
+
+             card4.append(name, para, linee1, linee2, linee3, extraa, horz, mrp, disc, price, sav, but);
+             document.getElementById("div5").append(card4);
+    });
 
     var tests = [
         {
