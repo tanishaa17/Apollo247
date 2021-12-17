@@ -1,0 +1,36 @@
+#profile{
+    display: flex;
+    border: 1px solid red ;
+    width: 100%;
+    background-color: whitesmoke;
+    height: 750px;
+}
+#profile > div {
+     margin-top:100px ;
+}
+#profile > div:first-child {
+     width: 33%;
+     border: 1px solid green;
+}
+#profile > div:last-child {
+    width: 65%;
+    border: 1px solid blue;
+    margin-left: 2%;
+    align-content: center;
+}
+#profile > div >button {
+    border-radius: 5px;
+    margin-left: 28%;
+    margin-top: 2%;
+    cursor: pointer;
+    border: white;
+    color: white;
+    padding: 12px 70px;
+    background-color:orange
+}
+#profile > div > div {
+    margin: auto;
+    margin-top: 20px;
+    width: 60%;
+    height: 30%;
+}

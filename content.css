@@ -1,0 +1,105 @@
+#content{
+    display: flex;
+    border: 1ps solid red transparent;
+    width: 100%;
+    background-color: whitesmoke;
+
+}
+#content > div {
+    margin-top: 100px;
+}
+#left{
+    border: 1px solid blue transparent;
+    width: 66%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    background-color: whitesmoke;
+}
+#left > div {
+    margin-top: 20px;
+}
+#left > div:first-child{
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    color: darkslateblue;
+}
+#button {
+    font-weight: bold;
+   border-radius: 10px;
+   cursor: pointer;
+   background-color: floralwhite;
+   color: orange;
+   border-color: orange;
+    padding: 10px 15px
+}
+
+#right{
+    width: 32%;
+    border: 1px solid green transparent;
+    margin-left: 1%;
+    background-color: white;
+}
+.box1{
+    display: flex;
+    justify-content: space-between;
+}
+.box2{
+    display: flex;
+    justify-content: space-between;
+
+}
+.box3{
+    display: flex;
+    justify-content: space-between;
+}
+.box4{
+    display: flex;
+    justify-content: space-between;
+}
+#upperbox{
+    border-radius: 10px;
+    margin: 20px;
+    background-color:whitesmoke
+    
+}
+#upperbox > div {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: midnightblue
+}
+#upperbox > h3 {
+    padding: 10px;
+    font-size: 18px;
+}
+#lowerbox{
+    margin-top: 250px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#lowerbox > button{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: white;
+    color: white;
+    padding: 12px 70px;
+    margin-bottom: 20px;
+    background-color:orange
+}
+.p{
+    background-color: lightyellow;
+    margin-left: 10px;
+}
+.box2 > div {
+    color: limegreen;
+}
+#backarrow {
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
