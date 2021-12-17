@@ -1,0 +1,149 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+body {
+  background-color: #dcdfce;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+#main {
+  width: 80%;
+  background-color: #dcdfce;
+  margin: auto;
+}
+#content {
+  padding-top: 10px;
+  display: flex;
+  padding-top: 70px;
+  border: 1p solid red;
+  width: 100%;
+  background-color: whitesmoke;
+}
+#crack {
+  width: 66%;
+}
+#left {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  font-size: smaller;
+  font-weight: lighter;
+  margin: 25px;
+  background-color: whitesmoke;
+}
+#left > div {
+  margin-top: 20px;
+}
+#left > div:first-child {
+  display: flex;
+  color: #02475b;
+  font-size: 16px;
+}
+#button {
+  width: 140px;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid;
+  cursor: pointer;
+  background-color: floralwhite;
+  color: orange;
+  border-color: orange;
+}
+
+#right {
+  width: 32%;
+  margin-left: 1%;
+  background-color: white;
+}
+.box1 {
+  display: flex;
+  justify-content: space-between;
+}
+.box2 {
+  display: flex;
+  justify-content: space-between;
+}
+.box3 {
+  display: flex;
+  justify-content: space-between;
+}
+.box4 {
+  display: flex;
+  justify-content: space-between;
+}
+#upperbox {
+  border-radius: 10px;
+  margin-top: 100px;
+  margin: 20px;
+  background-color: #f7f8f5;
+  padding: 5px 10px;
+}
+#upperbox > div {
+  margin-top: 10px;
+  font-size: small;
+  color: #02475b;
+}
+#upperbox > h3 {
+  color: #02475b;
+  padding: 10px;
+  font-size: small;
+}
+#lowerbox {
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#lowerbox > button {
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding: 12px 70px;
+  margin-bottom: 20px;
+  background-color: orange;
+}
+.p {
+  background-color: lightyellow;
+  margin-left: 10px;
+  font-size: smaller;
+}
+.box2 > div {
+  color: limegreen;
+}
+#backarrow {
+  font-size: 23px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#itemscart {
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+}
+#itemscart > div {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  height: 150px;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-bottom: 10px;
+  color: #02475b;
+}
+#itemscart > div > img {
+  width: 100%;
+  height: 100%;
+}
+#itemscart > div > div {
+  padding-left: 10px;
+}
+#itemscart > div > div:nth-child(3) {
+  text-align: right;
+  line-height: 5px;
+}
+#itemscart > div > div:nth-child(3) > i {
+  margin-bottom: 30px;
+  padding: 10px 10px 0px 0px;
+}

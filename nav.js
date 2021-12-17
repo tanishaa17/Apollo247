@@ -21,3 +21,9 @@ document.querySelector("#accountsymbol").addEventListener("click", navlogin);
 function navlogin() {
   window.location.href = "login.html";
 }
+
+document.querySelector("#cartsymbol").addEventListener("click", navcart);
+
+function navcart() {
+  window.location.href = "cart.html";
+}
