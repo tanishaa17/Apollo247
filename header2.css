@@ -1,0 +1,59 @@
+#header {
+    width: 79%;
+    background-color: white;
+    height: 85px;
+    display: flex;
+    position: fixed;
+    padding-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  #header > div {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 13px;
+    margin-top: 33px;
+  }
+  #header > DIV > h4 {
+    color: #02475b;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  #header > DIV > p {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    color: #67919d;
+  }
+  #cartsymbol {
+    padding: 33px 0px 31px 16px;
+    margin-right: 0px;
+    cursor: pointer;
+  }
+  #cartcount {
+    color: white;
+    width: 14px;
+    height: 14px;
+    font-size: 9px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    line-height: 14px;
+    border-radius: 50%;
+    background-color: #ff748e;
+    margin-top: 33px;
+    padding-left: 0px;
+  }
+  #accountsymbol {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #02475b;
+    margin: 22px 15px 15px 15px;
+  }
+  #apolloimage {
+    cursor: pointer;
+    width: 80px;
+    height: 60px;
+    margin: 25px 40% 15px 25px;
+  }
+  
