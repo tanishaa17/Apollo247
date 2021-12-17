@@ -7,7 +7,7 @@
     <style>
         #page{
             width: 80%;
-            border: 1px solid;
+            /* border: 1px solid; */
             margin: auto;
         }
         #div1{
@@ -15,30 +15,33 @@
             width: 100%;
             margin-left: 40px;
             margin-top: 40px;
+            border: 1px solid;
         }
         #searchBar{
-            width: 100%;
-            height: 70px;
+            border: 1px solid red;
+            width: 200%;
+            height: 60px;
             font-family: sans-serif;
             font-size: large;
-            border: none;
+            /* border: none; */
             border-radius: 10px;
             background-color: #f3f3f3;
         }
-        /* #orders{
+        #orders{
+            border: 1px solid red;
             width: 100%;
-            height: 70px;
+            height: 60px;
             padding-left: 20%;
-            margin-left: 100px;
+            margin-right: 0px;
             font-size: large;
             font-family: sans-serif;
             border-radius: 10px;
             color: rgb(116, 109, 109);
             font-weight: bold;
-            border: none;
+            /* border: none; */
             background-color: #f3f3f3;
-        } */
-        #div2{
+        }
+        /* #div2{
             display: flex;
             width: 100%;
         }
@@ -66,7 +69,7 @@
         }
         .pres > h3{
             margin-left: 15px;
-            margin-right: 10px;
+            margin-right: 50px;
             margin-top: 30px;
             font-weight: 600;
             color: #02475b;
@@ -78,13 +81,13 @@
             margin-left: 20px;
             margin-right: 20px;
             margin-top: 10px;
-            padding: 20px 90px;
+            padding: 10px 90px;
             border: none;          
             border-radius: 10px; 
             background-color: rgb(255, 186, 57);
             color: #ffffff;
-        }
-        #div3{
+        } */
+        /* #div3{
             display: flex;
             width: 100%;
             margin-left: 20px;
@@ -107,8 +110,8 @@
             font-family: sans-serif;
             font-weight: 700;
             color: #02475b;
-        }
-        #div4{
+        } */
+        /* #div4{
             width: 90%;
             height: 250px;
             margin-left: 65px;
@@ -118,7 +121,11 @@
             box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
             border-radius: 10px;
         }
-        #div5{
+        #div4 > img{
+            width: 100%;
+            height: 100%;
+        } */
+        /* #div5{
             display: flex;
             width: 100%;
             margin-left: 20px;
@@ -131,7 +138,7 @@
             border: 1px solid whitesmoke;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
             border-radius: 10px;
-        }
+        } */
         #div5 > div > h3{
             font-family: sans-serif;
             font-size: larger;
@@ -148,7 +155,7 @@
             color: #02475b;
             font-weight: bold;
         }
-        #div6{
+        /* #div6{
             width: 92%;
             height: 80px;
             border: 1px solid whitesmoke;
@@ -167,12 +174,11 @@
             font-family: sans-serif;
             font-weight: bolder;
             margin-left: 20px;
-        }
+        } */
         #div7{
             display: flex;
             width: 95%;
             margin-left: 15px;
-            
         }
         #div7 > div{
             height: 300px;
@@ -183,31 +189,25 @@
             margin-left: 25px;
             margin-top: 80px;
         }
-        #div7 > div > h5{
+        #div7 > div > img{
             margin-left: 10px;
-            margin-top: 0px;
-            color: #34aa55;
-           font-family: sans-serif;
+            margin-top: 10px;
         }
-        #div7 > div > p, del{
+        #h33{
             margin-left: 10px;
-            margin-top: 0px;
-            font-family: sans-serif;
-            color: #63757a;
-            font-weight: bold;
-        }
-        #div7 > div > b{
-            margin-left: 5px;
-            margin-top: 0px;
+            margin-top: 60px;
             font-family: sans-serif;
             color: #02475b;
-            font-weight: bold;
         }
+       
         #div8{
             display: flex;
             width: 95%;
             margin-left: 15px;
-            
+        }
+        #div8 > div > img{
+            margin-left: 10px;
+            margin-top: 10px;
         }
         #div8 > div{
             height: 300px;
@@ -238,7 +238,7 @@
             color: #02475b;
             font-weight: bold;
         }
-        #div9{
+        /* #div9{
             display: flex;
             border: 1px solid whitesmoke;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -258,7 +258,7 @@
             font-size: large;
             line-height: 20px;
             letter-spacing: 1px;
-        }
+        } */
        
         #div10{
             display: flex;
@@ -321,7 +321,7 @@
             color: #fc9916;
             font-weight: bold;
         }
-        #div11{
+        /* #div11{
             margin-top: 150px;
             margin-left: 40px;
             margin-right: 40px;
@@ -329,7 +329,7 @@
             letter-spacing: .5px;
             font-family: sans-serif;
             color: #02475b;
-        }
+        } */
         * hr{
             margin-left: 10px;
             margin-right: 10px;
@@ -338,12 +338,15 @@
 </head>
 <body>
     <div id="page">
-        <div id="div1">
+        <form id="searchForm" action="submit">
+            <div id="div1">
             <div><input id="searchBar" type="search" placeholder="Search test and packages"></div>
-            <!-- <div><input id="orders" type="text" value="My Orders"></div> -->
+            <div><input id="orders" type="text" value="My Orders"></div>
         </div>
+        </form>
+       
 
-        <div id="div2">
+        <!-- <div id="div2">
             <div id="img">
                 <img src="https://newassets.apollo247.com/cms/2021-06/Premium_2400_web.jpg" alt="">
             </div>
@@ -351,11 +354,11 @@
             <div id="prescription">
                 <div class="pres">
                     <img src="https://newassets.apollo247.com/images/ic_prescriptiontest.png" alt="Rx" height="40px" width="35px">
-                    <h3>Upload Prescription to place an order</h3>
+                    <h3>Upload Prescription to <br> place an order</h3>
                 </div>
                 <button>UPLOAD NOW</button>
             </div>
-        </div>
+        </div> -->
        
         <div id="div3">
             <!-- <span>POPULAR CATEGORIES(31)</span> -->
@@ -389,9 +392,9 @@
             </div>
         </div>
 
-        <div id="div4">
-            <img src="" alt="">
-        </div>
+        <!-- <div id="div4">
+            <img src="https://newassets.apollo247.com/images/banners/pharma_2Feb.png" alt="">
+        </div> -->
 
         <div id="div5">
             <!-- <p>POPULAR HEALTH CHECKUP PACKAGE (84)</p> -->
@@ -430,71 +433,62 @@
             </div>
         </div>
 
-        <div id="div6">
+        <!-- <div id="div6">
             <img src="https://newassets.apollo247.com/images/ic_workflow.png" alt="" height="50px" width="50px">
             <span>3 simple steps to get a lab test done from the comfort of your home.</span>
-        </div>
+        </div> -->
 
         <div id="div7">
             <!-- <span>TOP BOOKED TESTS</span> -->
              <div>
-                  <img src="https://newassets.apollo247.com/organs/ic_diabetes.png" alt="" width="35px" height="35px">
+                  <img src="https://newassets.apollo247.com/organs/virus.png" alt="" width="35px" height="35px">
                  <h3 class="h31">Covid 19 RTPCR With Home...</h3>
-                 <p id="p1">8 Parameters included</p>
+                 <p id="p1">3 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
-                 <p>MRP <del>Rs. 6630</del></p>
-                 <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
+                 <h3 id="h33">Rs. 750</h3>
                  <h3 id="h32">ADD TO CART</h3>
              </div>
              <div>
-                  <img src="https://newassets.apollo247.com/organs/ic_diabetes.png" alt="" width="35px" height="35px">
-                 <h3 class="h31">Covid 19 RTPCR With Home...</h3>
-                 <p id="p1">8 Parameters included</p>
+                  <img src="https://newassets.apollo247.com/organs/ic_blood.png" alt="" width="35px" height="35px">
+                 <h3 class="h31">Complete Blood Count (CBC)</h3>
+                 <p id="p1">13 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
-                 <p>MRP <del>Rs. 6630</del></p>
-                 <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
+                 <h3 id="h33">Rs. 360</h3>
                  <h3 id="h32">ADD TO CART</h3>
              </div>
              <div>
-                  <img src="https://newassets.apollo247.com/organs/ic_diabetes.png" alt="" width="35px" height="35px">
-                 <h3 class="h31">Covid 19 RTPCR With Home...</h3>
-                 <p id="p1">8 Parameters included</p>
+                  <img src="https://newassets.apollo247.com/organs/ic_blood.png" alt="" width="35px" height="35px">
+                 <h3 class="h31">C-Reactive Protein (Qualitative)</h3>
+                 <p id="p1">1 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
-                 <p>MRP <del>Rs. 6630</del></p>
-                 <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
+                 <h3 id="h33">Rs. 490</h3>
                  <h3 id="h32">ADD TO CART</h3>
              </div>
              <div>
-                  <img src="https://newassets.apollo247.com/organs/ic_diabetes.png" alt="" width="35px" height="35px">
-                 <h3 class="h31">Covid 19 RTPCR With Home...</h3>
-                 <p id="p1">8 Parameters included</p>
+                  <img src="https://newassets.apollo247.com/organs/ic_thyroid.png" alt="" width="35px" height="35px">
+                 <h3 class="h31">Thyroid Profile-
+                    Free (FT3, FT4,..</h3>
+                 <p id="p1">4 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
-                 <p>MRP <del>Rs. 6630</del></p>
-                 <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
+                 <h3 id="h33">Rs. 880</h3>
                  <h3 id="h32">ADD TO CART</h3>
              </div>
              <div>
-                  <img src="https://newassets.apollo247.com/organs/ic_diabetes.png" alt="" width="35px" height="35px">
-                 <h3 class="h31">Covid 19 RTPCR With Home...</h3>
-                 <p id="p1">8 Parameters included</p>
+                  <img src="https://newassets.apollo247.com/organs/ic_liver.png" alt="" width="35px" height="35px">
+                 <h3 class="h31">Liver Function
+                    Test (LFT)</h3>
+                 <p id="p1">10 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
-                 <p>MRP <del>Rs. 6630</del></p>
-                 <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
+                 <h3 id="h33">Rs. 700</h3>
                  <h3 id="h32">ADD TO CART</h3>
              </div>
              <div>
-                  <img src="https://newassets.apollo247.com/organs/ic_diabetes.png" alt="" width="35px" height="35px">
-                 <h3 class="h31">Covid 19 RTPCR With Home...</h3>
-                 <p id="p1">8 Parameters included</p>
+                  <img src="https://newassets.apollo247.com/organs/ic_blood.png" alt="" width="35px" height="35px">
+                 <h3 class="h31">Complete Urine
+                    Examination</h3>
+                 <p id="p1">15 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
-                 <p>MRP <del>Rs. 6630</del></p>
-                 <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
+                 <h3 id="h33">Rs. 240</h3>
                  <h3 id="h32">ADD TO CART</h3>
              </div>
         </div>
@@ -506,82 +500,83 @@
                  <h3 class="h31">Diabetes And Lipid Profile</h3>
                  <p id="p1">8 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
-                 <p>MRP <del>Rs. 6630</del></p>
+                 <h5>54% off</h5>
+                 <p>MRP <del>Rs. 1770</del></p>
                  <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
                  <h3 id="h32">ADD TO CART</h3>
              </div>
              <div>
                   <img src="https://newassets.apollo247.com/organs/ic_diabetes.png" alt="" width="35px" height="35px">
-                 <h3 class="h31">Diabetes And Lipid Profile</h3>
-                 <p id="p1">8 Parameters included</p>
+                 <h3 class="h31">Diabetes Screening</h3>
+                 <p id="p1">2 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
-                 <p>MRP <del>Rs. 6630</del></p>
+                 <h5>31% off</h5>
+                 <p>MRP <del>Rs. 660</del></p>
                  <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
                  <h3 id="h32">ADD TO CART</h3>
              </div>
              <div>
                   <img src="https://newassets.apollo247.com/organs/ic_diabetes.png" alt="" width="35px" height="35px">
-                 <h3 class="h31">Diabetes And Lipid Profile</h3>
-                 <p id="p1">8 Parameters included</p>
+                 <h3 class="h31">Diabetes Package Basic</h3>
+                 <p id="p1">17 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
-                 <p>MRP <del>Rs. 6630</del></p>
+                 <h5>36% off</h5>
+                 <p>MRP <del>Rs. 920</del></p>
                  <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
                  <h3 id="h32">ADD TO CART</h3>
              </div>
              <div>
                   <img src="https://newassets.apollo247.com/organs/ic_diabetes.png" alt="" width="35px" height="35px">
-                 <h3 class="h31">Diabetes And Lipid Profile</h3>
-                 <p id="p1">8 Parameters included</p>
+                 <h3 class="h31">Diabetes Package Advance</h3>
+                 <p id="p1">38 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
-                 <p>MRP <del>Rs. 6630</del></p>
+                 <h5>23% off</h5>
+                 <p>MRP <del>Rs. 24500</del></p>
                  <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
                  <h3 id="h32">ADD TO CART</h3>
              </div>
              <div>
                   <img src="https://newassets.apollo247.com/organs/ic_blood.png" alt="" width="35px" height="35px">
-                 <h3 class="h31">Diabetes And Lipid Profile</h3>
-                 <p id="p1">8 Parameters included</p>
+                 <h3 class="h31">Lipid Profile</h3>
+                 <p id="p1">6 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
-                 <p>MRP <del>Rs. 6630</del></p>
-                 <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
+                <h3 id="h33">Rs. 650</h3>
                  <h3 id="h32">ADD TO CART</h3>
              </div>
              <div>
                   <img src="https://newassets.apollo247.com/organs/ic_blood.png" alt="" width="35px" height="35px">
-                 <h3 class="h31">Diabetes And Lipid Profile</h3>
-                 <p id="p1">8 Parameters included</p>
+                 <h3 class="h31">HbA1c, Glycated
+                    Hemoglobin</h3>
+                 <p id="p1">2 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
-                 <p>MRP <del>Rs. 6630</del></p>
-                 <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
+                 <h3 id="h33">Rs. 600</h3>
                  <h3 id="h32">ADD TO CART</h3>
              </div>
         </div>
 
-        <div id="div9">
+        <!-- <div id="div9">
             <!-- WHY BOOK WITH US? -->
             <div>
+                <img src="https://newassets.apollo247.com/images/ic_surface.png" alt="">
                 <h1>3.5</h1>
                 <p>Million tests every year</p>
             </div>
             <div>
+                <img src="https://newassets.apollo247.com/images/ic_legacy.png" alt="">
                 <h1>36</h1>
                 <p>Years of legacy</p>
             </div>
             <div>
+                <img src="https://newassets.apollo247.com/images/ic_laboratories.png" alt="">
                 <h1>100+</h1>
                 <p>Laboratories</p>
             </div>
             <div>
+                <img src="https://newassets.apollo247.com/images/ic_cities.png" alt="">
                 <h1>30+</h1> Cities &
                 <p></p>
             </div>
-        </div>
+        </div> -->
 
         <div id="div10">
             <!-- <span>WOMEN WELLNESS</span> -->
@@ -597,52 +592,49 @@
                 </div>
                 <div>
                  <img src="https://newassets.apollo247.com/organs/ic_blood.png" alt="" width="35px" height="35px">
-                 <h3 class="h31">Comprehensive Package - Women</h3>
+                 <h3 class="h31">Comprehensive Package - Senio...</h3>
                  <p id="p1">63 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
+                 <h5>48% off</h5>
                  <p>MRP <del>Rs. 6630</del></p>
                   <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
                   <h3 id="h32">ADD TO CART</h3>
                 </div>
                 <div>
                  <img src="https://newassets.apollo247.com/organs/ic_blood.png" alt="" width="35px" height="35px">
-                 <h3 class="h31">Comprehensive Package - Women</h3>
+                 <h3 class="h31">Women Welness Advance</h3>
                  <p id="p1">63 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
+                 <h5>30% off</h5>
                  <p>MRP <del>Rs. 6630</del></p>
                   <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
                   <h3 id="h32">ADD TO CART</h3>
                 </div>
                 <div>
                  <img src="https://newassets.apollo247.com/organs/ic_blood.png" alt="" width="35px" height="35px">
-                 <h3 class="h31">Comprehensive Package - Women</h3>
+                 <h3 class="h31">Women Welness Basic</h3>
                  <p id="p1">63 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
+                 <h5>29% off</h5>
                  <p>MRP <del>Rs. 6630</del></p>
                   <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
                  <h3 id="h32">ADD TO CART</h3>
              </div>
              <div>
                  <img src="https://newassets.apollo247.com/organs/ic_blood.png" alt="" width="35px" height="35px">
-                 <h3 class="h31">Comprehensive Package - Women</h3>
+                 <h3 class="h31">Thyroid Profile
+                    Free (FT3, FT4,.</h3>
                  <p id="p1">63 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
-                 <p>MRP <del>Rs. 6630</del></p>
-                  <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
+                 <h3 id="h33">Rs. 600</h3>
                  <h3 id="h32">ADD TO CART</h3>
              </div>
              <div>
                  <img src="https://newassets.apollo247.com/organs/ic_blood.png" alt="" width="35px" height="35px">
-                 <h3 class="h31">Comprehensive Package - Women</h3>
+                 <h3 class="h31">Hemoglobin</h3>
                  <p id="p1">63 Parameters included</p>
                  <hr>
-                 <h5>65% off</h5>
-                 <p>MRP <del>Rs. 6630</del></p>
-                  <span><b>Rs. 2352</b> <small>savings Rs. 4278</small> </span>
+                 <h3 id="h33">Rs. 600</h3>
                  <h3 id="h32">ADD TO CART</h3>
              </div>
         </div>
