@@ -67,7 +67,7 @@ input[type="text"] {
   height: 50px;
 }
 #right {
-  border: 2px solid teal;
+  /* border: 2px solid teal; */
   /* width: 20%;  */
   margin-left: 10px;
 }
@@ -81,7 +81,7 @@ input[type="text"] {
   display: flex;
   height: 50px;
   cursor: pointer;
-  border: 2px solid rgb(16, 206, 32); 
+  /* border: 2px solid rgb(16, 206, 32);  */
   padding-left: 15px;
   color: #062513;
 }
@@ -158,21 +158,82 @@ input[type="text"] {
   font-size: 15px;
   padding: 15px 5px;
 }
-.products {
-  height: 220px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  display: grid;
-  grid-template-rows: 200px;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-  cursor: pointer;
-  align-content: center;
+#hotsel {
+display: grid;
+grid-template-columns: repeat(6,1fr);
+grid-template-rows: auto;
+grid-gap: 10px;
+text-align: center;
+padding: 10px 10px;
+/* border: 2px solid cadetblue; */
 }
-.products > div {
+#hotsel > div {
   /* border: 2px solid red; */
+  cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 8px;
+  
+}
+.namecash{
+  font-size: 15px;
+    color: #01475b;
+}
+.prc{
+  color: #01475b; 
+font-size: 20px;
+}
+.but{
+  font-size: large;
+  width: 100%;
+  color: #FDCB56;
+}
+#wintercare {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  text-align: center;
+  padding: 10px 10px;
+  /* border: 2px solid cadetblue; */
+  }
+#wintercare > div {
+  height: 105%;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 8px;
+  /* border: 2px solid red; */
+}
+#covidcare{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  text-align: center;
+  padding: 10px 10px;
+  /* border: 2px solid cadetblue; */
+}
+#covidcare>div{
+  height: 105%;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 8px;
+  /* border: 2px solid red; */
+}
+#halfprice{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  text-align: center;
+  padding: 10px 10px;
+  /* border: 2px solid cadetblue; */
+}
+#halfprice>div{
+  height: 105%;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 8px;
+  /* border: 2px solid red; */
 }
 .ads {
   height: 220px;
@@ -236,5 +297,11 @@ input[type="text"] {
   height: 100%;
 }
 .details {
-  border: 2px solid cyan;
+  padding: 20px ;
+}
+.details>h4{
+  color: #02475B;
+}
+.details>p{
+  color: #02475B;
 }
