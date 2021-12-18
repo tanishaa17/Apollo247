@@ -478,3 +478,6 @@ button {
   font-family: sans-serif;
   color: #fcb714;
 }
+.cards {
+  cursor: pointer;
+}

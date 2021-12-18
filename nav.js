@@ -39,3 +39,11 @@ document.querySelector("#covid").addEventListener("click", navtocovidpos);
 function navtocovidpos() {
   window.location.href = "corona.html";
 }
+
+var addedToCart = JSON.parse(localStorage.getItem("cartItemsadded")) || [];
+
+cartCountupdate(addedToCart);
+
+function cartCountupdate(addedToCart) {
+  document.querySelector("#cartcount").textContent = addedToCart.length;
+}

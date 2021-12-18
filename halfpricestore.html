@@ -287,5 +287,11 @@ function seaterof(el) {
   };
   addedToCart.push(obj);
   localStorage.setItem("cartItemsadded", JSON.stringify(addedToCart));
+  cartCountupdate(addedToCart);
 }
+
+function cartCountupdate(addedToCart) {
+  document.querySelector("#cartcount").textContent = addedToCart.length;
+}
+
 </script>

@@ -41,6 +41,12 @@ function distants(addedToCart) {
   });
 }
 
+cartCountupdate(addedToCart);
+
+function cartCountupdate(addedToCart) {
+  document.querySelector("#cartcount").textContent = addedToCart.length;
+}
+
 function restart(i) {
   addedToCart.splice(i, 1);
   localStorage.setItem("cartItemsadded", JSON.stringify(addedToCart));
