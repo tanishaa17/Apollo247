@@ -21,6 +21,7 @@ body {
 }
 #crack {
   width: 66%;
+  margin-right: 1px;
 }
 #left {
   width: 98%;
@@ -53,6 +54,7 @@ body {
 
 #right {
   width: 32%;
+  margin-top: 50px;
   margin-left: 1%;
   background-color: white;
 }
@@ -104,7 +106,7 @@ body {
   margin-bottom: 20px;
   background-color: orange;
 }
-.p {
+.den {
   background-color: lightyellow;
   margin-left: 10px;
   font-size: smaller;
