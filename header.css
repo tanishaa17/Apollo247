@@ -13,11 +13,12 @@
   grid-area: 1/1/2/15;
   width: 80px;
   padding: 30px 0px 10px 20px;
+  cursor: pointer;
 }
 .h4 {
   color: #02475b;
   border-bottom: 1px solid #01475b;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   font-size: 13px;
   font-weight: 580;
   line-height: normal;
@@ -25,28 +26,35 @@
 .p {
   color: #7a9ea9;
   font-size: smaller;
-  line-height: 5px;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
+
 #doc {
   padding-top: 15px;
   grid-area: 1/15/2/16;
+  cursor: pointer;
 }
 #pharma {
   padding-top: 15px;
   grid-area: 1/16/2/19;
+  cursor: pointer;
 }
 #labtest {
   padding-top: 15px;
   grid-area: 1/19/2/22;
+  cursor: pointer;
 }
 #covid {
   padding-top: 15px;
   grid-area: 1/22/2/25;
+  cursor: pointer;
 }
 
 #cartsymbol {
-  padding-top: 40px;
+  padding-top: 50px;
   grid-area: 1/25/2/26;
+  cursor: pointer;
 }
 #cartcount {
   grid-area: 1/25/2/26;
@@ -60,8 +68,9 @@
   line-height: 14px;
   border-radius: 50%;
   background-color: #ff748e;
-  margin-top: 33px;
+  margin-top: 43px;
   margin-left: 13px;
+  cursor: pointer;
 }
 #accountsymbol {
   padding-top: 30px;
@@ -72,4 +81,5 @@
   margin-top: 40px;
   padding: 15px 15px;
   border-radius: 50%;
+  cursor: pointer;
 }
