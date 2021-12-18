@@ -27,3 +27,9 @@ document.querySelector("#cartsymbol").addEventListener("click", navcart);
 function navcart() {
   window.location.href = "cart.html";
 }
+
+document.querySelector("#labtest").addEventListener("click", navtocreate);
+
+function navtocreate() {
+  window.location.href = "lab test.html";
+}
