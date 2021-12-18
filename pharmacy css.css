@@ -34,8 +34,8 @@ body {
   color: #fcb716;
   cursor: pointer;
 }
-.protype{
-  color: #02475B;
+.protype {
+  color: #02475b;
 }
 .selecticon {
   font-size: 25px;
@@ -50,8 +50,9 @@ body {
 .text {
   background-color: #f7f8f5;
 }
-
-
+.text > i {
+  color: #fcb716;
+}
 .searchbar {
   width: 90%;
   background-color: #f7f8f5;
@@ -78,15 +79,14 @@ input[type="text"] {
 #right > div:nth-child(1) > p {
   color: rgb(15, 136, 136);
   font-size: small;
-  padding-left: 20px;
-  padding-bottom: 40px;
+}
+#right > div:nth-child(1) > p > i {
+  margin-right: 10px;
 }
 #right > div:nth-child(1) {
-  display: flex;
-  height: 50px;
+  height: 30px;
+  margin-bottom: 10px;
   cursor: pointer;
-  /* border: 2px solid rgb(16, 206, 32);  */
-  padding-left: 15px;
   color: #062513;
 }
 #right > div:nth-child(2) {
@@ -104,6 +104,8 @@ input[type="text"] {
   /* border: 2px solid rgb(3, 2, 41); */
   padding-left: 10px;
   font-family: cursive;
+  font-size: small;
+  color: #02475b;
 }
 #right > div > div > button {
   border-radius: 8px;
@@ -118,14 +120,12 @@ input[type="text"] {
   padding-top: 5px;
   /* border: 2px solid red; */
 }
-#right > div:nth-child(3) {
+#smash {
   width: 90%;
-  padding: 10px 20px;
   margin-top: 20px;
   border-radius: 8px;
   cursor: pointer;
   display: flex;
-  justify-content: space-between;
   background-color: #f7f8f5;
   font-size: 22px;
 }
@@ -150,67 +150,67 @@ input[type="text"] {
   padding-top: 15px;
   height: 60%;
   width: 25%;
-  margin-right: 8px;
 }
 .typeclass {
   display: flex;
   justify-content: center;
-  /* padding: 10px 10px; */
+  height: 60px;
 }
 .typeclass > p {
   font-family: sans-serif;
   font-size: 15px;
-  padding: 15px 5px;
+  padding: 15px 15px;
+  color: #01475b;
+  font-size: x-small;
 }
 #hotsel {
-display: grid;
-grid-template-columns: repeat(6,1fr);
-grid-template-rows: auto;
-grid-gap: 10px;
-text-align: center;
-padding: 10px 10px;
-line-height: normal;
-/* border: 2px solid cadetblue; */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  text-align: center;
+  padding: 10px 10px;
+  line-height: normal;
+  /* border: 2px solid cadetblue; */
 }
 #hotsel > div {
   /* border: 2px solid red; */
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 8px;
-  
 }
-.namecash{
+.namecash {
   font-size: 15px;
-    color: #01475b;
+  color: #01475b;
 }
-.prc{
-  color: #01475b; 
-font-size: 20px;
+.prc {
+  color: #01475b;
+  font-size: 20px;
 }
-.but{
+.but {
   font-size: large;
   width: 100%;
-  color: #FDCB56;
+  color: #fdcb56;
 }
 #wintercare {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   grid-gap: 10px;
   text-align: center;
   padding: 10px 10px;
   line-height: normal;
   /* border: 2px solid cadetblue; */
-  }
+}
 #wintercare > div {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 8px;
   /* border: 2px solid red; */
 }
-#covidcare{
+#covidcare {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   grid-gap: 10px;
   text-align: center;
@@ -218,15 +218,15 @@ font-size: 20px;
   line-height: normal;
   /* border: 2px solid cadetblue; */
 }
-#covidcare>div{
+#covidcare > div {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 8px;
   /* border: 2px solid red; */
 }
-#halfprice{
+#halfprice {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   grid-gap: 10px;
   text-align: center;
@@ -234,7 +234,7 @@ font-size: 20px;
   padding: 10px 10px;
   /* border: 2px solid cadetblue; */
 }
-#halfprice>div{
+#halfprice > div {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 8px;
@@ -246,7 +246,7 @@ font-size: 20px;
   margin: auto;
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
   cursor: pointer;
 }
@@ -345,11 +345,22 @@ font-size: 20px;
   font-size : large;
 }
 .details {
-  padding: 20px ;
+  padding: 20px;
 }
-.details>h4{
-  color: #02475B;
+.details > h4 {
+  color: #02475b;
 }
-.details>p{
-  color: #02475B;
+.details > p {
+  color: #02475b;
+}
+#smash {
+  color: #02475b;
+  height: 45px;
+  padding: 0px 0px 10px 15px;
+}
+#smash > p > i:nth-child(2) {
+  margin-left: 30px;
+}
+.protype {
+  font-weight: 600;
 }
