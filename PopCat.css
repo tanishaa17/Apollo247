@@ -1,3 +1,9 @@
+body {
+    background-color: #dcdfce;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+  
 #page2{
     width: 80%;
     margin: auto;

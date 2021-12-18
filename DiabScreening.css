@@ -1,6 +1,13 @@
+body {
+    background-color: #dcdfce;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+  
 #page3{
     width: 80%;
     margin: auto;
+    background-color: white;
    }
    #div1{
     margin-left: 40px;
@@ -14,6 +21,7 @@
     font-weight: lighter;
     color: #02475b;
     letter-spacing: 1px;
+    margin-top: 50px;
    }
 #div3{
     margin-top: 50px;
@@ -21,6 +29,8 @@
     font-weight: 700;
     color: #02475b;
     letter-spacing: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 #div4{
     display: grid;
@@ -29,6 +39,8 @@
     grid-gap: 15px;
     align-content: center;    
     padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 #div4 > div{ 
     border: 1px solid whitesmoke;

@@ -1,9 +1,18 @@
+body {
+    background-color: #dcdfce;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+  
 #page{
     width: 80%;
     margin: auto;
+    background-color: white;
 }
 #div2{
     display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #img{
     width: 70%;
@@ -49,6 +58,8 @@ button{
 #category{
     display: flex;
     justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 .pop{
     margin-top: 50px;
@@ -57,7 +68,7 @@ button{
     color: #02475b;
     letter-spacing: 1px;
 }
-#viewall {
+.viewall {
     color: #fcb716;
     cursor: pointer;
     margin-top: 50px;
@@ -73,6 +84,8 @@ button{
     grid-gap: 15px;
     margin-top: 0px;
     align-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #div3 > div{
     border: 1px solid whitesmoke;
@@ -96,6 +109,8 @@ button{
     border: 1px solid whitesmoke;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #div4 > img{
     width: 100%;
@@ -104,6 +119,8 @@ button{
 #healthCheackup{
     display: flex;
     justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #healthCheackup > h4{
     margin-top: 50px;
@@ -121,6 +138,8 @@ button{
     margin-top: 0px;
     font-size: larger;
     align-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #div5 > div{
     border: 1px solid whitesmoke;
@@ -133,6 +152,8 @@ button{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
     margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #div6 > img{
     margin-top: 15px;
@@ -149,6 +170,8 @@ button{
 #tests{
     display: flex;
     justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #tests > h4{
     margin-top: 50px;
@@ -164,6 +187,8 @@ button{
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 15px;
     align-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #div7 > div{ 
     border: 1px solid whitesmoke;
@@ -187,6 +212,8 @@ button{
 #diabetes{
     display: flex;
     justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #div8{
     display: grid;
@@ -194,6 +221,8 @@ button{
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 15px;
     align-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #div8 > div{
     border: 1px solid whitesmoke;
@@ -206,6 +235,8 @@ button{
     font-weight: bold;
     color: #818b8d;
     letter-spacing: 1px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 * small{
     font-weight: 100;
@@ -218,6 +249,8 @@ button{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
     margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #div9 > div{
     margin: auto;
@@ -232,6 +265,8 @@ button{
 #wellness{
     display: flex;
     justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 #wellness > h4{
@@ -248,6 +283,8 @@ button{
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 15px;
     align-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
     }
 #div10 > div{
     border: 1px solid whitesmoke;
@@ -262,7 +299,83 @@ button{
     letter-spacing: .5px;
     font-family: sans-serif;
     color: #02475b;
+    margin-left: 30px;
+    margin-right: 30px;
 }
+#lastdiv{
+    display: grid;
+    margin-top: 50px;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#div19, #div20{
+    justify-content: space-between;
+}
+#vitalorgan{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px;
+    align-content: center;
+    border: 1px solid whitesmoke;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+}
+#womencare{
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    align-content: center;
+    border: 1px solid whitesmoke;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+}
+#upper{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    align-content: center;   
+}
+#upper > div > img{
+    height: 50px;
+    width: 50px;
+    margin-top: 25%;
+    margin-left: 30%;
+}
+#vitalorgan > div > img{
+    height: 50px;
+    width: 50px;
+    margin-top: 25%;
+    margin-left: 30%;
+}
+#vitalorgan > div > p{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #02475b;
+}
+#upper > div > p{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #02475b;
+}
+#lower > div > img{
+    height: 120px;
+    width: 500px;
+    padding-left: 25px;
+    padding-top: 25px;
+    border-radius: 5%;
+}
+
 .typepara{
     font-size: smaller;
     margin-left: 15px;
