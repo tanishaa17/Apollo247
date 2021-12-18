@@ -97,12 +97,11 @@ body {
 }
 .healthy-img > h1 {
   color: white;
-  margin: 200px 30px;
+  padding: 200px 30px;
   font-size: 30px;
 }
 
 .healthy-bites {
-  border: 2px solid blue;
   background-color: white;
 }
 .healthy-bites > h3 {

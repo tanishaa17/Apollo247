@@ -15,7 +15,6 @@ body {
   padding-top: 10px;
   display: flex;
   padding-top: 70px;
-  border: 1p solid red;
   width: 100%;
   background-color: whitesmoke;
 }
@@ -135,8 +134,8 @@ body {
   color: #02475b;
 }
 #itemscart > div > img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 #itemscart > div > div {
   padding-left: 10px;
@@ -144,6 +143,7 @@ body {
 #itemscart > div > div:nth-child(3) {
   text-align: right;
   line-height: 5px;
+  padding-right: 15px;
 }
 #itemscart > div > div:nth-child(3) > i {
   margin-bottom: 30px;

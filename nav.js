@@ -33,3 +33,9 @@ document.querySelector("#labtest").addEventListener("click", navtocreate);
 function navtocreate() {
   window.location.href = "lab test.html";
 }
+
+document.querySelector("#covid").addEventListener("click", navtocovidpos);
+
+function navtocovidpos() {
+  window.location.href = "corona.html";
+}

@@ -317,7 +317,10 @@
         },
     ]
 
-    health.map(function(elems){
+
+
+
+    health.map(function(elems , index){
             var card6 = document.createElement("div");
             card6.setAttribute("class", "cards");
     
@@ -367,8 +370,26 @@
              var but = document.createElement("p");
              but.innerHTML = "ADD TO CART";
              but.setAttribute("class", "button");
+             but.addEventListener("click", function(){
+                seaterof(elems)
+             })
 
              card6.append(name, para, linee1, linee2, linee3, extraa, horz, mrp, disc, price, sav, but);
              document.getElementById("div4").append(card6);
     });
+
+
+    var  addedToCart = JSON.parse(localStorage.getItem("cartItemsadded")) || [];
+
+    function seaterof(el){
+      var obj = {
+        name : el.title,
+        mrp : el.MRP,
+        price : el.price,
+        img : "https://newassets.apollo247.com/organs/virus.png"
+      }
+      addedToCart.push(obj);
+      localStorage.setItem("cartItemsadded",JSON.stringify(addedToCart));
+    }
+
 </script>
