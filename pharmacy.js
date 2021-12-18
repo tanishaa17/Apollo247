@@ -221,49 +221,49 @@ var data = [
  
 
  var data4 = [
-    {
-      img : "https://newassets.apollo247.com/pub/media/catalog/product/cache/resized/100x/w/i/wil0138.jpg",
-      name : " Wildcraft Outdoor Face Mask W95 Medium,",
-      mrp : "200",
-      rs : "79",
-      cashback : "4"
-    },
-    {
-      img : "https://newassets.apollo247.com/pub/media/catalog/product/cache/resized/100x/t/r/travel_protect.jpg",
-      name : " Marico's Travel Protect Surface Disinfectant..",
-      mrp : "179",
-      rs : "44.75",
-      cashback : "4"
-    },
-    {
-      img : "https://newassets.apollo247.com/pub/media/catalog/product/cache/resized/100x/m/e/mediker_500ml.jpg",
-      name : "Mediker Advansed Hand Sanitizer, 34 ml",
-      mrp : "15.1",
-      rs : "3.775",
-      cashback : "0"
-    },
-    {
-      img : "https://newassets.apollo247.com/pub/media/catalog/product/cache/resized/100x/c/o/covidfind_box_1.jpg",
-      name : "COVIFIND Covid-19 Antigen Self Test kit, 1",
-      mrp : "250",
-      rs : "250",
-      cashback : "13"
-    },
-    {
-      img : "https://newassets.apollo247.com/pub/media/catalog/product/cache/resized/100x/r/o/romsons_child_mask_front.jpg",
-      name : "Romsons N95 Respirator Kare 6 Layer Child Mask..",
-      mrp : "50",
-      rs : "50",
-      cashback : "3"
-    },
-    {
-      img : "https://newassets.apollo247.com/pub/media/catalog/product/cache/resized/100x/h/e/hea0495_1_.jpg",
-      name : "Healthvit Tulsi Drops, 30 milli-liter",
-      mrp : "200",
-      rs : "120",
-      cashback : "6"
-    },
-  ]
+  {
+    img : "https://newassets.apollo247.com/pub/media/catalog/product/cache/resized/100x/6/1/61dsvyqdh1l._sl1100_.jpg",
+    name : " Sugarlite Sugar, 500gm",
+    mrp : "99",
+    rs : "49",
+    cashback : "2"
+  },
+  {
+    img : "https://newassets.apollo247.com/pub/media/catalog/product/cache/resized/100x/s/e/set0154.jpg",
+    name : "Set Wet Cool Avatar Deodorant Body Spray,..",
+    mrp : "199",
+    rs : "99",
+    cashback : "5"
+  },
+  {
+    img : "https://newassets.apollo247.com/pub/media/catalog/product/cache/resized/100x/b/o/bor0039_1_2.jpg",
+    name : "Boro Plus Doodh Kesar Body Lotion, 400 ml",
+    mrp : "320",
+    rs : "160",
+    cashback : "8"
+  },
+  {
+    img : "https://newassets.apollo247.com/pub/media/catalog/product/cache/resized/100x/i/m/img_20210109_173928__front__hand_sanitizer_250ml_1__1.jpg",
+    name : "Apollo Life Hand Sanitizer, 250 ml",
+    mrp : "125",
+    rs : "62",
+    cashback : "6"
+  },
+  {
+    img : "https://newassets.apollo247.com/pub/media/catalog/product/cache/resized/100x/l/i/lit0170_3.jpg",
+    name : "Lttles Soft Cleansing Baby Wipes, 80 Count ",
+    mrp : "190",
+    rs : "195",
+    cashback : "5"
+  },
+  {
+    img : "https://newassets.apollo247.com/pub/media/catalog/product/cache/resized/100x/k/a/kam0050_2.jpg",
+    name : "Kamasutra Urge Men Deodorant Spray, 150 ml",
+    mrp : "210",
+    rs : "105",
+    cashback : "5"
+  },
+]
 
   data4.map (function(elem){
    var divcard = document.createElement("div");

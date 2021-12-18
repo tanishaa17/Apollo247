@@ -39,6 +39,7 @@ body {
 }
 .selecticon {
   font-size: 25px;
+  color: #F9D786;
 }
 .arrow {
   font-size: 10px;
@@ -297,8 +298,51 @@ font-size: 20px;
   background-color: #2582a1;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 90%;
   height: 100%;
+}
+#shopbrand{
+  margin: auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 15px;
+  cursor: pointer;
+  align-content: center;
+  justify-content: space-around;
+  /* border: 2px solid gray; */
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#shopbrand>div{
+   /* border: none; */
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+   border-radius: 8px;
+   height: 80px;
+   /* border: 2px solid red; */
+}
+#shopbrand>div>img{
+  width: 35%;
+  height: 55%;
+  padding-left:70px;
+  padding-top: 20px
+}
+#indiamap>p{
+  color: #ffffff;
+  font-size : x-large;
+  padding-left: 20px;
+}
+#inddet {
+  display: flex;
+  padding-left: 20px;
+}
+#inddet>p{
+  color: #ffffff;
+  padding-left: 5px;
+}
+#inddet>p:nth-child(3){
+  padding-left: 50%;
+  font-size : large;
 }
 .details {
   padding: 20px ;
