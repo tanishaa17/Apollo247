@@ -87,7 +87,12 @@ function restart(i) {
     document.querySelector("#dvcharge").textContent = " ";
     document.querySelector("#toprice").textContent = " ";
   }
+  cartCountupdate(addedToCart);
   distants(addedToCart);
+}
+
+function cartCountupdate(addedToCart) {
+  document.querySelector("#cartcount").textContent = addedToCart.length;
 }
 
 document.querySelector("#checkout").addEventListener("click", navtocheck);
