@@ -1,0 +1,11 @@
+#bot {
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0px 20px 20px 0px;
+  cursor: pointer;
+}
+#bot > img {
+  height: 100%;
+}

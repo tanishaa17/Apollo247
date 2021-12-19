@@ -1,7 +1,6 @@
 #header {
   width: 79%;
   background-color: white;
-  height: 85px;
   display: flex;
   position: fixed;
   padding-bottom: 15px;
@@ -45,8 +44,8 @@
 }
 #accountsymbol {
   cursor: pointer;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #02475b;
   margin: 22px 15px 15px 15px;
@@ -55,5 +54,5 @@
   cursor: pointer;
   width: 80px;
   height: 60px;
-  margin: 25px 40% 15px 25px;
+  margin: 25px 43% 15px 25px;
 }

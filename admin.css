@@ -1,0 +1,62 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+body {
+  background-color: #dcdfce;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+#main {
+  width: 80%;
+  background-color: white;
+  margin: auto;
+}
+#prodadd {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 20px 35px 40px;
+  margin: auto;
+  width: 60%;
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  color: #07ae8b;
+}
+#htag {
+  padding-top: 150px;
+  margin: auto;
+  text-align: center;
+  color: #02475b;
+}
+#adpt {
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 180px;
+  height: 40px;
+  margin-left: 60%;
+  border: none;
+  background-color: #f2ce78;
+}
+#adpt:hover {
+  background-color: lime;
+  color: white;
+}
+#selectcat {
+  margin-top: 30px;
+  margin-left: 20%;
+  width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: white;
+  padding: 20px 25px 25px 25px;
+}
+.add {
+  font-size: smaller;
+  display: grid;
+  padding-bottom: 20px;
+  grid-template-columns: 40% 60%;
+  color: orange;
+}
+.add > select {
+  height: 45px;
+  color: gray;
+}
