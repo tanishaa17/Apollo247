@@ -134,6 +134,9 @@ button {
   color: #02475b;
   letter-spacing: 1px;
 }
+#healthCheackup > h4:nth-child(2) {
+  color: #fcb716;
+}
 
 #div5 {
   display: grid;
@@ -480,4 +483,29 @@ button {
 }
 .cards {
   cursor: pointer;
+}
+#tests > #polars {
+  color: #fcb716;
+}
+#diabetes > #germanship {
+  color: #fcb716;
+}
+#wellness > #spanishers {
+  color: #fcb716;
+}
+#care > div > h4 {
+  display: inline-flex;
+}
+
+#organs > div > h4 {
+  display: inline-flex;
+}
+
+#organs > div > .viewall {
+  margin-left: 30%;
+  text-align: right;
+}
+#care > div > .viewall {
+  margin-left: 30%;
+  text-align: right;
 }
