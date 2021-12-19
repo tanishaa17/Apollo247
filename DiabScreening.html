@@ -285,9 +285,32 @@
              var but = document.createElement("p");
              but.innerHTML = "ADD TO CART";
              but.setAttribute("class", "button");
+             but.addEventListener("click", function(){
+                seaterof(elems)
+             })
 
              card5.append(name, para, linee1, linee2, linee3, extraa, horz, mrp, disc, price, sav, but);
              document.getElementById("div4").append(card5);
 
         });
+
+
+
+        var  addedToCart = JSON.parse(localStorage.getItem("cartItemsadded")) || [];
+
+    function seaterof(el){
+      var obj = {
+        name : el.title,
+        mrp : el.MRP,
+        price : el.price,
+        img : "https://newassets.apollo247.com/organs/ic_blood.png"
+      }
+      addedToCart.push(obj);
+      localStorage.setItem("cartItemsadded",JSON.stringify(addedToCart));
+      cartCountupdate(addedToCart);
+    }
+
+    function cartCountupdate(addedToCart) {
+  document.querySelector("#cartcount").textContent = addedToCart.length;
+}
 </script>

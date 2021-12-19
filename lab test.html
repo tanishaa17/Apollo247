@@ -525,6 +525,9 @@
              var but = document.createElement("p");
              but.innerHTML = "ADD TO CART";
              but.setAttribute("class", "button");
+             but.addEventListener("click", function(){
+                seaterof(elems)
+             })
 
              card4.append(name, para, linee1, linee2, linee3, extraa, horz, mrp, disc, price, sav, but);
              document.getElementById("div5").append(card4);
@@ -588,6 +591,9 @@
              var but = document.createElement("p");
              but.innerHTML = "ADD TO CART";
              but.setAttribute("class", "button");
+             but.addEventListener("click", function(){
+                seaterof(elems)
+             })
              card.append(image, name, para, horz, price, but);
              document.getElementById("div7").append(card);
 
@@ -676,6 +682,9 @@
              var but = document.createElement("p");
              but.innerHTML = "ADD TO CART";
              but.setAttribute("class", "button");
+             but.addEventListener("click", function(){
+                seaterof(elems)
+             })
 
              card2.append(image, name, para, horz, dis, mrp, price, but);
              document.getElementById("div8").append(card2);
@@ -764,9 +773,30 @@
              var but = document.createElement("p");
              but.innerHTML = "ADD TO CART";
              but.setAttribute("class", "button");
+             but.addEventListener("click", function(){
+                seaterof(elems)
+             })
 
              card3.append(image, name, para, horz, dis, mrp, price, but);
              document.getElementById("div10").append(card3);
 
         });
+
+        var  addedToCart = JSON.parse(localStorage.getItem("cartItemsadded")) || [];
+
+function seaterof(el){
+  var obj = {
+    name : el.title,
+    mrp : el.MRP,
+    price : el.price,
+    img : "https://newassets.apollo247.com/organs/virus.png"
+  }
+  addedToCart.push(obj);
+  localStorage.setItem("cartItemsadded",JSON.stringify(addedToCart));
+  cartCountupdate(addedToCart);
+}
+
+function cartCountupdate(addedToCart) {
+  document.querySelector("#cartcount").textContent = addedToCart.length;
+}
 </script>

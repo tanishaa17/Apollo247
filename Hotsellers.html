@@ -264,8 +264,30 @@
    var button = document.createElement("button");
    button.innerHTML="ADD TO CART";
    button.setAttribute("class","but")
+  button.addEventListener("click", function () {
+    seaterof(elem);
+  });
    divcard.append(image,nam,mprice,price,cb,button)
    document.getElementById("products").append(divcard)
    console.log(products)
  })
+
+
+ var addedToCart = JSON.parse(localStorage.getItem("cartItemsadded")) || [];
+
+function seaterof(el) {
+  var obj = {
+    name: el.name,
+    mrp: el.mrp,
+    price: el.rs,
+    img: el.img,
+  };
+  addedToCart.push(obj);
+  localStorage.setItem("cartItemsadded", JSON.stringify(addedToCart));
+  cartCountupdate(addedToCart);
+}
+
+function cartCountupdate(addedToCart) {
+  document.querySelector("#cartcount").textContent = addedToCart.length;
+}
 </script>
