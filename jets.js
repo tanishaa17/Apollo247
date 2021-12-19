@@ -62,7 +62,9 @@ function distants(addedToCart) {
     document.querySelector("#dvcharge").textContent =
       "₹ " + dcharges.toFixed(2);
     document.querySelector("#dvcharge").style.textDecoration = "line-through";
-    console.log(toprice);
+  } else if (addedToCart.length == 0) {
+    document.querySelector("#dvcharge").textContent = "₹  0";
+    document.querySelector("#toprice").textContent = "₹  0";
   } else {
     toprice += 25;
     document.querySelector("#toprice").textContent = "₹ " + toprice.toFixed(2);
@@ -81,6 +83,10 @@ function cartCountupdate(addedToCart) {
 function restart(i) {
   addedToCart.splice(i, 1);
   localStorage.setItem("cartItemsadded", JSON.stringify(addedToCart));
+  if (addedToCart.length == 0) {
+    document.querySelector("#dvcharge").textContent = " ";
+    document.querySelector("#toprice").textContent = " ";
+  }
   distants(addedToCart);
 }
 
