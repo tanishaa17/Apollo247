@@ -19,7 +19,7 @@ function navpharma() {
 document.querySelector("#accountsymbol").addEventListener("click", navlogin);
 
 function navlogin() {
-  window.location.href = "login.html";
+  window.location.href = "cart.html";
 }
 
 document.querySelector("#cartsymbol").addEventListener("click", navcart);

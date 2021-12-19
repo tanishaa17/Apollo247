@@ -70,7 +70,6 @@ data.map(function (elem) {
   });
   divcard.append(image, nam, hor, mprice, price, cb, button);
   document.getElementById("hotsel").append(divcard);
-  console.log(divcard);
 });
 
 var data2 = [
@@ -146,7 +145,6 @@ data2.map(function (elem) {
   });
   divcard.append(image, nam, hor, mprice, price, cb, button);
   document.getElementById("wintercare").append(divcard);
-  console.log(divcard);
 });
 
 var data3 = [
@@ -222,7 +220,6 @@ data3.map(function (elem) {
   });
   divcard.append(image, nam, hor, mprice, price, cb, button);
   document.getElementById("covidcare").append(divcard);
-  console.log(divcard);
 });
 
 var data4 = [
@@ -298,7 +295,6 @@ data4.map(function (elem) {
   });
   divcard.append(image, nam, hor, mprice, price, cb, button);
   document.getElementById("halfprice").append(divcard);
-  console.log(divcard);
 });
 
 var addedToCart = JSON.parse(localStorage.getItem("cartItemsadded")) || [];
