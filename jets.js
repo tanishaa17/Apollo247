@@ -4,6 +4,12 @@ distants(addedToCart);
 
 function distants(addedToCart) {
   document.querySelector("#itemscart").innerHTML = "";
+
+  var ctotal = 0;
+  var csavings = 0;
+  var dcharges = 25;
+  var toprice = 0;
+
   addedToCart.map(function (el, index) {
     var image = document.createElement("img");
     image.setAttribute("src", el.img);
@@ -24,13 +30,20 @@ function distants(addedToCart) {
     });
 
     var mrp = document.createElement("p");
-    mrp.textContent = el.mrp;
+    mrp.textContent = "MRP" + " ₹ " + el.mrp;
+    mrp.setAttribute("class", "linethrough");
+    ctotal += Number(el.mrp);
 
     var price = document.createElement("h3");
-    price.textContent = el.price;
+    price.textContent = " ₹ " + el.price;
+    toprice += Number(el.price);
+
+    var savings = el.mrp - el.price;
+    csavings += savings;
 
     var discount = document.createElement("p");
-    discount.textContent = "500";
+    discount.textContent = "savings" + " ₹ " + savings.toFixed(2);
+    discount.setAttribute("class", "smallest");
 
     div3.append(ic, mrp, price, discount);
 
@@ -39,6 +52,24 @@ function distants(addedToCart) {
 
     document.querySelector("#itemscart").append(div5);
   });
+
+  document.querySelector("#tprice").textContent = "₹ " + ctotal;
+  document.querySelector("#discountprice").textContent =
+    "₹ " + csavings.toFixed(2);
+
+  if (Number(toprice) >= 1000) {
+    document.querySelector("#toprice").textContent = "₹ " + toprice.toFixed(2);
+    document.querySelector("#dvcharge").textContent =
+      "₹ " + dcharges.toFixed(2);
+    document.querySelector("#dvcharge").style.textDecoration = "line-through";
+    console.log(toprice);
+  } else {
+    toprice += 25;
+    document.querySelector("#toprice").textContent = "₹ " + toprice.toFixed(2);
+    document.querySelector("#dvcharge").textContent =
+      "₹ " + dcharges.toFixed(2);
+    document.querySelector("#dvcharge").style.textDecoration = "none";
+  }
 }
 
 cartCountupdate(addedToCart);
@@ -51,4 +82,10 @@ function restart(i) {
   addedToCart.splice(i, 1);
   localStorage.setItem("cartItemsadded", JSON.stringify(addedToCart));
   distants(addedToCart);
+}
+
+document.querySelector("#checkout").addEventListener("click", navtocheck);
+
+function navtocheck() {
+  window.location.href = "checkout.html";
 }

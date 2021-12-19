@@ -149,3 +149,19 @@ body {
   margin-bottom: 30px;
   padding: 10px 10px 0px 0px;
 }
+.linethrough {
+  font-size: small;
+  text-decoration: line-through;
+}
+.smallest {
+  font-size: smaller;
+}
+.lineneeded {
+  text-decoration: line-through;
+}
+#toprice {
+  padding-top: 18px;
+}
+#checkout {
+  cursor: pointer;
+}
